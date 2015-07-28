@@ -1,0 +1,218 @@
+2960s
+1900 router
+
+Network Classes
+===============================
+
+Class A 1-126
+Class B 128-191
+Class C 192-223
+Class D 224-239  Multicast
+Class E 240-255  Experimental
+
+Subnetting Review
+===============================
+
+128	64	32	16	8	4	2	1
+  |_   _||_   _||__
+    128    192     224     240     248    252      254     255
+
+
+
+#1 197.201.255.100/29 		11000101.11001010.11111111.01100|100
+Valid Class B range - .97-.102 valid ip range
+
+#2 7.183.22.95 255.255.255.240  00000111.10110111.00010110.0101|1111
+Invalid Class A - Net ID  -   Valid range .81-94
+
+#3 232.79.251.249/30 		11101000.01001111.11111011.111110|01
+Not Valid Class D (multicast)    range is .249-250
+
+#4 72.62.52.32 255.255.255.224	01001000.00111110.00110100.001|00000
+Invalid Class A - Net ID  valid range .33-62
+
+#5 161.151.141.131/30   	10100001.10010101.10001101.100000|11
+Invalid Class B - Broadcast   Range is .129-130
+
+BEWARE OF CLASSFUL RANGES
+
+2 to the power of number of bits = # of valid hosts
+
+OSI Review
+========================
+Layer 1 - Physical - wires,hub,connectors
+Layer 2 - Datalink - switch, bridge, 
+MPLS,IPSEC 
+Layer 3 - Network - router, mls switch, layer 3 sw| NAT
+IPSEC
+Layer 4 - Transport - PAT
+SSL
+Layer 5 - Session - keep alives
+Layer 6 - Presentation - compression
+Layer 7 - Application - browser..etc    Ironport
+
+Firewalls/Load balancers/IPS span transport-application
+Technially ICMP is layer 3 but rides on IP(layer 4)
+GRE - Generic routing encapsulation
+How to remember - Please do not throw sausage pizza away
+
+Switches - 	Flood broadcast, unknown unicast, multicast
+		Learn Source MAC addresses
+
+IOS Commands
+========================
+Ask yourself two questions - what mode am i in?  is there a subcommand
+
+copy run start - copies running config to startup config
+
+know login local vs login
+
+
+Base Config Template
++++++++++++++++++++++
+
+MGMT
+_________
+
+service password enc - encrypts all passwords
+hostname somethinguseful
+ip domain name anystring
+enable password garbage
+enable secret rax123
+username rack priv 15 pass rax123  - used by login local
+no ip domain lookup -
+
+clock set
+(config)#clock summertime   ###Research clock options
+banner MOTD
+ 
+
+
+line con 0
+logging syncronous - enables automatic CTRL-R to prevent log messages from overwriting command line
+exec-timeout 27
+hist size 200
+password temp123
+login          - no username authenticated
+
+line vty 0 4    -  for remote in band connections  allows 5 connections (0-4)
+logging syncronous 
+exec timeout 27
+hist size 200
+login local   - reference the local user account db
+transport input ssh
+
+line vty 5 15
+login  - locks out additional connections
+
+
+L1+L2
+_______________
+speed 100
+duplex full
+shut/no shut  - shutdown unused ports
+descriptions on all interfaces
+*switchport mode access - says dont be a trunk link
+*switchport access VLAN # - assigns a vlan to a port inside interface subconfig
+*switchport no negotiate - not work with dynamic trunking protocal
+***spanning-tree portfast default -BPDU guard  - global config mode for all ports
+no cdp run - can be done global   cisco discovery protocol - cisco ip phones often require CDP
+no cdp enable - done on the interface  - only turn on when used - turn on the interface first, then global
+
+
+vlan #number
+|_name
+
+L3
+________________
+IP Default-gateway
+int vlan #
+|_ip add IP mask
+
+
+
+after build config 
+
+crypto key gen rsa in global config mode
+
+
+For Lab:
+
+For models with four gig ports (2 fibre/2 rj45) set media type to rj45
+To shutdown all ports, in global config mode 
+int range F0/1-24 , G0/1-2   (spaces are important)
+sw mo access
+description
+speed 100
+dup full
+switchport no negotiate
+
+
+
+ASIC - application specific intergrated circuit
+
+==========================
+Module 2 Notes
+==========================
+
+Found in IPv4 Service type field
+ToS - type of service
+QoS - quality of service
+
+DSCP - differentiated services code point
+
+Fragmentation occurs when packet is bigger than MTU of device.  Fragmentation in general is viewed as bad.  Can be exploited to insert bad fragments into good ones
+TTL is a hop count - layer 3 hops, not time
+Protocol - 6 is tcp, 17 is udp
+
+TCP
++++++++++
+
+TCP has 3-way handshake
+1. A sends SYN + seed value (example 100)
+2. B sends SYN + seed value (500) and ACK number 101
+3. A sends ACK (501)
+4. Open tcp connection/session
+
+A -> SYN(100)
+B -> SYN(500) ACK(101)
+A -> ACK(501)
+
+To finish
+FIN/RST/TIMEOUT
+
+Source ports are typically in the ephemeral range (typically about 1024)  Find high end of the range
+
+DNS uses TCP for zone transfers and UDP for name resolution
+
+
+ARP resolves layer 3 to layer 2 addresses, usually for a host communicating out
+MAC ADD table  - L2 -> L1  normally for frames passing through
+ROUTE Table - L3 -> L1  normally for frames passing through
+
+Understand the source/destination MACs of routers vs switches
+
+RESEARCH: Access - Distribution - Core - Cisco recommended network design
+
+
+VLANS
+====================
+Works at layer 2
+
+802.1q
+
+Configurable VLAN IDs are 1-4094
+VLANS greater than 1023 are called extended VLANs
+
+Native VLAN - is the only untagged vlan on 802.1q trunks - is configurable, not always vlan 1.  
+Native vlans must match on both sides of trunk or native vlan mismatch will occur
+On most equipment vlans are stored in vlan.dat in flash
+
+VLANs allow for logical grouping of physical ports across one or more switches
+VLAN is identified by a shim head that contains VLAN ID # in ethernet frames
+
+In IOS switchport mode access says send plain ethernet (untagged)
+	- switchport mode trunk says tag all frames between endpoints(switches) not all uplinks are trunks
+Cisco proprietary version of vlans - ISL (depricated) used 1-1005 for ID #s
+
+Sending to hypervisors may have trunk mode enabled for vSwitch vlans
