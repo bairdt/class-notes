@@ -78,3 +78,2095 @@ ip add IPADDRESS MASK
 ==============================================================
 Console Output
 ==============================================================
+=~=~=~=~=~=~=~=~=~=~=~= PuTTY log 2015.07.28 08:50:10 =~=~=~=~=~=~=~=~=~=~=~=
+
+sw-10>sh?
+show  
+
+sw-10>shshow    ow in
+sw-10>show inventory         t
+sw-10>show int        enable
+sw-10#show int
+sw-10#show interfaces status brief
+                             ^
+% Invalid input detected at '^' marker.
+
+sw-10#show interfaces status brief     ?
+  err-disabled  Show interface error disabled state
+  inactive      Show interface inactive state
+  module        Limit display to interfaces on module
+  |             Output modifiers
+  <cr>
+
+sw-10#show interfaces status 
+
+Port      Name               Status       Vlan       Duplex  Speed Type
+Fa0/1                        connected    100        a-full  a-100 10/100BaseTX
+Fa0/2                        notconnect   1            auto   auto 10/100BaseTX
+Fa0/3                        notconnect   1            auto   auto 10/100BaseTX
+Fa0/4                        notconnect   1            auto   auto 10/100BaseTX
+Fa0/5                        notconnect   1            auto   auto 10/100BaseTX
+Fa0/6                        notconnect   1            auto   auto 10/100BaseTX
+Fa0/7                        notconnect   1            auto   auto 10/100BaseTX
+Fa0/8                        notconnect   1            auto   auto 10/100BaseTX
+Fa0/9                        notconnect   1            auto   auto 10/100BaseTX
+Fa0/10                       notconnect   1            auto   auto 10/100BaseTX
+Fa0/11                       notconnect   1            auto   auto 10/100BaseTX
+Fa0/12                       notconnect   1            auto   auto 10/100BaseTX
+Fa0/13                       notconnect   1            auto   auto 10/100BaseTX
+Fa0/14                       notconnect   1            auto   auto 10/100BaseTX
+Fa0/15                       notconnect   1            auto   auto 10/100BaseTX
+Fa0/16                       notconnect   1            auto   auto 10/100BaseTX
+Fa0/17                       notconnect   1            auto   auto 10/100BaseTX
+Fa0/18                       notconnect   1            auto   auto 10/100BaseTX
+Fa0/19                       notconnect   1            auto   auto 10/100BaseTX
+Fa0/20                       notconnect   1            auto   auto 10/100BaseTX
+Fa0/21                       notconnect   1            auto   auto 10/100BaseTX
+ --More--         
+Port      Name               Status       Vlan       Duplex  Speed Type
+Fa0/22                       notconnect   1            auto   auto 10/100BaseTX
+Fa0/23                       connected    100        a-full  a-100 10/100BaseTX
+Fa0/24                       notconnect   100          auto   auto 10/100BaseTX
+Gi0/1                        notconnect   1            auto   auto Not Present
+Gi0/2                        notconnect   1            auto   auto Not Present
+sw-10#show run
+Building configuration...
+
+Current configuration : 1533 bytes
+!
+version 12.2
+no service pad
+service timestamps debug datetime msec
+service timestamps log datetime msec
+no service password-encryption
+!
+hostname sw-10
+!
+boot-start-marker
+boot-end-marker
+!
+!
+no aaa new-model
+system mtu routing 1500
+ip subnet-zero
+!
+!
+!
+!
+!
+ --More--         !
+!
+!
+!
+spanning-tree mode pvst
+spanning-tree extend system-id
+!
+vlan internal allocation policy ascending
+!
+!
+!
+interface FastEthernet0/1
+ switchport access vlan 100
+!
+interface FastEthernet0/2
+!
+interface FastEthernet0/3
+!
+interface FastEthernet0/4
+!
+interface FastEthernet0/5
+!
+interface FastEthernet0/6
+ --More--         !
+interface FastEthernet0/7
+!
+interface FastEthernet0/8
+!
+interface FastEthernet0/9
+!
+interface FastEthernet0/10
+!
+interface FastEthernet0/11
+!
+interface FastEthernet0/12
+!
+interface FastEthernet0/13
+!
+interface FastEthernet0/14
+!
+interface FastEthernet0/15
+!
+interface FastEthernet0/16
+!
+interface FastEthernet0/17
+!
+ --More--         interface FastEthernet0/18
+!
+interface FastEthernet0/19
+!
+interface FastEthernet0/20
+!
+interface FastEthernet0/21
+!
+interface FastEthernet0/22
+!
+interface FastEthernet0/23
+ switchport access vlan 100
+ switchport mode access
+!
+interface FastEthernet0/24
+ switchport access vlan 100
+ switchport mode access
+!
+interface GigabitEthernet0/1
+!
+interface GigabitEthernet0/2
+!
+interface Vlan1
+ --More--          no ip address
+ no ip route-cache
+ shutdown
+!
+interface Vlan100
+ ip address 192.168.100.20 255.255.255.0
+ no ip route-cache
+!
+ip http server
+ip http secure-server
+!
+control-plane
+!
+!
+line con 0
+ logging synchronous
+line vty 0 4
+ login
+line vty 5 15
+ login
+!
+end
+
+sw-10#host?
+% Unrecognized command
+sw-10#host    conf t
+Enter configuration commands, one per line.  End with CNTL/Z.
+sw-10(config)#host
+sw-10(config)#hostname sw10
+sw10(config)#ser
+sw10(config)#service pa
+sw10(config)#service pa
+sw10(config)#service pas
+sw10(config)#service password-
+sw10(config)#service password-?
+password-encryption  password-recovery  
+
+sw10(config)#service password-en
+sw10(config)#service password-encryption 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+sw10 con0 is now available
+
+
+
+
+
+Press RETURN to get started.
+
+
+
+
+*Mar  1 18:47:28.190: %SYS-5-CONFIG_I: Configured from console by console
+sw10>enable
+sw10#
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+sw10 con0 is now available
+
+
+
+
+
+Press RETURN to get started.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+*Mar  1 19:57:40.714: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/1, changed state to down
+*Mar  1 19:57:41.721: %LINK-3-UPDOWN: Interface FastEthernet0/1, changed state to down
+*Mar  1 19:57:46.242: %LINK-3-UPDOWN: Interface FastEthernet0/1, changed state to up
+*Mar  1 19:57:47.249: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/1, changed state to up
+sw10>enable
+sw10#show ip in
+sw10#show ip interface bri
+sw10#show ip interface brief 
+Interface              IP-Address      OK? Method Status                Protocol
+Vlan1                  unassigned      YES unset  administratively down down    
+Vlan100                192.168.100.20  YES manual up                    up      
+FastEthernet0/1        unassigned      YES unset  up                    up      
+FastEthernet0/2        unassigned      YES unset  down                  down    
+FastEthernet0/3        unassigned      YES unset  down                  down    
+FastEthernet0/4        unassigned      YES unset  down                  down    
+FastEthernet0/5        unassigned      YES unset  down                  down    
+FastEthernet0/6        unassigned      YES unset  down                  down    
+FastEthernet0/7        unassigned      YES unset  down                  down    
+FastEthernet0/8        unassigned      YES unset  down                  down    
+FastEthernet0/9        unassigned      YES unset  down                  down    
+FastEthernet0/10       unassigned      YES unset  down                  down    
+FastEthernet0/11       unassigned      YES unset  down                  down    
+FastEthernet0/12       unassigned      YES unset  down                  down    
+FastEthernet0/13       unassigned      YES unset  down                  down    
+FastEthernet0/14       unassigned      YES unset  down                  down    
+FastEthernet0/15       unassigned      YES unset  down                  down    
+FastEthernet0/16       unassigned      YES unset  down                  down    
+FastEthernet0/17       unassigned      YES unset  down                  down    
+FastEthernet0/18       unassigned      YES unset  down                  down    
+FastEthernet0/19       unassigned      YES unset  down                  down    
+FastEthernet0/20       unassigned      YES unset  down                  down    
+ --More--         
+sw10#show ip interface brief ?
+  Async              Async interface
+  Auto-Template      Auto-Template interface
+  BVI                Bridge-Group Virtual Interface
+  CTunnel            CTunnel interface
+  Dialer             Dialer interface
+  FastEthernet       FastEthernet IEEE 802.3
+  Filter             Filter interface
+  Filtergroup        Filter Group interface
+  GigabitEthernet    GigabitEthernet IEEE 802.3z
+  GroupVI            Group Virtual interface
+  Lex                Lex interface
+  Loopback           Loopback interface
+  Null               Null interface
+  Port-channel       Ethernet Channel of interfaces
+  Portgroup          Portgroup interface
+  Pos-channel        POS Channel of interfaces
+  Tunnel             Tunnel interface
+  Vif                PGM Multicast Host interface
+  Virtual-Template   Virtual Template interface
+  Virtual-TokenRing  Virtual TokenRing
+  Vlan               Catalyst Vlans
+  fcpa               Fiber Channel
+ --More-- 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+sw10 con0 is now available
+
+
+
+
+
+Press RETURN to get started.
+
+
+
+
+
+
+*Mar  1 22:53:06.756: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/1, changed state to down
+*Mar  1 22:53:07.754: %LINK-3-UPDOWN: Interface FastEthernet0/1, changed state to down
+*Mar  1 22:53:10.355: %LINK-3-UPDOWN: Interface FastEthernet0/1, changed state to up
+*Mar  1 22:53:11.361: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/1, changed state to up
+*Mar  1 22:53:12.922: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/1, changed state to down
+*Mar  1 22:53:14.927: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/1, changed state to up
+*Mar  1 22:53:16.739: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/1, changed state to down
+*Mar  1 22:53:18.743: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/1, changed state to up
+sw10>
+*Mar  1 23:03:17.766: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/23, changed state to down
+sw10>
+*Mar  1 23:03:18.764: %LINK-3-UPDOWN: Interface FastEthernet0/23, changed state to down
+sw10>
+*Mar  1 23:03:32.831: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/1, changed state to down
+*Mar  1 23:03:32.831: %LINEPROTO-5-UPDOWN: Line protocol on Interface Vlan100, changed state to down
+sw10>
+*Mar  1 23:03:34.845: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/1, changed state to up
+sw10>
+*Mar  1 23:04:04.566: %LINEPROTO-5-UPDOWN: Line protocol on Interface Vlan100, changed state to up
+sw10>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+sw10 con0 is now available
+
+
+
+
+
+Press RETURN to get started.
+
+
+
+
+
+
+
+
+*Mar  1 23:09:22.158: %LINK-3-UPDOWN: Interface FastEthernet0/10, changed state to up
+*Mar  1 23:09:22.838: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/1, changed state to down
+*Mar  1 23:09:22.838: %LINEPROTO-5-UPDOWN: Line protocol on Interface Vlan100, changed state to down
+*Mar  1 23:09:23.165: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/10, changed state to up
+*Mar  1 23:09:23.844: %LINK-3-UPDOWN: Interface FastEthernet0/1, changed state to down
+*Mar  1 23:09:25.388: %LINK-3-UPDOWN: Interface FastEthernet0/9, changed state to up
+*Mar  1 23:09:26.394: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/9, changed state to up
+sw10>
+sw10>
+sw10>
+sw10>
+sw10>
+sw10>
+sw10>
+sw10>
+sw10>
+sw10>
+sw10>enable
+sw10#conf t
+Enter configuration commands, one per line.  End with CNTL/Z.
+sw10(config)#line con 0
+sw10(config-line)#logg
+sw10(config-line)#logging sync
+sw10(config-line)#logging synchronous 
+sw10(config-line)#exec-t
+sw10(config-line)#exec-timeout 27
+sw10(config-line)#
+*Mar  1 23:12:12.875: %SYS-7-NV_BLOCK_INIT: Initialized the geometry of nvram
+sw10(config-line)#
+*Mar  1 23:12:12.875: %EXPRESS_SETUP-6-CONFIG_IS_RESET: The configuration is reset and the system will now reboot
+*Mar  1 23:12:13.881: %SYS-5-RELOAD: Reload requested by Hulc LED Process. Reload Reason: Reason unspecified.
+sw10(config-line)#
+
+Boot Sector Filesystem (bs) installed, fsid: 2
+
+Base ethernet MAC Address: 00:26:98:63:eb:00
+
+Xmodem file system is available.
+
+The password-recovery mechanism is enabled.
+
+Initializing Flash...
+
+flashfs[0]: 530 files, 19 directories
+
+flashfs[0]: 0 orphaned files, 0 orphaned directories
+
+flashfs[0]: Total bytes: 32514048
+
+flashfs[0]: Bytes used: 10423296
+
+flashfs[0]: Bytes available: 22090752
+
+flashfs[0]: flashfs fsck took 10 seconds.
+
+...done Initializing Flash.
+
+done.
+
+Loading "flash:c2960-lanbasek9-mz.122-44.SE6/c2960-lanbasek9-mz.122-44.SE6.bin"...@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+File "flash:c2960-lanbasek9-mz.122-44.SE6/c2960-lanbasek9-mz.122-44.SE6.bin" uncompressed and installed, entry point: 0x3000
+
+executing...
+
+
+              Restricted Rights Legend
+
+Use, duplication, or disclosure by the Government is
+subject to restrictions as set forth in subparagraph
+(c) of the Commercial Computer Software - Restricted
+Rights clause at FAR sec. 52.227-19 and subparagraph
+(c) (1) (ii) of the Rights in Technical Data and Computer
+Software clause at DFARS sec. 252.227-7013.
+
+           cisco Systems, Inc.
+           170 West Tasman Drive
+           San Jose, California 95134-1706
+
+
+
+Cisco IOS Software, C2960 Software (C2960-LANBASEK9-M), Version 12.2(44)SE6, RELEASE SOFTWARE (fc1)
+Copyright (c) 1986-2009 by Cisco Systems, Inc.
+Compiled Mon 09-Mar-09 18:10 by gereddy
+Image text-base: 0x00003000, data-base: 0x01100000
+
+Initializing flashfs...
+
+flashfs[1]: 530 files, 19 directories
+flashfs[1]: 0 orphaned files, 0 orphaned directories
+flashfs[1]: Total bytes: 32514048
+flashfs[1]: Bytes used: 10423296
+flashfs[1]: Bytes available: 22090752
+flashfs[1]: flashfs fsck took 2 seconds.
+flashfs[1]: Initialization complete....done Initializing flashfs.
+
+Checking for Bootloader upgrade.. not needed
+
+POST: CPU MIC register Tests : Begin
+POST: CPU MIC register Tests : End, Status Passed
+
+POST: PortASIC Memory Tests : Begin
+POST: PortASIC Memory Tests : End, Status Passed
+
+POST: CPU MIC interface Loopback Tests : Begin
+POST: CPU MIC interface Loopback Tests : End, Status Passed
+
+POST: PortASIC RingLoopback Tests : Begin
+POST: PortASIC RingLoopback Tests : End, Status Passed
+
+POST: PortASIC CAM Subsystem Tests : Begin
+POST: PortASIC CAM Subsystem Tests : End, Status Passed
+
+POST: PortASIC Port Loopback Tests : Begin
+POST: PortASIC Port Loopback Tests : End, Status Passed
+
+Waiting for Port download...Complete
+
+
+This product contains cryptographic features and is subject to United
+States and local country laws governing import, export, transfer and
+use. Delivery of Cisco cryptographic products does not imply
+third-party authority to import, export, distribute or use encryption.
+Importers, exporters, distributors and users are responsible for
+compliance with U.S. and local country laws. By using this product you
+agree to comply with applicable laws and regulations. If you are unable
+to comply with U.S. and local laws, return this product immediately.
+
+A summary of U.S. laws governing Cisco cryptographic products may be found at:
+http://www.cisco.com/wwl/export/crypto/tool/stqrg.html
+
+If you require further assistance please contact us by sending email to
+export@cisco.com.
+
+cisco WS-C2960-24TC-L (PowerPC405) processor (revision J0) with 61440K/4088K bytes of memory.
+Processor board ID FOC1328V7XB
+Last reset from power-on
+1 Virtual Ethernet interface
+24 FastEthernet interfaces
+2 Gigabit Ethernet interfaces
+The password-recovery mechanism is enabled.
+
+64K bytes of flash-simulated non-volatile configuration memory.
+Base ethernet MAC Address       : 00:26:98:63:EB:00
+Motherboard assembly number     : 73-11437-06
+Power supply part number        : 341-0097-02
+Motherboard serial number       : FOC13290VHG
+Power supply serial number      : AZS132620PD
+Model revision number           : J0
+Motherboard revision number     : A0
+Model number                    : WS-C2960-24TC-L
+System serial number            : FOC1328V7XB
+Top Assembly Part Number        : 800-29826-03
+Top Assembly Revision Number    : C0
+Version ID                      : V06
+CLEI Code Number                : COMFT00BRA
+Hardware Board Revision Number  : 0x01
+
+
+Switch Ports Model              SW Version            SW Image                 
+------ ----- -----              ----------            ----------               
+*    1 26    WS-C2960-24TC-L    12.2(44)SE6           C2960-LANBASEK9-M        
+
+
+
+
+Press RETURN to get started!
+
+
+*Mar  1 00:00:25.451: %LINEPROTO-5-UPDOWN: Line protocol on Interface Vlan1, changed state to down
+*Mar  1 00:00:26.566: %SPANTREE-5-EXTENDED_SYSID: Extended SysId enabled for type vlan
+*Mar  1 00:00:47.479: %SYS-5-RESTART: System restarted --
+Cisco IOS Software, C2960 Software (C2960-LANBASEK9-M), Version 12.2(44)SE6, RELEASE SOFTWARE (fc1)
+Copyright (c) 1986-2009 by Cisco Systems, Inc.
+Compiled Mon 09-Mar-09 18:10 by gereddy
+*Mar  1 00:00:49.408: %LINK-3-UPDOWN: Interface FastEthernet0/9, changed state to up
+*Mar  1 00:00:49.417: %LINK-3-UPDOWN: Interface FastEthernet0/10, changed state to up
+*Mar  1 00:00:50.415: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/9, changed state to up
+*Mar  1 00:00:50.423: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/10, changed state to up
+*Mar  1 00:01:20.136: %LINEPROTO-5-UPDOWN: Line protocol on Interface Vlan1, changed state to up
+
+
+         --- System Configuration Dialog ---
+
+Would you like to enter the initial configuration dialog? [yes/no]: no
+Switch>
+Switch>enable
+Switch#conf t
+Enter configuration commands, one per line.  End with CNTL/Z.
+Switch(config)#line con 0          serv
+Switch(config)#service pas
+Switch(config)#service password-e
+Switch(config)#service password-encryption 
+Switch(config)#hostname super-cool_sw
+super-cool_sw(config)#enable secre
+super-cool_sw(config)#enable secret r               ipd  d
+super-cool_sw(config)#ip do
+super-cool_sw(config)#ip domain nsm
+super-cool_sw(config)#ip domain nsm  a
+super-cool_sw(config)#ip domain name SAT
+super-cool_sw(config)#enable pass
+super-cool_sw(config)#enable password garbage 
+super-cool_sw(config)#enabl
+super-cool_sw(config)#enable secr
+super-cool_sw(config)#enable secret rax123
+super-cool_sw(config)#user
+super-cool_sw(config)#username rack pri
+super-cool_sw(config)#username rack privilege 15 pass passx     rax123
+super-cool_sw(config)#no ip dom
+super-cool_sw(config)#no ip domain loo
+super-cool_sw(config)#no ip domain lookup 
+super-cool_sw(config)#clock ?
+  summer-time  Configure summer (daylight savings) time
+  timezone     Configure time zone
+
+super-cool_sw(config)#clock set
+                             ^
+% Invalid input detected at '^' marker.
+
+super-cool_sw(config)#^Z
+super-cool_sw#
+*Mar  1 00:09:12.960: %SYS-5-CONFIG_I: Configured from console by console^Z
+super-cool_sw#clo
+super-cool_sw#clock set ?
+  hh:mm:ss  Current Time
+
+super-cool_sw#clock set 
+% Incomplete command.
+
+super-cool_sw#clock se
+super-cool_sw#clock set 13:40:00
+% Incomplete command.
+
+super-cool_sw#clock set 13:40:00 current time
+                                 ^
+% Invalid input detected at '^' marker.
+
+super-cool_sw#clock set 13:40:00 current time              1
+% Incomplete command.
+
+super-cool_sw#clock set 13:40:01 ?
+  <1-31>  Day of the month
+  MONTH   Month of the year
+
+super-cool_sw#clock set 13:40:01 7   28 july
+% Incomplete command.
+
+super-cool_sw#clock set 13:40:01 28 july ?
+  <1993-2035>  Year
+
+super-cool_sw#clock set 13:40:01 28 july 2015
+super-cool_sw#
+*Jul 28 13:40:01.000: %SYS-6-CLOCKUPDATE: System clock has been updated from 00:11:36 UTC Mon Mar 1 1993 to 13:40:01 UTC Tue Jul 28 2015, configured from console by console.bann
+super-cool_sw#banner
+super-cool_sw#banner mo
+super-cool_sw#banner mo
+super-cool_sw#banner mo
+super-cool_sw#banner mo
+super-cool_sw#banner mo
+super-cool_sw#banner mo
+super-cool_sw#banner mot
+super-cool_sw#banner mot
+super-cool_sw#banner mot
+super-cool_sw#banner mot          banner
+super-cool_sw#banner
+super-cool_sw#banner
+super-cool_sw#banner m
+super-cool_sw#banner m        motd ?
+% Unrecognized command
+super-cool_sw#motd conf           
+super-cool_sw#
+super-cool_sw#
+super-cool_sw#
+super-cool_sw#conf t
+Enter configuration commands, one per line.  End with CNTL/Z.
+super-cool_sw(config)#bann
+super-cool_sw(config)#banner mo
+super-cool_sw(config)#banner motd 
+% Incomplete command.
+
+super-cool_sw(config)#banner motd ?
+  LINE  c banner-text c, where 'c' is a delimiting character
+
+super-cool_sw(config)#banner motd c Wekco       Big brother is watching becareful nefore $ c Big brother is watching becareful nefore y         o9 u press ther is watching becareful nefore you press e         nter!!efore you press enter!! before you press enter!! careful before you press enter!!careful before you press enter!! c
+super-cool_sw(config)#
+super-cool_sw(config)#
+super-cool_sw(config)#
+super-cool_sw(config)#
+super-cool_sw(config)#
+super-cool_sw(config)#line con 0
+super-cool_sw(config-line)#lgo
+super-cool_sw(config-line)#lgo   log
+super-cool_sw(config-line)#log
+super-cool_sw(config-line)#log
+super-cool_sw(config-line)#logg
+super-cool_sw(config-line)#logging sy
+super-cool_sw(config-line)#logging synchronous 
+super-cool_sw(config-line)#exec
+super-cool_sw(config-line)#exec t
+super-cool_sw(config-line)#exec tim
+super-cool_sw(config-line)#exec tim   timeo
+super-cool_sw(config-line)#exec timeo      -t
+super-cool_sw(config-line)#exec-timeout 27
+super-cool_sw(config-line)#hist
+super-cool_sw(config-line)#history      tz
+super-cool_sw(config-line)#histzi
+super-cool_sw(config-line)#histzi   t-s
+super-cool_sw(config-line)#hist-s    siz
+super-cool_sw(config-line)#his size 500   200
+super-cool_sw(config-line)#passw
+super-cool_sw(config-line)#password temp123
+super-cool_sw(config-line)#login       login?
+login  
+
+super-cool_sw(config-line)#login  ?
+logging  login  
+
+super-cool_sw(config-line)#login
+super-cool_sw(config-line)#line vt
+super-cool_sw(config-line)#line vty 0 4 
+super-cool_sw(config-line)#log
+super-cool_sw(config-line)#logg
+super-cool_sw(config-line)#logging syn
+super-cool_sw(config-line)#logging synchronous 
+super-cool_sw(config-line)#timeo
+super-cool_sw(config-line)#timeout 27
+                                   ^
+% Invalid input detected at '^' marker.
+
+super-cool_sw(config-line)#exec-t
+super-cool_sw(config-line)#exec-timeout 27
+super-cool_sw(config-line)#hist siz
+super-cool_sw(config-line)#hist size 200
+super-cool_sw(config-line)#login local
+super-cool_sw(config-line)#trans
+super-cool_sw(config-line)#transport inp
+super-cool_sw(config-line)#transport input ssg h
+super-cool_sw(config-line)#line vty 5 25  15 
+super-cool_sw(config-line)#logi
+super-cool_sw(config-line)#login 
+% Login disabled on line 6, until 'password' is set
+% Login disabled on line 7, until 'password' is set
+% Login disabled on line 8, until 'password' is set
+% Login disabled on line 9, until 'password' is set
+% Login disabled on line 10, until 'password' is set
+% Login disabled on line 11, until 'password' is set
+% Login disabled on line 12, until 'password' is set
+% Login disabled on line 13, until 'password' is set
+% Login disabled on line 14, until 'password' is set
+% Login disabled on line 15, until 'password' is set
+% Login disabled on line 16, until 'password' is set
+super-cool_sw(config-line)#
+super-cool_sw(config-line)#
+super-cool_sw(config-line)#
+super-cool_sw(config-line)#
+super-cool_sw(config-line)#
+super-cool_sw(config-line)#
+super-cool_sw(config-line)#
+super-cool_sw(config-line)#
+super-cool_sw(config-line)#
+super-cool_sw(config-line)#
+super-cool_sw(config-line)#speed     ^Z
+super-cool_sw#
+Jul 28 13:50:49.321: %SYS-5-CONFIG_I: Configured from console by console
+super-cool_sw#int G0/1
+               ^
+% Invalid input detected at '^' marker.
+
+super-cool_sw#conf t
+Enter configuration commands, one per line.  End with CNTL/Z.
+super-cool_sw(config)#int G
+super-cool_sw(config)#int G
+super-cool_sw(config)#int G0/1
+super-cool_sw(config-if)#show ?
+% Unrecognized command
+super-cool_sw(config-if)#show      ?
+Interface configuration commands:
+  arp                     Set arp type (arpa, probe, snap) or timeout
+  auto                    Configure Automation
+  bandwidth               Set bandwidth informational parameter
+  carrier-delay           Specify delay for interface transitions
+  cdp                     CDP interface subcommands
+  channel-group           Etherchannel/port bundling configuration
+  channel-protocol        Select the channel protocol (LACP, PAgP)
+  dampening               Enable event dampening
+  default                 Set a command to its defaults
+  delay                   Specify interface throughput delay
+  description             Interface specific description
+  exit                    Exit from interface configuration mode
+  flowcontrol             Configure flow operation.
+  help                    Description of the interactive help system
+  hold-queue              Set hold queue depth
+  ip                      Interface Internet Protocol config commands
+  keepalive               Enable keepalive
+  lacp                    LACP interface subcommands
+  link                    Configure Link
+  lldp                    LLDP interface subcommands
+  load-interval           Specify interval for load calculation for an
+ --More--                                   interface
+  location                Interface location information
+  logging                 Configure logging for interface
+  mac                     MAC interface commands
+  macro                   Command macro
+  max-reserved-bandwidth  Maximum Reservable Bandwidth on an Interface
+  media-type              Configure media type
+  mls                     mls interface commands
+  mvr                     MVR per port configuration
+  no                      Negate a command or set its defaults
+  pagp                    PAgP interface subcommands
+  priority-queue          Priority Queue
+  queue-set               Choose a queue set for this queue
+  rmon                    Configure Remote Monitoring on an interface
+  service-policy          Configure QoS Service Policy
+  shutdown                Shutdown the selected interface
+  small-frame             Set rate limit parameters for small frame
+  snmp                    Modify SNMP interface parameters
+  source                  Get config from another source
+  spanning-tree           Spanning Tree Subsystem
+  srr-queue               Configure shaped round-robin transmit queues
+  storm-control           storm configuration
+  switchport              Set switching mode characteristics
+ --More--         
+super-cool_sw(config-if)#medi
+super-cool_sw(config-if)#media-type ?
+  auto-select  Use whichever connector is attached
+  rj45         Use RJ45 connector
+  sfp          Use SFP connector
+
+super-cool_sw(config-if)#media-type rj45
+super-cool_sw(config-if)#exit
+super-cool_sw(config)#intexitmedia-type rj45int G0/1       login   int G0/1 2
+super-cool_sw(config-if)#int G0/2exit    media-type rj45
+super-cool_sw(config-if)#exit
+super-cool_sw(config)#int range F0/1-24 , G0/102  -2
+super-cool_sw(config-if-range)#sw
+super-cool_sw(config-if-range)#switchport mo
+super-cool_sw(config-if-range)#switchport mode acc
+super-cool_sw(config-if-range)#switchport mode access 
+super-cool_sw(config-if-range)#des
+super-cool_sw(config-if-range)#description unassigned ports                  n ?
+  LINE  Up to 240 characters describing this interface
+
+super-cool_sw(config-if-range)#description UNASSIGNED PORTS
+super-cool_sw(config-if-range)#speed 100
+super-cool_sw(config-if-range)#dup
+super-cool_sw(config-if-range)#duplex 
+Jul 28 13:53:49.131: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/9, changed state to down
+Jul 28 13:53:49.140: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/10, changed state to down
+Jul 28 13:53:49.140: %LINEPROTO-5-UPDOWN: Line protocol on Interface Vlan1, changed state to down
+super-cool_sw(config-if-range)#duplex full
+Jul 28 13:53:51.145: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/9, changed state to up
+Jul 28 13:53:51.145: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/10, changed state to up
+super-cool_sw(config-if-range)#duplex full
+super-cool_sw(config-if-range)#
+Jul 28 13:53:54.383: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/9, changed state to down
+Jul 28 13:53:54.391: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/10, changed state to down
+super-cool_sw(config-if-range)#siw 
+Jul 28 13:53:56.396: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/9, changed state to up
+Jul 28 13:53:56.396: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/10, changed state to up
+super-cool_sw(config-if-range)#si wi
+super-cool_sw(config-if-range)#switchport none
+super-cool_sw(config-if-range)#switchport nonegotiate 
+super-cool_sw(config-if-range)#
+Jul 28 13:54:26.284: %LINEPROTO-5-UPDOWN: Line protocol on Interface Vlan1, changed state to up
+super-cool_sw(config-if-range)#exit
+super-cool_sw(config)#show ip status
+                        ^
+% Invalid input detected at '^' marker.
+
+super-cool_sw(config)#^Z
+super-cool_sw#show ip sta
+Jul 28 13:54:45.863: %SYS-5-CONFIG_I: Configured from console by console
+super-cool_sw#show ip sta
+super-cool_sw#show ip status
+                       ^
+% Invalid input detected at '^' marker.
+
+super-cool_sw#show ip status      ?
+  access-lists  List IP access lists
+  accounting    The active IP accounting database
+  admission     Network Admission Control information
+  aliases       IP alias table
+  arp           IP ARP table
+  device        Show IP Tracking Hosts
+  dhcp          Show items in the DHCP database
+  host          IP host information
+  http          HTTP information
+  igmp          IGMP information
+  interface     IP interface status and configuration
+  local         IP local options
+  nat           IP NAT information
+  port-map      Port to Application Mapping (PAM) information
+  redirects     IP redirects
+  sla           Service Level Agreement (SLA)
+  sockets       Open IP sockets
+  source        IP source
+  ssh           Information on SSH
+  traffic       IP protocol statistics
+
+super-cool_sw#show ip intert
+super-cool_sw#show ip intert 
+super-cool_sw#show ip interface status
+                                ^
+% Invalid input detected at '^' marker.
+
+super-cool_sw#show ip interface status      ?
+  Async              Async interface
+  Auto-Template      Auto-Template interface
+  BVI                Bridge-Group Virtual Interface
+  CTunnel            CTunnel interface
+  Dialer             Dialer interface
+  FastEthernet       FastEthernet IEEE 802.3
+  Filter             Filter interface
+  Filtergroup        Filter Group interface
+  GigabitEthernet    GigabitEthernet IEEE 802.3z
+  GroupVI            Group Virtual interface
+  Lex                Lex interface
+  Loopback           Loopback interface
+  Null               Null interface
+  Port-channel       Ethernet Channel of interfaces
+  Portgroup          Portgroup interface
+  Pos-channel        POS Channel of interfaces
+  Tunnel             Tunnel interface
+  Vif                PGM Multicast Host interface
+  Virtual-Template   Virtual Template interface
+  Virtual-TokenRing  Virtual TokenRing
+  Vlan               Catalyst Vlans
+  brief              Brief summary of IP status and configuration
+ --More--         
+super-cool_sw#show ip interface bri
+super-cool_sw#show ip interface brief 
+Interface              IP-Address      OK? Method Status                Protocol
+Vlan1                  unassigned      YES unset  up                    up      
+FastEthernet0/1        unassigned      YES unset  down                  down    
+FastEthernet0/2        unassigned      YES unset  down                  down    
+FastEthernet0/3        unassigned      YES unset  down                  down    
+FastEthernet0/4        unassigned      YES unset  down                  down    
+FastEthernet0/5        unassigned      YES unset  down                  down    
+FastEthernet0/6        unassigned      YES unset  down                  down    
+FastEthernet0/7        unassigned      YES unset  down                  down    
+FastEthernet0/8        unassigned      YES unset  down                  down    
+FastEthernet0/9        unassigned      YES unset  up                    up      
+FastEthernet0/10       unassigned      YES unset  up                    up      
+FastEthernet0/11       unassigned      YES unset  down                  down    
+FastEthernet0/12       unassigned      YES unset  down                  down    
+FastEthernet0/13       unassigned      YES unset  down                  down    
+FastEthernet0/14       unassigned      YES unset  down                  down    
+FastEthernet0/15       unassigned      YES unset  down                  down    
+FastEthernet0/16       unassigned      YES unset  down                  down    
+FastEthernet0/17       unassigned      YES unset  down                  down    
+FastEthernet0/18       unassigned      YES unset  down                  down    
+FastEthernet0/19       unassigned      YES unset  down                  down    
+FastEthernet0/20       unassigned      YES unset  down                  down    
+FastEthernet0/21       unassigned      YES unset  down                  down    
+ --More--         
+super-cool_sw#show ip interface brief statusstatus          conf t        
+Enter configuration commands, one per line.  End with CNTL/Z.
+super-cool_sw(config)#show ip statusexit          switchport nonegotiate duplex full            speed 100  description UNASSIGNED PORTSswitchport mode access      int range F0/1-24 , G0/1-2
+super-cool_sw(config-if-range)#shu
+super-cool_sw(config-if-range)#shutdown 
+super-cool_sw(config-if-range)#
+Jul 28 13:56:16.469: %LINEPROTO-5-UPDOWN: Line protocol on Interface Vlan1, changed state to down
+Jul 28 13:56:17.442: %LINK-5-CHANGED: Interface FastEthernet0/1, changed state to administratively down
+Jul 28 13:56:17.450: %LINK-5-CHANGED: Interface FastEthernet0/2, changed state to administratively down
+Jul 28 13:56:17.450: %LINK-5-CHANGED: Interface FastEthernet0/3, changed state to administratively down
+Jul 28 13:56:17.450: %LINK-5-CHANGED: Interface FastEthernet0/4, changed state to administrativ
+super-cool_sw(config-if-range)#ely down
+Jul 28 13:56:17.450: %LINK-5-CHANGED: Interface FastEthernet0/5, changed state to administratively down
+Jul 28 13:56:17.459: %LINK-5-CHANGED: Interface FastEthernet0/6, changed state to administratively down
+Jul 28 13:56:17.459: %LINK-5-CHANGED: Interface FastEthernet0/7, changed state to administratively down
+Jul 28 13:56:17.459: %LINK-5-CHANGED: Interface FastEthernet0/8, changed state to administratively down
+Jul 28 13:56:17.459: %LINK-5-CHANGED: Interface FastEthernet0/9, changed state to
+super-cool_sw(config-if-range)# administratively down
+Jul 28 13:56:17.467: %LINK-5-CHANGED: Interface FastEthernet0/10, changed state to administratively down
+Jul 28 13:56:17.475: %LINK-5-CHANGED: Interface FastEthernet0/11, changed state to administratively down
+Jul 28 13:56:17.475: %LINK-5-CHANGED: Interface FastEthernet0/12, changed state to administratively down
+Jul 28 13:56:17.475: %LINK-5-CHANGED: Interface FastEthernet0/13, changed state to administratively down
+Jul 28 13:56:17.475: %LINK-5-CHANGED: Interface FastEthernet0/1
+super-cool_sw(config-if-range)#4, changed state to administratively down
+Jul 28 13:56:17.475: %LINK-5-CHANGED: Interface FastEthernet0/15, changed state to administratively down
+Jul 28 13:56:17.484: %LINK-5-CHANGED: Interface FastEthernet0/16, changed state to administratively down
+Jul 28 13:56:17.484: %LINK-5-CHANGED: Interface FastEthernet0/17, changed state to administratively down
+Jul 28 13:56:17.484: %LINK-5-CHANGED: Interface FastEthernet0/18, changed state to administratively down
+Jul 28 13:56:17.484: %LINK-5-CHANGED: Interf
+super-cool_sw(config-if-range)#ace FastEthernet0/19, changed state to administratively down
+Jul 28 13:56:17.492: %LINK-5-CHANGED: Interface FastEthernet0/20, changed state to administratively down
+Jul 28 13:56:17.492: %LINK-5-CHANGED: Interface FastEthernet0/21, changed state to administratively down
+Jul 28 13:56:17.492: %LINK-5-CHANGED: Interface FastEthernet0/22, changed state to administratively down
+Jul 28 13:56:17.501: %LINK-5-CHANGED: Interface FastEthernet0/23, changed state to administratively down
+Jul 28 13:56:17.501: %LIN
+super-cool_sw(config-if-range)#K-5-CHANGED: Interface FastEthernet0/24, changed state to administratively down
+Jul 28 13:56:17.509: %LINK-5-CHANGED: Interface GigabitEthernet0/1, changed state to administratively down
+Jul 28 13:56:17.509: %LINK-5-CHANGED: Interface GigabitEthernet0/2, changed state to administratively down
+Jul 28 13:56:18.465: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/9, changed state to down
+Jul 28 13:56:18.474: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/10, changed state to d
+super-cool_sw(config-if-range)#own
+super-cool_sw(config-if-range)#exit
+super-cool_sw(config)#int fa/  
+super-cool_sw(config)#int fa/9
+                            ^
+% Invalid input detected at '^' marker.
+
+super-cool_sw(config)#int fo/9
+                           ^
+% Invalid input detected at '^' marker.
+
+super-cool_sw(config)#int fo/9   0/9
+super-cool_sw(config-if)#no shutdonw  wn
+super-cool_sw(config-if)#
+Jul 28 13:57:34.021: %LINK-3-UPDOWN: Interface FastEthernet0/9, changed state to up
+Jul 28 13:57:35.028: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/9, changed state to up
+super-cool_sw(config-if)#exit
+super-cool_sw(config)#exitno shutdownint f0/9    10
+super-cool_sw(config-if)#int f0/10exit     no shutdown
+super-cool_sw(config-if)#
+Jul 28 13:57:54.926: %LINK-3-UPDOWN: Interface FastEthernet0/10, changed state to up
+Jul 28 13:57:55.932: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/10, changed state to up
+super-cool_sw(config-if)#exit
+super-cool_sw(config)#exitno shutdownint f0/10  exit     int f0/10
+Jul 28 13:58:03.977: %LINEPROTO-5-UPDOWN: Line protocol on Interface Vlan1, changed state to up
+super-cool_sw(config)#int f0/10  9
+super-cool_sw(config-if)#des
+super-cool_sw(config-if)#description PCA -A  .10
+super-cool_sw(config-if)#exit
+super-cool_sw(config)#exitdescription PC-A.10int f0/9            10
+super-cool_sw(config-if)#des
+super-cool_sw(config-if)#description PC-B.11
+super-cool_sw(config-if)#exit
+super-cool_sw(config)#^Z
+super-cool_sw#conf t
+Enter configuration commands, one per line.  End with CNTL/Z.
+super-cool_sw(config)#
+Jul 28 13:59:23.736: %SYS-5-CONFIG_I: Configured from console by console
+super-cool_sw(config)#ip
+super-cool_sw(config)#ip 
+super-cool_sw(config)#ip 
+super-cool_sw(config)#ip ?
+Global IP configuration subcommands:
+  access-list           Named access-list
+  accounting-list       Select hosts for which IP accounting information is
+                        kept
+  accounting-threshold  Sets the maximum number of accounting entries
+  accounting-transits   Sets the maximum number of transit entries
+  address-pool          Specify default IP address pooling mechanism
+  admission             Network Admission Control (NAC)
+  alias                 Alias an IP address to a TCP port
+  arp                   IP ARP global configuration
+  arp                   IP Arp features
+  default-gateway       Specify default gateway (if not routing IP)
+  device                Device tracking
+  dhcp                  Configure DHCP server and relay parameters
+  dhcp-client           Configure parameters for DHCP client operation
+  dhcp-server           Specify address of DHCP server to use
+  domain                IP DNS Resolver
+  domain-list           Domain name to complete unqualified host names.
+  domain-lookup         Enable IP Domain Name System hostname translation
+  domain-name           Define the default domain name
+  finger                finger server
+  ftp                   FTP configuration commands
+ --More--         
+super-cool_sw(config)#ip def
+super-cool_sw(config)#ip default-gateway ?
+  A.B.C.D  IP address of default gateway
+
+super-cool_sw(config)#ip default-gateway 1.1.1.1
+super-cool_sw(config)#int vlan 77
+super-cool_sw(config-if)#
+Jul 28 13:59:48.122: %LINEPROTO-5-UPDOWN: Line protocol on Interface Vlan77, changed state to down
+super-cool_sw(config-if)#ip add
+super-cool_sw(config-if)#ip address 172.16.77.5 ?
+  A.B.C.D  IP subnet mask
+
+super-cool_sw(config-if)#ip address 172.16.77.5 255.255.255.240
+super-cool_sw(config-if)#int vlan  1 
+super-cool_sw(config-if)#shutdo
+super-cool_sw(config-if)#shutdown 
+super-cool_sw(config-if)#i 
+Jul 28 14:00:53.234: %LINK-5-CHANGED: Interface Vlan1, changed state to administratively down
+Jul 28 14:00:54.241: %LINEPROTO-5-UPDOWN: Line protocol on Interface Vlan1, changed state to down
+super-cool_sw(config-if)#sh in  brief int
+                            ^
+% Invalid input detected at '^' marker.
+
+super-cool_sw(config-if)#sh ip int brief
+                            ^
+% Invalid input detected at '^' marker.
+
+super-cool_sw(config-if)#
+super-cool_sw(config-if)#
+super-cool_sw(config-if)#
+super-cool_sw(config-if)#
+super-cool_sw(config-if)#
+super-cool_sw(config-if)#show ?
+% Unrecognized command
+super-cool_sw(config-if)#show ?
+% Unrecognized command
+super-cool_sw(config-if)#show ?
+% Unrecognized command
+super-cool_sw(config-if)#show ^Z                           ^
+% Invalid input detected at '^' marker.
+
+super-cool_sw#
+Jul 28 14:01:52.860: %SYS-5-CONFIG_I: Configured from console by console
+super-cool_sw#sh ip int brief
+Interface              IP-Address      OK? Method Status                Protocol
+Vlan1                  unassigned      YES unset  administratively down down    
+Vlan77                 172.16.77.5     YES manual down                  down    
+FastEthernet0/1        unassigned      YES unset  administratively down down    
+FastEthernet0/2        unassigned      YES unset  administratively down down    
+FastEthernet0/3        unassigned      YES unset  administratively down down    
+FastEthernet0/4        unassigned      YES unset  administratively down down    
+FastEthernet0/5        unassigned      YES unset  administratively down down    
+FastEthernet0/6        unassigned      YES unset  administratively down down    
+FastEthernet0/7        unassigned      YES unset  administratively down down    
+FastEthernet0/8        unassigned      YES unset  administratively down down    
+FastEthernet0/9        unassigned      YES unset  up                    up      
+FastEthernet0/10       unassigned      YES unset  up                    up      
+FastEthernet0/11       unassigned      YES unset  administratively down down    
+FastEthernet0/12       unassigned      YES unset  administratively down down    
+FastEthernet0/13       unassigned      YES unset  administratively down down    
+FastEthernet0/14       unassigned      YES unset  administratively down down    
+FastEthernet0/15       unassigned      YES unset  administratively down down    
+FastEthernet0/16       unassigned      YES unset  administratively down down    
+FastEthernet0/17       unassigned      YES unset  administratively down down    
+FastEthernet0/18       unassigned      YES unset  administratively down down    
+FastEthernet0/19       unassigned      YES unset  administratively down down    
+FastEthernet0/20       unassigned      YES unset  administratively down down    
+ --More--         FastEthernet0/21       unassigned      YES unset  administratively down down    
+ --More--         FastEthernet0/22       unassigned      YES unset  administratively down down    
+ --More--         FastEthernet0/23       unassigned      YES unset  administratively down down    
+ --More--         
+super-cool_sw#conf t
+Enter configuration commands, one per line.  End with CNTL/Z.
+super-cool_sw(config)#sw
+super-cool_sw(config)#sw  co cdp runco cdp run no cdp run
+super-cool_sw(config)#no cdp runshow       ip int briefbrief int   utdown    int vlan1 p address 172.16.77.5 255.255.255.240nt vlan 77                           p default-gateway 1.1.1.1exit                      description PC-B.11int f0/10          exit     description PC-A.10int f0/9           exit    no shutdownint f0/10  exit     no shutdownint f0/9   o/9a/9exit    shutdown int range F0/1-24 , G0/1-2show ip status            int range F0/1-24 , G0/1-2
+super-cool_sw(config-if-range)#no cdp enable 
+super-cool_sw(config-if-range)#exit
+super-cool_sw(config)#sps
+super-cool_sw(config)#spsn
+super-cool_sw(config)#spsnn
+super-cool_sw(config)#spsnn    pa
+super-cool_sw(config)#spanning-tree po
+super-cool_sw(config)#spanning-tree portfast def
+super-cool_sw(config)#spanning-tree portfast default ?
+  <cr>
+
+super-cool_sw(config)#spanning-tree portfast default 
+%Warning: this command enables portfast by default on all interfaces. You
+ should now disable portfast explicitly on switched ports leading to hubs,
+ switches and bridges as they may create temporary bridging loops.
+
+super-cool_sw(config)#vlan 77
+super-cool_sw(config-vlan)#?
+VLAN configuration commands:
+  are          Maximum number of All Route Explorer hops for this VLAN (or zero
+               if none specified)
+  backupcrf    Backup CRF mode of the VLAN
+  bridge       Bridging characteristics of the VLAN
+  exit         Apply changes, bump revision number, and exit mode
+  media        Media type of the VLAN
+  mtu          VLAN Maximum Transmission Unit
+  name         Ascii name of the VLAN
+  no           Negate a command or set its defaults
+  parent       ID number of the Parent VLAN of FDDI or Token Ring type VLANs
+  remote-span  Configure as Remote SPAN VLAN
+  ring         Ring number of FDDI or Token Ring type VLANs
+  said         IEEE 802.10 SAID
+  shutdown     Shutdown VLAN switching
+  state        Operational state of the VLAN
+  ste          Maximum number of Spanning Tree Explorer hops for this VLAN (or
+               zero if none specified)
+  stp          Spanning tree characteristics of the VLAN
+  tb-vlan1     ID number of the first translational VLAN for this VLAN (or zero
+               if none)
+  tb-vlan2     ID number of the second translational VLAN for this VLAN (or
+ --More--         
+super-cool_sw(config-vlan)#name vlan77
+super-cool_sw(config-vlan)#exit
+super-cool_sw(config)#exitname vlan77vlan 77    spanning-tree portfast default exit                           no cdp enable int range F0/1-24 , G0/1-2no cdp run                show       ip int briefbrief int   utdown    int vlan1 p address 172.16.77.5 255.255.255.240nt vlan 77                           p default-gateway 1.1.1.1exit                      description PC-B.11int f0/10          exit     int f0/10  9
+super-cool_sw(config-if)#?
+Interface configuration commands:
+  arp                     Set arp type (arpa, probe, snap) or timeout
+  auto                    Configure Automation
+  bandwidth               Set bandwidth informational parameter
+  carrier-delay           Specify delay for interface transitions
+  cdp                     CDP interface subcommands
+  channel-group           Etherchannel/port bundling configuration
+  channel-protocol        Select the channel protocol (LACP, PAgP)
+  dampening               Enable event dampening
+  default                 Set a command to its defaults
+  delay                   Specify interface throughput delay
+  description             Interface specific description
+  dot1x                   Interface Config Commands for IEEE 802.1X
+  down-when-looped        Force looped interface down
+  duplex                  Configure duplex operation.
+  exit                    Exit from interface configuration mode
+  flowcontrol             Configure flow operation.
+  help                    Description of the interactive help system
+  hold-queue              Set hold queue depth
+  ip                      Interface Internet Protocol config commands
+  keepalive               Enable keepalive
+  lacp                    LACP interface subcommands
+ --More--           link                    Configure Link
+  lldp                    LLDP interface subcommands
+  load-interval           Specify interval for load calculation for an
+                          interface
+  location                Interface location information
+  logging                 Configure logging for interface
+  mac                     MAC interface commands
+  macro                   Command macro
+  max-reserved-bandwidth  Maximum Reservable Bandwidth on an Interface
+  mdix                    Set Media Dependent Interface with Crossover
+  mls                     mls interface commands
+  mvr                     MVR per port configuration
+  no                      Negate a command or set its defaults
+  pagp                    PAgP interface subcommands
+  priority-queue          Priority Queue
+  queue-set               Choose a queue set for this queue
+  rmon                    Configure Remote Monitoring on an interface
+  service-policy          Configure QoS Service Policy
+  shutdown                Shutdown the selected interface
+  small-frame             Set rate limit parameters for small frame
+  snmp                    Modify SNMP interface parameters
+  source                  Get config from another source
+  spanning-tree           Spanning Tree Subsystem
+ --More--           speed                   Configure speed operation.
+  srr-queue               Configure shaped round-robin transmit queues
+  storm-control           storm configuration
+  switchport              Set switching mode characteristics
+  timeout                 Define timeout values for this interface
+  transmit-interface      Assign a transmit interface to a receive-only
+                          interface
+  tx-ring-limit           Configure PA level transmit ring limit
+  udld                    Configure UDLD enabled or disabled and ignore global
+                          UDLD setting
+
+super-cool_sw(config-if)#swi
+super-cool_sw(config-if)#switchport acc
+super-cool_sw(config-if)#switchport access vl
+super-cool_sw(config-if)#switchport access vlan 77
+super-cool_sw(config-if)#exit
+super-cool_sw(config)#
+Jul 28 14:06:48.223: %LINEPROTO-5-UPDOWN: Line protocol on Interface Vlan77, changed state to up
+super-cool_sw(config)#exitswitchport access vlan 77int f0/9                 exit    int f0/9 10
+super-cool_sw(config-if)#int f0/10exit     switchport access vlan 77
+super-cool_sw(config-if)#exi   ^Z
+super-cool_sw#s
+Jul 28 14:07:22.163: %SYS-5-CONFIG_I: Configured from console by consoleh
+super-cool_sw#show ip in
+super-cool_sw#show ip interface br
+super-cool_sw#show ip interface brief 
+Interface              IP-Address      OK? Method Status                Protocol
+Vlan1                  unassigned      YES unset  administratively down down    
+Vlan77                 172.16.77.5     YES manual up                    up      
+FastEthernet0/1        unassigned      YES unset  administratively down down    
+FastEthernet0/2        unassigned      YES unset  administratively down down    
+FastEthernet0/3        unassigned      YES unset  administratively down down    
+FastEthernet0/4        unassigned      YES unset  administratively down down    
+FastEthernet0/5        unassigned      YES unset  administratively down down    
+FastEthernet0/6        unassigned      YES unset  administratively down down    
+FastEthernet0/7        unassigned      YES unset  administratively down down    
+FastEthernet0/8        unassigned      YES unset  administratively down down    
+FastEthernet0/9        unassigned      YES unset  up                    up      
+FastEthernet0/10       unassigned      YES unset  up                    up      
+FastEthernet0/11       unassigned      YES unset  administratively down down    
+FastEthernet0/12       unassigned      YES unset  administratively down down    
+FastEthernet0/13       unassigned      YES unset  administratively down down    
+FastEthernet0/14       unassigned      YES unset  administratively down down    
+FastEthernet0/15       unassigned      YES unset  administratively down down    
+FastEthernet0/16       unassigned      YES unset  administratively down down    
+FastEthernet0/17       unassigned      YES unset  administratively down down    
+FastEthernet0/18       unassigned      YES unset  administratively down down    
+FastEthernet0/19       unassigned      YES unset  administratively down down    
+FastEthernet0/20       unassigned      YES unset  administratively down down    
+ --More--         FastEthernet0/21       unassigned      YES unset  administratively down down    
+ --More--         FastEthernet0/22       unassigned      YES unset  administratively down down    
+ --More--         FastEthernet0/23       unassigned      YES unset  administratively down down    
+ --More--         
+super-cool_sw#x sh vlam
+                    ^
+% Invalid input detected at '^' marker.
+
+super-cool_sw#sh vlam n
+
+VLAN Name                             Status    Ports
+---- -------------------------------- --------- -------------------------------
+1    default                          active    Fa0/1, Fa0/2, Fa0/3, Fa0/4
+                                                Fa0/5, Fa0/6, Fa0/7, Fa0/8
+                                                Fa0/11, Fa0/12, Fa0/13, Fa0/14
+                                                Fa0/15, Fa0/16, Fa0/17, Fa0/18
+                                                Fa0/19, Fa0/20, Fa0/21, Fa0/22
+                                                Fa0/23, Fa0/24, Gi0/1, Gi0/2
+77   vlan77                           active    Fa0/9, Fa0/10
+1002 fddi-default                     act/unsup 
+1003 token-ring-default               act/unsup 
+1004 fddinet-default                  act/unsup 
+1005 trnet-default                    act/unsup 
+
+VLAN Type  SAID       MTU   Parent RingNo BridgeNo Stp  BrdgMode Trans1 Trans2
+---- ----- ---------- ----- ------ ------ -------- ---- -------- ------ ------
+1    enet  100001     1500  -      -      -        -    -        0      0   
+77   enet  100077     1500  -      -      -        -    -        0      0   
+1002 fddi  101002     1500  -      -      -        -    -        0      0   
+1003 tr    101003     1500  -      -      -        -    -        0      0   
+1004 fdnet 101004     1500  -      -      -        ieee -        0      0   
+1005 trnet 101005     1500  -      -      -        ibm  -        0      0   
+ --More--         
+
+Primary Secondary Type              Ports
+------- --------- ----------------- ------------------------------------------
+
+super-cool_sw#k sh int status
+
+Port      Name               Status       Vlan       Duplex  Speed Type
+Fa0/1     UNASSIGNED PORTS   disabled     1            full    100 10/100BaseTX
+Fa0/2     UNASSIGNED PORTS   disabled     1            full    100 10/100BaseTX
+Fa0/3     UNASSIGNED PORTS   disabled     1            full    100 10/100BaseTX
+Fa0/4     UNASSIGNED PORTS   disabled     1            full    100 10/100BaseTX
+Fa0/5     UNASSIGNED PORTS   disabled     1            full    100 10/100BaseTX
+Fa0/6     UNASSIGNED PORTS   disabled     1            full    100 10/100BaseTX
+Fa0/7     UNASSIGNED PORTS   disabled     1            full    100 10/100BaseTX
+Fa0/8     UNASSIGNED PORTS   disabled     1            full    100 10/100BaseTX
+Fa0/9     PC-A.10            connected    77           full    100 10/100BaseTX
+Fa0/10    PC-B.11            connected    77           full    100 10/100BaseTX
+Fa0/11    UNASSIGNED PORTS   disabled     1            full    100 10/100BaseTX
+Fa0/12    UNASSIGNED PORTS   disabled     1            full    100 10/100BaseTX
+Fa0/13    UNASSIGNED PORTS   disabled     1            full    100 10/100BaseTX
+Fa0/14    UNASSIGNED PORTS   disabled     1            full    100 10/100BaseTX
+Fa0/15    UNASSIGNED PORTS   disabled     1            full    100 10/100BaseTX
+Fa0/16    UNASSIGNED PORTS   disabled     1            full    100 10/100BaseTX
+Fa0/17    UNASSIGNED PORTS   disabled     1            full    100 10/100BaseTX
+Fa0/18    UNASSIGNED PORTS   disabled     1            full    100 10/100BaseTX
+Fa0/19    UNASSIGNED PORTS   disabled     1            full    100 10/100BaseTX
+Fa0/20    UNASSIGNED PORTS   disabled     1            full    100 10/100BaseTX
+Fa0/21    UNASSIGNED PORTS   disabled     1            full    100 10/100BaseTX
+ --More--         
+Port      Name               Status       Vlan       Duplex  Speed Type
+Fa0/22    UNASSIGNED PORTS   disabled     1            full    100 10/100BaseTX
+Fa0/23    UNASSIGNED PORTS   disabled     1            full    100 10/100BaseTX
+Fa0/24    UNASSIGNED PORTS   disabled     1            full    100 10/100BaseTX
+Gi0/1     UNASSIGNED PORTS   disabled     1            full    100 10/100/1000BaseTX
+Gi0/2     UNASSIGNED PORTS   disabled     1            full    100 10/100/1000BaseTX
+super-cool_sw#conf t
+Enter configuration commands, one per line.  End with CNTL/Z.
+super-cool_sw(config)#cry
+super-cool_sw(config)#crypto ke
+super-cool_sw(config)#crypto key ge
+super-cool_sw(config)#crypto key generate rsa
+The name for the keys will be: super-cool_sw.SAT
+Choose the size of the key modulus in the range of 360 to 2048 for your
+  General Purpose Keys. Choosing a key modulus greater than 512 may take
+  a few minutes.
+
+How many bits in the modulus [512]: 
+% Generating 512 bit RSA keys, keys will be non-exportable...[OK]
+
+super-cool_sw(config)#
+super-cool_sw(config)#
+Jul 28 14:09:48.939:  RSA key size needs to be atleast 768 bits for ssh version 2
+super-cool_sw(config)#
+Jul 28 14:09:48.939: %SSH-5-ENABLED: SSH 1.5 has been enabled
+super-cool_sw(config)#
+Jul 28 14:13:53.937: %SYS-5-CONFIG_I: Configured from console by rack on vty2 (172.16.77.11)
+super-cool_sw(config)#^Z
+super-cool_sw#conf tsh int statusvlan      
+Jul 28 14:15:06.574: %SYS-5-CONFIG_I: Configured from console by console
+super-cool_sw#sh vlan
+
+VLAN Name                             Status    Ports
+---- -------------------------------- --------- -------------------------------
+1    default                          active    Fa0/1, Fa0/2, Fa0/3, Fa0/4
+                                                Fa0/5, Fa0/6, Fa0/7, Fa0/8
+                                                Fa0/11, Fa0/12, Fa0/13, Fa0/14
+                                                Fa0/15, Fa0/16, Fa0/17, Fa0/18
+                                                Fa0/19, Fa0/20, Fa0/21, Fa0/22
+                                                Fa0/23, Fa0/24, Gi0/1, Gi0/2
+77   vlan77                           active    Fa0/9, Fa0/10
+1002 fddi-default                     act/unsup 
+1003 token-ring-default               act/unsup 
+1004 fddinet-default                  act/unsup 
+1005 trnet-default                    act/unsup 
+
+VLAN Type  SAID       MTU   Parent RingNo BridgeNo Stp  BrdgMode Trans1 Trans2
+---- ----- ---------- ----- ------ ------ -------- ---- -------- ------ ------
+1    enet  100001     1500  -      -      -        -    -        0      0   
+77   enet  100077     1500  -      -      -        -    -        0      0   
+1002 fddi  101002     1500  -      -      -        -    -        0      0   
+1003 tr    101003     1500  -      -      -        -    -        0      0   
+1004 fdnet 101004     1500  -      -      -        ieee -        0      0   
+1005 trnet 101005     1500  -      -      -        ibm  -        0      0   
+ --More--         
+Remote SPAN VLANs
+------------------------------------------------------------------------------
+
+
+Primary Secondary Type              Ports
+------- --------- ----------------- ------------------------------------------
+
+super-cool_sw# ip do
+super-cool_sw# ip do
+super-cool_sw# ip do
+super-cool_sw# ip dom
+super-cool_sw# ip dom
+super-cool_sw# ip dom
+super-cool_sw# ip dom
+super-cool_sw# ip domas ain
+super-cool_sw# ip domaain    ai
+super-cool_sw# ip domai
+super-cool_sw# ip domai
+super-cool_sw# ip domai
+super-cool_sw# ip domai
+super-cool_sw# ip domai
+super-cool_sw# ip domai
+super-cool_sw# ip domai         conf t
+Enter configuration commands, one per line.  End with CNTL/Z.
+super-cool_sw(config)#ip dom
+super-cool_sw(config)#ip domain n
+super-cool_sw(config)#ip domain name 
+super-cool_sw#
+Jul 28 14:17:22.746: %SYS-5-CONFIG_I: Configured from console by console
+super-cool_sw#conf tsh vlanconf t sh int statusvlan      mow ip interface brief conf t                  sh ip int briefconf t         show ip interface brief statusstatus          conf t        int G0/1conf t  lock set 13:40:01 28 july 2015             0 current time                     onf t    enableno      his
+super-cool_sw#his
+super-cool_sw#his
+super-cool_sw#his
+super-cool_sw#his   enableno      conf t
+Enter configuration commands, one per line.  End with CNTL/Z.
+super-cool_sw(config)#crypto key generate rsaswitchport access vlan 77int f0/10                exit     switchport access vlan 77int f0/9                 exit    name vlan77vlan 77    spanning-tree portfast default exit                               int ran
+super-cool_sw(config)#int range f0/1-8 , f0/12-   11-24,    4 , G0  g0/1-2
+super-cool_sw(config-if-range)#swi
+super-cool_sw(config-if-range)#switchport acc
+super-cool_sw(config-if-range)#switchport access vl
+super-cool_sw(config-if-range)#switchport access vlan 7 666
+% Access VLAN does not exist. Creating vlan 666
+super-cool_sw(config-if-range)#^Z
+super-cool_sw#sho 
+Jul 28 14:20:12.196: %SYS-5-CONFIG_I: Configured from console by console
+super-cool_sw#sh vlan
+super-cool_sw#sh vlan 
+
+VLAN Name                             Status    Ports
+---- -------------------------------- --------- -------------------------------
+1    default                          active    
+77   vlan77                           active    Fa0/9, Fa0/10
+666  VLAN0666                         active    Fa0/1, Fa0/2, Fa0/3, Fa0/4
+                                                Fa0/5, Fa0/6, Fa0/7, Fa0/8
+                                                Fa0/11, Fa0/12, Fa0/13, Fa0/14
+                                                Fa0/15, Fa0/16, Fa0/17, Fa0/18
+                                                Fa0/19, Fa0/20, Fa0/21, Fa0/22
+                                                Fa0/23, Fa0/24, Gi0/1, Gi0/2
+1002 fddi-default                     act/unsup 
+1003 token-ring-default               act/unsup 
+1004 fddinet-default                  act/unsup 
+1005 trnet-default                    act/unsup 
+
+VLAN Type  SAID       MTU   Parent RingNo BridgeNo Stp  BrdgMode Trans1 Trans2
+---- ----- ---------- ----- ------ ------ -------- ---- -------- ------ ------
+1    enet  100001     1500  -      -      -        -    -        0      0   
+77   enet  100077     1500  -      -      -        -    -        0      0   
+666  enet  100666     1500  -      -      -        -    -        0      0   
+1002 fddi  101002     1500  -      -      -        -    -        0      0   
+1003 tr    101003     1500  -      -      -        -    -        0      0   
+ --More--         
+super-cool_sw#conf - t
+Enter configuration commands, one per line.  End with CNTL/Z.
+super-cool_sw(config)#cloc
+super-cool_sw(config)#clock summ
+super-cool_sw(config)#clock summer-time 
+% Incomplete command.
+
+super-cool_sw(config)#clock summer-time ?
+  WORD  name of time zone in summer
+
+super-cool_sw(config)#clock summer-time CST
+% Incomplete command.
+
+super-cool_sw(config)#clock summer-time CST  entral
+% Incomplete command.
+
+super-cool_sw(config)#clock summer-time Central ?
+  date       Configure absolute summer time
+  recurring  Configure recurring summer time
+
+super-cool_sw(config)#clock summer-time Central 
+super-cool_sw#
+Jul 28 14:21:35.134: %SYS-5-CONFIG_I: Configured from console by console
+super-cool_sw#conf  nt f t
+Enter configuration commands, one per line.  End with CNTL/Z.
+super-cool_sw(config)#int vl
+super-cool_sw(config)#int vlan ?
+  <1-4094>  Vlan interface number
+
+super-cool_sw(config)#int vlan 
+super-cool_sw#
+Jul 28 14:28:05.724: %SYS-5-CONFIG_I: Configured from console by console
+super-cool_sw#int range f0/9 , f0/10
+               ^
+% Invalid input detected at '^' marker.
+
+super-cool_sw#conf t
+Enter configuration commands, one per line.  End with CNTL/Z.
+super-cool_sw(config)#int range f0/9 , f0/10
+super-cool_sw(config-if-range)#exit
+super-cool_sw(config)#no ip?
+ip  
+
+super-cool_sw(config)#no ip ?
+Global IP configuration subcommands:
+  access-list           Named access-list
+  accounting-list       Select hosts for which IP accounting information is
+                        kept
+  accounting-threshold  Sets the maximum number of accounting entries
+  accounting-transits   Sets the maximum number of transit entries
+  address-pool          Specify default IP address pooling mechanism
+  admission             Network Admission Control (NAC)
+  alias                 Alias an IP address to a TCP port
+  arp                   IP ARP global configuration
+  arp                   IP Arp features
+  default-gateway       Specify default gateway (if not routing IP)
+  device                Device tracking
+  dhcp                  Configure DHCP server and relay parameters
+  dhcp-client           Configure parameters for DHCP client operation
+  dhcp-server           Specify address of DHCP server to use
+  domain                IP DNS Resolver
+  domain-list           Domain name to complete unqualified host names.
+  domain-lookup         Enable IP Domain Name System hostname translation
+  domain-name           Define the default domain name
+  finger                finger server
+  ftp                   FTP configuration commands
+ --More--         
+super-cool_sw(config)#no ip cryp
+super-cool_sw(config)#no ip cryp          cry
+super-cool_sw(config)#crypto ke
+super-cool_sw(config)#crypto key ge
+super-cool_sw(config)#crypto key generate ?
+  rsa  Generate RSA keys
+  <cr>
+
+super-cool_sw(config)#crypto key generate                     no tt  htt
+super-cool_sw(config)#no http
+super-cool_sw(config)#no http 
+super-cool_sw(config)#no http 
+super-cool_sw(config)#no http 
+super-cool_sw(config)#no http 
+super-cool_sw(config)#no http      ip htt
+super-cool_sw(config)#no ip http ser
+super-cool_sw(config)#no ip http server 
+super-cool_sw(config)#no ip http server      c
+super-cool_sw(config)#no ip http secure-ser
+super-cool_sw(config)#no ip http secure-server 
+super-cool_sw(config)#ip ssh
+super-cool_sw(config)#ip ssh 
+super-cool_sw(config)#ip ssh 
+super-cool_sw(config)#ip ssh ?
+  authentication-retries  Specify number of authentication retries
+  dscp                    IP DSCP value for SSH traffic
+  logging                 Configure logging for SSH
+  precedence              IP Precedence value for SSH traffic
+  source-interface        Specify interface for source address in SSH
+                          connections
+  time-out                Specify SSH time-out interval
+  version                 Specify protocol version supported
+
+super-cool_sw(config)#ip ssh ver ?
+  <1-2>  Protocol version
+
+super-cool_sw(config)#ip ssh ver 2
+Please create RSA keys to enable SSH (of atleast 768 bits size) to enable SSH v2.
+super-cool_sw(config)#ip ssh ver 2no ip http secure-server rver        exit              int range f0/9 , f0/10
+super-cool_sw#conf 
+Jul 28 14:41:40.770: %SYS-5-CONFIG_I: Configured from console by console
+super-cool_sw#conf t
+Enter configuration commands, one per line.  End with CNTL/Z.
+super-cool_sw(config)#cry
+super-cool_sw(config)#crypto k
+super-cool_sw(config)#crypto key ge
+super-cool_sw(config)#crypto key generate re sa
+% You already have RSA keys defined named super-cool_sw.SAT.
+% Do you really want to replace them? [yes/no]: yes
+Choose the size of the key modulus in the range of 360 to 2048 for your
+  General Purpose Keys. Choosing a key modulus greater than 512 may take
+  a few minutes.
+
+How many bits in the modulus [512]: 
+Jul 28 14:41:52.673: %SSH-5-DISABLED: SSH 1.5 has been disabled
+1024
+% Generating 1024 bit RSA keys, keys will be non-exportable...[OK]
+
+super-cool_sw(config)#
+Jul 28 14:41:59.611: %SSH-5-ENABLED: SSH 1.99 has been enabled
+super-cool_sw(config)#
+Jul 28 14:42:11.061: %SYS-5-CONFIG_I: Configured from console by rack on vty0 (172.16.77.10)
+super-cool_sw(config)#1024yes crypto key generate rsaip ssh ver 2           
+super-cool_sw(config)#
+Jul 28 14:45:34.275: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/9, changed state to down
+super-cool_sw(config)#
+Jul 28 14:45:35.273: %LINK-3-UPDOWN: Interface FastEthernet0/9, changed state to down
+super-cool_sw(config)#
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+super-cool_sw con0 is now available
+
+
+
+
+
+Press RETURN to get started.
+
+
+
+
+
+
+
+
+
+
+
+Jul 28 15:09:34.054: %SYS-5-CONFIG_I: Configured from console by console Big brother is wat
+
+User Access Verification
+
+Password: 
+Password: 
+Password: 
+% Bad passwords
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+super-cool_sw con0 is now available
+
+
+
+
+
+Press RETURN to get started.
+
+
+
+
+
+
+
+
+
+
+ Big brother is wat
+
+User Access Verification
+
+Password: 
+Password: 
+Password: 
+% Bad passwords
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+super-cool_sw con0 is now available
+
+
+
+
+
+Press RETURN to get started.
+
+
+
+
+
+
+
+
+
+
+ Big brother is wat
+
+User Access Verification
+
+Password: 
+% Password:  timeout expired!
+Password: 
+Jul 28 15:44:50.944: %LINK-3-UPDOWN: Interface FastEthernet0/9, changed state to up
+Jul 28 15:44:51.951: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/9, changed state to up
+% Password:  timeout expired!
+Password: 
+super-cool_sw>
+Jul 28 15:45:42.542: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/9, changed state to down
+super-cool_sw>
+Jul 28 15:45:43.541: %LINK-3-UPDOWN: Interface FastEthernet0/9, changed state to down
+super-cool_sw>enable
+Password: 
+super-cool_sw#int fa/  0/10
+               ^
+% Invalid input detected at '^' marker.
+
+super-cool_sw#conf t
+Enter configuration commands, one per line.  End with CNTL/Z.
+super-cool_sw(config)#int f/ 0/10
+super-cool_sw(config-if)#swi
+super-cool_sw(config-if)#switchport s por
+super-cool_sw(config-if)#switchport port-security 
+super-cool_sw(config-if)#switchport port-security max
+super-cool_sw(config-if)#switchport port-security maximum 1
+super-cool_sw(config-if)#switchport port-security maximum 1       c-a
+super-cool_sw(config-if)#switchport port-security mac-address sti
+super-cool_sw(config-if)#switchport port-security mac-address sticky 
+super-cool_sw(config-if)#switchport port-security mac-address sticky                    vio
+super-cool_sw(config-if)#switchport port-security violation sh
+super-cool_sw(config-if)#switchport port-security violation shutdown 
+super-cool_sw(config-if)#
+Jul 28 15:51:18.968: %LINK-3-UPDOWN: Interface FastEthernet0/9, changed state to up
+Jul 28 15:51:19.974: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/9, changed state to up
+super-cool_sw(config-if)#
+Jul 28 15:51:43.773: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/9, changed state to down
+super-cool_sw(config-if)#
+Jul 28 15:51:44.771: %LINK-3-UPDOWN: Interface FastEthernet0/9, changed state to down
+super-cool_sw(config-if)#
+Jul 28 15:51:46.625: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/10, changed state to down
+Jul 28 15:51:46.625: %LINEPROTO-5-UPDOWN: Line protocol on Interface Vlan77, changed state to down
+super-cool_sw(config-if)#
+Jul 28 15:51:47.623: %LINK-3-UPDOWN: Interface FastEthernet0/10, changed state to down
+super-cool_sw(config-if)#
+Jul 28 15:51:49.016: %LINEPROTO-5-UPDOWN: Line protocol on Interface Vlan77, changed state to up
+Jul 28 15:51:50.014: %LINK-3-UPDOWN: Interface FastEthernet0/9, changed state to up
+Jul 28 15:51:50.333: %PM-4-ERR_DISABLE: psecure-violation error detected on Fa0/10, putting Fa0/10 in err-disable state
+super-cool_sw(config-if)#
+Jul 28 15:51:50.333: %PORT_SECURITY-2-PSECURE_VIOLATION: Security violation occurred, caused by MAC address 0021.7010.e639 on port FastEthernet0/10.
+super-cool_sw(config-if)#
+Jul 28 15:51:51.020: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/9, changed state to up
+super-cool_sw(config-if)#
+Jul 28 15:52:35.530: %SYS-5-CONFIG_I: Configured from console by rack on vty0 (172.16.77.11)
+super-cool_sw(config-if)#
+Jul 28 15:53:26.793: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/9, changed state to down
+Jul 28 15:53:26.793: %LINEPROTO-5-UPDOWN: Line protocol on Interface Vlan77, changed state to down
+super-cool_sw(config-if)#
+Jul 28 15:53:27.791: %LINK-3-UPDOWN: Interface FastEthernet0/9, changed state to down
+super-cool_sw(config-if)#
+Jul 28 15:53:29.603: %LINEPROTO-5-UPDOWN: Line protocol on Interface Vlan77, changed state to up
+super-cool_sw(config-if)#
+Jul 28 15:53:30.602: %LINK-3-UPDOWN: Interface FastEthernet0/9, changed state to up
+Jul 28 15:53:31.608: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/9, changed state to up
+super-cool_sw(config-if)#int     exit
+super-cool_sw(config)#int fa 0/10
+super-cool_sw(config-if)#shut
+super-cool_sw(config-if)#no shut
+super-cool_sw(config-if)#
+Jul 28 15:53:44.460: %LINK-5-CHANGED: Interface FastEthernet0/10, changed state to administratively down
+super-cool_sw(config-if)#
+Jul 28 15:53:46.498: %PM-4-ERR_DISABLE: psecure-violation error detected on Fa0/10, putting Fa0/10 in err-disable state
+super-cool_sw(config-if)#
+Jul 28 15:53:46.498: %PORT_SECURITY-2-PSECURE_VIOLATION: Security violation occurred, caused by MAC address 0021.7010.e639 on port FastEthernet0/10.
+super-cool_sw(config-if)#
+Jul 28 15:53:47.379: %LINK-3-UPDOWN: Interface FastEthernet0/10, changed state to down
+super-cool_sw(config-if)#
+Jul 28 15:53:54.517: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/9, changed state to down
+Jul 28 15:53:54.517: %LINEPROTO-5-UPDOWN: Line protocol on Interface Vlan77, changed state to down
+super-cool_sw(config-if)#
+Jul 28 15:53:55.516: %LINK-3-UPDOWN: Interface FastEthernet0/9, changed state to down
+super-cool_sw(config-if)#
+Jul 28 15:53:58.880: %LINEPROTO-5-UPDOWN: Line protocol on Interface Vlan77, changed state to up
+super-cool_sw(config-if)#no shut
+Jul 28 15:53:59.878: %LINK-3-UPDOWN: Interface FastEthernet0/9, changed state to up
+Jul 28 15:54:00.884: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/9, changed state to up
+super-cool_sw(config-if)#no shutshut   
+super-cool_sw(config-if)#shutno shut
+Jul 28 15:54:04.341: %LINK-5-CHANGED: Interface FastEthernet0/10, changed state to administratively down
+super-cool_sw(config-if)#no shut
+super-cool_sw(config-if)#
+Jul 28 15:54:07.688: %LINK-3-UPDOWN: Interface FastEthernet0/10, changed state to up
+Jul 28 15:54:08.694: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/10, changed state to up
+super-cool_sw(config-if)#sho run int f/0  0/9
+                           ^
+% Invalid input detected at '^' marker.
+
+super-cool_sw(config-if)#ex  ^Z
+super-cool_sw#
+Jul 28 15:54:36.578: %SYS-5-CONFIG_I: Configured from console by console
+super-cool_sw#sho run int f0/9
+Building configuration...
+
+Current configuration : 213 bytes
+!
+interface FastEthernet0/9
+ description PC-A.10
+ switchport access vlan 77
+ switchport mode access
+ switchport nonegotiate
+ switchport port-security mac-address sticky
+ speed 100
+ duplex full
+ no cdp enable
+end
+
+super-cool_sw#sho run int f0/9 10
+Building configuration...
+
+Current configuration : 300 bytes
+!
+interface FastEthernet0/10
+ description PC-B.11
+ switchport access vlan 77
+ switchport mode access
+ switchport nonegotiate
+ switchport port-security
+ switchport port-security mac-address sticky
+ switchport port-security mac-address sticky 0021.7010.e7b5
+ speed 100
+ duplex full
+ no cdp enable
+end
+
+super-cool_sw#
+Jul 28 15:55:54.181: %SYS-5-CONFIG_I: Configured from console by rack on vty0 (172.16.77.11)
+super-cool_sw#sho run int f0/109 
+Building configuration...
+
+Current configuration : 299 bytes
+!
+interface FastEthernet0/9
+ description PC-A.10
+ switchport access vlan 77
+ switchport mode access
+ switchport nonegotiate
+ switchport port-security
+ switchport port-security mac-address sticky
+ switchport port-security mac-address sticky 0021.7010.e639
+ speed 100
+ duplex full
+ no cdp enable
+end
+
+super-cool_sw#
+Jul 28 15:59:17.840: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/9, changed state to down
+Jul 28 15:59:18.838: %LINK-3-UPDOWN: Interface FastEthernet0/9, changed state to down
+super-cool_sw#
+Jul 28 15:59:19.643: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/10, changed state to down
+Jul 28 15:59:19.643: %LINEPROTO-5-UPDOWN: Line protocol on Interface Vlan77, changed state to down
+super-cool_sw#
+Jul 28 15:59:20.641: %LINK-3-UPDOWN: Interface FastEthernet0/10, changed state to down
+Jul 28 15:59:20.868: %PM-4-ERR_DISABLE: psecure-violation error detected on Fa0/9, putting Fa0/9 in err-disable state
+super-cool_sw#
+Jul 28 15:59:20.868: %PORT_SECURITY-2-PSECURE_VIOLATION: Security violation occurred, caused by MAC address 0021.7010.e7b5 on port FastEthernet0/9.
+super-cool_sw#
+Jul 28 15:59:23.619: %PM-4-ERR_DISABLE: psecure-violation error detected on Fa0/10, putting Fa0/10 in err-disable state
+super-cool_sw#sho run int f0/9
+Building configuration...
+
+Current configuration : 299 bytes
+!
+interface FastEthernet0/9
+ description PC-A.10
+ switchport access vlan 77
+ switchport mode access
+ switchport nonegotiate
+ switchport port-security
+ switchport port-security mac-address sticky
+ switchport port-security mac-address sticky 0021.7010.e639
+ speed 100
+ duplex full
+ no cdp enable
+end
+
+super-cool_sw#sho run int f0/9            int status
+
+Port      Name               Status       Vlan       Duplex  Speed Type
+Fa0/1     UNASSIGNED PORTS   disabled     666          full    100 10/100BaseTX
+Fa0/2     UNASSIGNED PORTS   disabled     666          full    100 10/100BaseTX
+Fa0/3     UNASSIGNED PORTS   disabled     666          full    100 10/100BaseTX
+Fa0/4     UNASSIGNED PORTS   disabled     666          full    100 10/100BaseTX
+Fa0/5     UNASSIGNED PORTS   disabled     666          full    100 10/100BaseTX
+Fa0/6     UNASSIGNED PORTS   disabled     666          full    100 10/100BaseTX
+Fa0/7     UNASSIGNED PORTS   disabled     666          full    100 10/100BaseTX
+Fa0/8     UNASSIGNED PORTS   disabled     666          full    100 10/100BaseTX
+Fa0/9     PC-A.10            err-disabled 77           full    100 10/100BaseTX
+Fa0/10    PC-B.11            err-disabled 77           full    100 10/100BaseTX
+Fa0/11    UNASSIGNED PORTS   disabled     666          full    100 10/100BaseTX
+Fa0/12    UNASSIGNED PORTS   disabled     666          full    100 10/100BaseTX
+Fa0/13    UNASSIGNED PORTS   disabled     666          full    100 10/100BaseTX
+Fa0/14    UNASSIGNED PORTS   disabled     666          full    100 10/100BaseTX
+Fa0/15    UNASSIGNED PORTS   disabled     666          full    100 10/100BaseTX
+Fa0/16    UNASSIGNED PORTS   disabled     666          full    100 10/100BaseTX
+Fa0/17    UNASSIGNED PORTS   disabled     666          full    100 10/100BaseTX
+Fa0/18    UNASSIGNED PORTS   disabled     666          full    100 10/100BaseTX
+Fa0/19    UNASSIGNED PORTS   disabled     666          full    100 10/100BaseTX
+Fa0/20    UNASSIGNED PORTS   disabled     666          full    100 10/100BaseTX
+Fa0/21    UNASSIGNED PORTS   disabled     666          full    100 10/100BaseTX
+ --More--         
+super-cool_sw#sho int statusrun int f0/9109 conf t          int f0/10  9
+               ^
+% Invalid input detected at '^' marker.
+
+super-cool_sw#conf t
+Enter configuration commands, one per line.  End with CNTL/Z.
+super-cool_sw(config)#int f/ -0  0/9
+super-cool_sw(config-if)#shut
+super-cool_sw(config-if)#no shut
+super-cool_sw(config-if)#
+Jul 28 16:00:21.828: %LINK-5-CHANGED: Interface FastEthernet0/9, changed state to administratively down
+super-cool_sw(config-if)#
+Jul 28 16:00:24.403: %LINK-3-UPDOWN: Interface FastEthernet0/9, changed state to up
+super-cool_sw(config-if)#
+Jul 28 16:00:24.445: %LINEPROTO-5-UPDOWN: Line protocol on Interface Vlan77, changed state to up
+Jul 28 16:00:25.410: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/9, changed state to up
+super-cool_sw(config-if)#int f/ 0/10
+super-cool_sw(config-if)#shut
+super-cool_sw(config-if)#no shut
+super-cool_sw(config-if)#
+Jul 28 16:00:40.400: %LINK-5-CHANGED: Interface FastEthernet0/10, changed state to administratively down
+super-cool_sw(config-if)#
+Jul 28 16:00:42.581: %LINK-3-UPDOWN: Interface FastEthernet0/10, changed state to up
+Jul 28 16:00:43.588: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/10, changed state to up
+super-cool_sw(config-if)#exit
+super-cool_sw(config)#exit
+super-cool_sw#conf tint f0/9sho int status
+Jul 28 16:01:49.338: %SYS-5-CONFIG_I: Configured from console by console
+super-cool_sw#sho int status
+
+Port      Name               Status       Vlan       Duplex  Speed Type
+Fa0/1     UNASSIGNED PORTS   disabled     666          full    100 10/100BaseTX
+Fa0/2     UNASSIGNED PORTS   disabled     666          full    100 10/100BaseTX
+Fa0/3     UNASSIGNED PORTS   disabled     666          full    100 10/100BaseTX
+Fa0/4     UNASSIGNED PORTS   disabled     666          full    100 10/100BaseTX
+Fa0/5     UNASSIGNED PORTS   disabled     666          full    100 10/100BaseTX
+Fa0/6     UNASSIGNED PORTS   disabled     666          full    100 10/100BaseTX
+Fa0/7     UNASSIGNED PORTS   disabled     666          full    100 10/100BaseTX
+Fa0/8     UNASSIGNED PORTS   disabled     666          full    100 10/100BaseTX
+Fa0/9     PC-A.10            connected    77           full    100 10/100BaseTX
+Fa0/10    PC-B.11            connected    77           full    100 10/100BaseTX
+Fa0/11    UNASSIGNED PORTS   disabled     666          full    100 10/100BaseTX
+Fa0/12    UNASSIGNED PORTS   disabled     666          full    100 10/100BaseTX
+Fa0/13    UNASSIGNED PORTS   disabled     666          full    100 10/100BaseTX
+Fa0/14    UNASSIGNED PORTS   disabled     666          full    100 10/100BaseTX
+Fa0/15    UNASSIGNED PORTS   disabled     666          full    100 10/100BaseTX
+Fa0/16    UNASSIGNED PORTS   disabled     666          full    100 10/100BaseTX
+Fa0/17    UNASSIGNED PORTS   disabled     666          full    100 10/100BaseTX
+Fa0/18    UNASSIGNED PORTS   disabled     666          full    100 10/100BaseTX
+Fa0/19    UNASSIGNED PORTS   disabled     666          full    100 10/100BaseTX
+Fa0/20    UNASSIGNED PORTS   disabled     666          full    100 10/100BaseTX
+Fa0/21    UNASSIGNED PORTS   disabled     666          full    100 10/100BaseTX
+ --More-- 
+Jul 28 16:02:19.210: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/9, changed state to down
+ --More-- 
+Jul 28 16:02:20.208: %LINK-3-UPDOWN: Interface FastEthernet0/9, changed state to down
+ --More-- 
