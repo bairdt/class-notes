@@ -1,0 +1,80 @@
+Basic config
+
+service password enc
+hostname somethinguseful
+ip domain name anystring
+enable password garbage
+enable secret rax123
+username racker priv 15 pass rax123
+no ip domain lookup
+clock set
+clock summertime
+banner MOTD
+
+line con 0
+logging syncronous
+exec-timeout 27
+hist size 200
+password temp123
+login  
+
+line vty 0 4
+logging syncronous
+exec timeout 27
+hist size 200
+login local 
+transport input ssh
+
+line vty 5 15
+login
+
+===========================
+Change media type of g0 ports if needed
+int range g0/1-2
+media-type rj45
+=======================================
+
+spanning-tree portfast default
+no cdp run
+
+
+int range f0/1-LASTPORT , g0/1-LASTPORT
+speed 100
+duplex full
+shutdown
+desciption
+switchport mode access
+switchport access vlan #
+switchport nonegotiate
+no cdp enable
+
+======================
+for each port you will be using
+int f0/XX
+description
+no shut
+
+
+vlan #
+name
+
+crypto key gen rsa
+ip ssh ver 2
+
+no ip http server
+no ip http secure-server
+
+
+==============
+If changing SVI
+
+int vlan #
+ip add IPADDRESS MASK
+
+
+
+
+
+==============================================================
+Console Output
+==============================================================
