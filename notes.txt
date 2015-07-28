@@ -227,6 +227,14 @@ Module 3
 
 What does restrict/protected on switchport security mean?
 
+ When configuring port security violation modes, note the following information:
+
+•protect—Drops packets with unknown source addresses until you remove a sufficient number of secure MAC addresses to drop below the maximum value.
+
+•restrict—Drops packets with unknown source addresses until you remove a sufficient number of secure MAC addresses to drop below the maximum value and causes the SecurityViolation counter to increment.
+
+•shutdown—Puts the interface into the error-disabled state immediately and sends an SNMP trap notification. 
+
 
 
 =============
