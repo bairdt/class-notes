@@ -1,3 +1,6 @@
+GNS3 for router
+Pacetracer
+
 2960s
 1900 router
 
@@ -216,3 +219,23 @@ In IOS switchport mode access says send plain ethernet (untagged)
 Cisco proprietary version of vlans - ISL (depricated) used 1-1005 for ID #s
 
 Sending to hypervisors may have trunk mode enabled for vSwitch vlans
+
+
+=============
+Module 3
+=============
+
+
+
+
+
+=============
+Module 4
+=============
+
+Almost always a unique vlan is assigned to a subnet so we can route between
+
+Operational Mode: static access = access mode
+
+In order for a switch to pass through a vlan, the vlan must exist on the switch
+
