@@ -225,7 +225,7 @@ Sending to hypervisors may have trunk mode enabled for vSwitch vlans
 Module 3
 =============
 
-
+What does restrict/protected on switchport security mean?
 
 
 
