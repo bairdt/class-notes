@@ -1,15 +1,18 @@
 Basic config
 
-service password enc
+In global config mode(conf t)
+service password-enc
 hostname somethinguseful
 ip domain name anystring
 enable password garbage
 enable secret rax123
 username racker priv 15 pass rax123
 no ip domain lookup
-clock set
+exit
+clock set HH:MM:SS DOM Month Year
+conf t
 clock summertime
-banner MOTD
+banner motd c YOURMESSAGE c
 
 line con 0
 logging syncronous
@@ -20,7 +23,7 @@ login
 
 line vty 0 4
 logging syncronous
-exec timeout 27
+exec-timeout 27
 hist size 200
 login local 
 transport input ssh
@@ -34,7 +37,7 @@ int range g0/1-2
 media-type rj45
 =======================================
 
-spanning-tree portfast default
+spanning-tree portfast bpduguard
 no cdp run
 
 
@@ -43,9 +46,11 @@ speed 100
 duplex full
 shutdown
 desciption
+==========================  Only on switch
 switchport mode access
 switchport access vlan #
 switchport nonegotiate
+==========================
 no cdp enable
 
 ======================
