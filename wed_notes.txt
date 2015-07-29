@@ -1,0 +1,123 @@
+Exam Prep Methods
+=====================================
+1.  Go to class/RTFM - intial exposure
+2.  "Practice the test" 
+        -  do not look at answers - use to find weaknesses
+		-  timed   30min/50 questions
+		-  quiet/uninterrupted time
+3.  Write out by hand every missed question
+4.  Look up in the official courseware and take hand written notes for every missed question
+5.  Repeat until you can get 95% on practice exams
+
+
+
+Routers
+=================
+#1 rule of the routing table - longest prefix match
+Routers route using the routing table
+Dynamic routing protocols "gossip"/advertise about available networks
+Routers fail closed - if no match found it drops unless a 0.0.0.0/0 (default route) is specified.
+Default routes have zero length masks
+
+Convergence time - the time it takes for all the routers to know all the paths
+
+How a routing table is built:
+  Static Sources
+    -  physically connected interfaces  			admin dist of 0
+    -  static routes   								admin dist of 1
+  Dynamic 
+    -  EIGRP  AD 90
+	-  OSFP   AD 110
+	-  ISIS   AD 115
+	-  RIP    AD 120
+	-  BGP 
+	     -  iBGP  AD 200 (internal)
+		 -  eBGP  AD 20  (external)
+	Routes are "ranked" by administrative distance
+
+	By default RIP,OSPF, and EIGRP will all load balance across up to 4 equal cost paths
+	Routing table allows for up to 16 equal cost paths for the same network
+	
+	DRP Categories
+	  -  Distance vector - typically has slow convergence and frequent advertisements.  Will route by rumor
+	    -  RIP v2
+		
+	  -  Link State - typically has fast convergence.  wants to know all the paths
+	    -  OSPF - builds a topology database
+		
+		
+		
+ASN - autonomous system number - research this more
+Sites to check out
+peeringdb.com
+arin
+
+EIGRP uses dual algorithm 
+
+Routing protocol metrics are not the same as administrative distance
+EIGRP has a composite metric - look up metric
+not all routing protocols evaluate metrics the same way.  each algorithm is unique to each protocol.
+Metrics are cumulative throughout network.  ie. if i am one hop away, next is 2 hops away
+
+
+Configuring routers:
+  all router interfaces out of the box start out down, switch ports are on out the box.
+  
+  to create a static route
+  ip route NETID MASK NEXTHOPIP
+  
+  
+  OSPF
+  ======
+  Link state protocol
+  Has topology db using spf calculations
+  uses mcast to communicate
+  224.0.0.5  all OSPF routers
+  224.0.0.6  all designated router/ designated backup routers  #double check this
+  OSPFs metric is called Cost  default is REF Bandwidth over INT Bandwith, can be manually set
+  Admin Distance is 110
+  Forms neighbor relationship with other routers on bootup
+    -  need to have same area ID
+	-  same hello and dead intervals
+	-  same authentication
+	-  same subnet mask
+	-  Link state advertisements (LSA) 
+	
+  Must always have an area 0.  Called backbone area or transit
+
+		
+To configure OSPF
+remove static routes
+(config)#no ip route .......
+(config)#router ospf 9  (9 is Process ID)
+(config-router)#router-id 6.6.6.6  (loopback ip)
+(config-router)#net 192.6.111.0 0.0.0.255 area 0
+(config-router)#net 192.16.222.0 0.0.0.255 area 0
+(config-router)#net 6.6.6.6 0.0.0.0 area 0
+(config-router)#net 10.10.10.8 0.0.0.3 area 0
+(config-router)#passive-int g0/0
+(config-router)#passive-int g0/1
+(config-router)#maximum-paths 1
+ctrl-z
+show ip protocols
+
+
+		
+		
+		
+An autonomous system is a collection of networks within a common administrative domain
+
+Router on a stick - see notes
+		
+		
+CVE - Common vulnerability and exposure		
+PASSWORD Recovery
+Config Register value 0x2102 is normal boot behaviour
+0x2142 says ignore startup config
+When booting, in first few seconds issue a <break> to drop into rommon mode
+  rommon>confreg 0x2142
+  rommon>reset
+  go into global config mode
+  (config)#config-register 0x2102
+  fix password issues
+  

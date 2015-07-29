@@ -1,0 +1,2380 @@
+=~=~=~=~=~=~=~=~=~=~=~= PuTTY log 2015.07.29 08:39:43 =~=~=~=~=~=~=~=~=~=~=~=
+
+
+
+        .--.
+       |o_o |
+       |:_/ |
+      //   \ \
+     (|     | )
+    /'\_   _/`\
+    \___)=(___/
+
+
+
+User Access Verification
+
+Password: 
+% Password:  timeout expired!
+Password: 
+% Password:  timeout expired!
+Password: 
+2960SW-5>enable
+Password: 
+2960SW-5#conf t
+Enter configuration commands, one per line.  End with CNTL/Z.
+2960SW-5(config)#ip dom
+2960SW-5(config)#ip domain name a sat.local
+2960SW-5(config)#^Z
+2960SW-5#show run
+Jul 29 08:40:37.954: %SYS-5-CONFIG_I: Configured from console by console
+2960SW-5#show run
+Building configuration...
+
+Current configuration : 6326 bytes
+!
+! Last configuration change at 08:40:37 UTC Wed Jul 29 2015
+!
+version 12.2
+no service pad
+service timestamps debug datetime msec
+service timestamps log datetime msec
+service password-encryption
+!
+hostname 2960SW-5
+!
+boot-start-marker
+boot-end-marker
+!
+enable secret 5 $1$Vuu/$DdGhYXLgBlGedNWGK30B31
+enable password 7 141013190E052D2E64
+!
+username rack privilege 15 password 7 021405435A545C
+no aaa new-model
+system mtu routing 1500
+ip subnet-zero
+ --More--         !
+no ip domain-lookup
+ip domain-name sat.local
+!
+!
+!
+!
+!
+!
+!
+!
+spanning-tree mode pvst
+spanning-tree portfast default
+spanning-tree extend system-id
+!
+vlan internal allocation policy ascending
+!
+ip ssh version 2
+!
+!
+interface FastEthernet0/1
+ description UNASSIGNED PORTS
+ switchport access vlan 666
+ --More--          switchport mode access
+ switchport nonegotiate
+ shutdown
+ speed 100
+ duplex full
+ no cdp enable
+!
+interface FastEthernet0/2
+ description UNASSIGNED PORTS
+ switchport access vlan 666
+ switchport mode access
+ switchport nonegotiate
+ shutdown
+ speed 100
+ duplex full
+ no cdp enable
+!
+interface FastEthernet0/3
+ description UNASSIGNED PORTS
+ switchport access vlan 666
+ switchport mode access
+ switchport nonegotiate
+ shutdown
+ --More--          speed 100
+ duplex full
+ no cdp enable
+!
+interface FastEthernet0/4
+ description UNASSIGNED PORTS
+ switchport access vlan 666
+ switchport mode access
+ switchport nonegotiate
+ shutdown
+ speed 100
+ duplex full
+ no cdp enable
+!
+interface FastEthernet0/5
+ description UNASSIGNED PORTS
+ switchport access vlan 666
+ switchport mode access
+ switchport nonegotiate
+ shutdown
+ speed 100
+ duplex full
+ no cdp enable
+ --More--         !
+interface FastEthernet0/6
+ description UNASSIGNED PORTS
+ switchport access vlan 666
+ switchport mode access
+ switchport nonegotiate
+ shutdown
+ speed 100
+ duplex full
+ no cdp enable
+!
+interface FastEthernet0/7
+ description UNASSIGNED PORTS
+ switchport access vlan 666
+ switchport mode access
+ switchport nonegotiate
+ shutdown
+ speed 100
+ duplex full
+ no cdp enable
+!
+interface FastEthernet0/8
+ description UNASSIGNED PORTS
+ --More--          switchport access vlan 666
+ switchport mode access
+ switchport nonegotiate
+ shutdown
+ speed 100
+ duplex full
+ no cdp enable
+!
+interface FastEthernet0/9
+ description PC-A.10
+ switchport access vlan 77
+ switchport mode access
+ switchport nonegotiate
+ switchport port-security
+ switchport port-security mac-address sticky
+ switchport port-security mac-address sticky 0021.7010.e639
+ speed 100
+ duplex full
+ no cdp enable
+!
+interface FastEthernet0/10
+ description PC-B.11
+ switchport access vlan 77
+ --More--          switchport mode access
+ switchport nonegotiate
+ switchport port-security
+ switchport port-security mac-address sticky
+ switchport port-security mac-address sticky 0021.7010.e7b5
+ speed 100
+ duplex full
+ no cdp enable
+!
+interface FastEthernet0/11
+ description UNASSIGNED PORTS
+ switchport access vlan 666
+ switchport mode access
+ switchport nonegotiate
+ shutdown
+ speed 100
+ duplex full
+ no cdp enable
+!
+interface FastEthernet0/12
+ description UNASSIGNED PORTS
+ switchport access vlan 666
+ switchport mode access
+ --More--          switchport nonegotiate
+ shutdown
+ speed 100
+ duplex full
+ no cdp enable
+!
+interface FastEthernet0/13
+ description UNASSIGNED PORTS
+ switchport access vlan 666
+ switchport mode access
+ switchport nonegotiate
+ shutdown
+ speed 100
+ duplex full
+ no cdp enable
+!
+interface FastEthernet0/14
+ description UNASSIGNED PORTS
+ switchport access vlan 666
+ switchport mode access
+ switchport nonegotiate
+ shutdown
+ speed 100
+ --More--          duplex full
+ no cdp enable
+!
+interface FastEthernet0/15
+ description UNASSIGNED PORTS
+ switchport access vlan 666
+ switchport mode access
+ switchport nonegotiate
+ shutdown
+ speed 100
+ duplex full
+ no cdp enable
+!
+interface FastEthernet0/16
+ description UNASSIGNED PORTS
+ switchport access vlan 666
+ switchport mode access
+ switchport nonegotiate
+ shutdown
+ speed 100
+ duplex full
+ no cdp enable
+!
+ --More--         interface FastEthernet0/17
+ description UNASSIGNED PORTS
+ switchport access vlan 666
+ switchport mode access
+ switchport nonegotiate
+ shutdown
+ speed 100
+ duplex full
+ no cdp enable
+!
+interface FastEthernet0/18
+ description UNASSIGNED PORTS
+ switchport access vlan 666
+ switchport mode access
+ switchport nonegotiate
+ shutdown
+ speed 100
+ duplex full
+ no cdp enable
+!
+interface FastEthernet0/19
+ description UNASSIGNED PORTS
+ switchport access vlan 666
+ --More--          switchport mode access
+ switchport nonegotiate
+ shutdown
+ speed 100
+ duplex full
+ no cdp enable
+!
+interface FastEthernet0/20
+ description UNASSIGNED PORTS
+ switchport access vlan 666
+ switchport mode access
+ switchport nonegotiate
+ shutdown
+ speed 100
+ duplex full
+ no cdp enable
+!
+interface FastEthernet0/21
+ description UNASSIGNED PORTS
+ switchport access vlan 666
+ switchport mode access
+ switchport nonegotiate
+ shutdown
+ --More--          speed 100
+ duplex full
+ no cdp enable
+!
+interface FastEthernet0/22
+ description UNASSIGNED PORTS
+ switchport access vlan 666
+ switchport mode access
+ switchport nonegotiate
+ shutdown
+ speed 100
+ duplex full
+ no cdp enable
+!
+interface FastEthernet0/23
+ description UNASSIGNED PORTS
+ switchport access vlan 666
+ switchport mode access
+ switchport nonegotiate
+ shutdown
+ speed 100
+ duplex full
+ no cdp enable
+ --More--         !
+interface FastEthernet0/24
+ description UNASSIGNED PORTS
+ switchport access vlan 666
+ switchport mode access
+ switchport nonegotiate
+ shutdown
+ speed 100
+ duplex full
+ no cdp enable
+!
+interface GigabitEthernet0/1
+ description UNASSIGNED PORTS
+ switchport access vlan 666
+ switchport mode access
+ switchport nonegotiate
+ shutdown
+ media-type rj45
+ speed 100
+ duplex full
+ no cdp enable
+!
+interface GigabitEthernet0/2
+ --More--          description UNASSIGNED PORTS
+ switchport access vlan 666
+ switchport mode access
+ switchport nonegotiate
+ shutdown
+ media-type rj45
+ speed 100
+ duplex full
+ no cdp enable
+!
+interface Vlan1
+ no ip address
+ no ip route-cache
+ shutdown
+!
+interface Vlan77
+ ip address 172.16.77.5 255.255.255.240
+ no ip route-cache
+!
+ip default-gateway 1.1.1.1
+no ip http server
+no ip http secure-server
+no cdp run
+ --More--         !
+control-plane
+!
+banner motd ^C
+
+
+        .--.
+       |o_o |
+       |:_/ |
+      //   \ \
+     (|     | )
+    /'\_   _/`\
+    \___)=(___/
+
+^C
+banner config-save ^C^C
+!
+line con 0
+ exec-timeout 27 0
+ password 7 071B24415E584B56
+ logging synchronous
+ login
+ history size 200
+ --More--         line vty 0 4
+ exec-timeout 27 0
+ logging synchronous
+ login local
+ history size 200
+ transport input ssh
+line vty 5 15
+ login
+!
+end
+
+2960SW-5#show run | section f/01
+                    ^
+% Invalid input detected at '^' marker.
+
+2960SW-5#show run | section f/01              | ?
+  append    Append redirected output to URL (URLs supporting append operation
+            only)
+  begin     Begin with the line that matches
+  exclude   Exclude lines that match
+  include   Include lines that match
+  redirect  Redirect output to URL
+  tee       Copy output to URL
+
+2960SW-5#show run | i 0/1
+interface FastEthernet0/1
+interface FastEthernet0/10
+interface FastEthernet0/11
+interface FastEthernet0/12
+interface FastEthernet0/13
+interface FastEthernet0/14
+interface FastEthernet0/15
+interface FastEthernet0/16
+interface FastEthernet0/17
+interface FastEthernet0/18
+interface FastEthernet0/19
+interface GigabitEthernet0/1
+2960SW-5#
+Jul 29 08:42:26.050: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/10, changed state to down
+Jul 29 08:42:26.050: %LINEPROTO-5-UPDOWN: Line protocol on Interface Vlan77, changed state to down
+2960SW-5#
+Jul 29 08:42:27.048: %LINK-3-UPDOWN: Interface FastEthernet0/10, changed state to down
+2960SW-5#
+Jul 29 08:42:29.028: %LINEPROTO-5-UPDOWN: Line protocol on Interface Vlan77, changed state to up
+2960SW-5#
+Jul 29 08:42:30.026: %LINK-3-UPDOWN: Interface FastEthernet0/10, changed state to up
+Jul 29 08:42:31.033: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/10, changed state to up
+2960SW-5#copy ru
+Jul 29 08:42:32.090: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/10, changed state to down
+Jul 29 08:42:32.090: %LINEPROTO-5-UPDOWN: Line protocol on Interface Vlan77, changed state to down
+2960SW-5#copy run ftp
+Jul 29 08:42:34.019: %LINEPROTO-5-UPDOWN: Line protocol on Interface Vlan77, changed state to up
+Jul 29 08:42:34.095: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/10, changed state to up
+2960SW-5#copy run ftp
+Address or name of remote host []? 
+Jul 29 08:42:36.074: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/10, changed state to down
+Jul 29 08:42:36.074: %LINEPROTO-5-UPDOWN: Line protocol on Interface Vlan77, changed state to down
+
+Jul 29 08:42:37.073: %LINK-3-UPDOWN: Interface FastEthernet0/10, changed state to down
+
+Jul 29 08:42:38.255: %LINEPROTO-5-UPDOWN: Line protocol on Interface Vlan77, changed state to up
+
+Jul 29 08:42:39.254: %LINK-3-UPDOWN: Interface FastEthernet0/10, changed state to up
+Jul 29 08:42:40.260: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/10, changed state to up
+
+Jul 29 08:43:09.914: %LINK-3-UPDOWN: Interface FastEthernet0/9, changed state to up
+Jul 29 08:43:10.921: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/9, changed state to up
+
+?Host name or address not specified
+%Error parsing filename (Unknown error 0)
+2960SW-5#show ru       
+2960SW-5#
+2960SW-5#
+2960SW-5#
+2960SW-5#
+2960SW-5#
+2960SW-5#
+2960SW-5#
+2960SW-5#
+2960SW-5#
+2960SW-5#
+2960SW-5#
+2960SW-5#
+2960SW-5#show run
+Building configuration...
+
+Current configuration : 6326 bytes
+!
+! Last configuration change at 08:40:37 UTC Wed Jul 29 2015
+!
+version 12.2
+no service pad
+service timestamps debug datetime msec
+service timestamps log datetime msec
+service password-encryption
+!
+hostname 2960SW-5
+!
+boot-start-marker
+boot-end-marker
+!
+enable secret 5 $1$Vuu/$DdGhYXLgBlGedNWGK30B31
+enable password 7 141013190E052D2E64
+!
+username rack privilege 15 password 7 021405435A545C
+no aaa new-model
+system mtu routing 1500
+ip subnet-zero
+ --More--         !
+no ip domain-lookup
+ip domain-name sat.local
+!
+!
+!
+!
+!
+!
+!
+!
+spanning-tree mode pvst
+spanning-tree portfast default
+spanning-tree extend system-id
+!
+vlan internal allocation policy ascending
+!
+ip ssh version 2
+!
+!
+interface FastEthernet0/1
+ description UNASSIGNED PORTS
+ switchport access vlan 666
+ --More--          switchport mode access
+ switchport nonegotiate
+ shutdown
+ speed 100
+ duplex full
+ no cdp enable
+!
+interface FastEthernet0/2
+ description UNASSIGNED PORTS
+ switchport access vlan 666
+ switchport mode access
+ switchport nonegotiate
+ shutdown
+ speed 100
+ duplex full
+ no cdp enable
+!
+interface FastEthernet0/3
+ description UNASSIGNED PORTS
+ switchport access vlan 666
+ switchport mode access
+ switchport nonegotiate
+ shutdown
+ --More--          speed 100
+ duplex full
+ no cdp enable
+!
+interface FastEthernet0/4
+ description UNASSIGNED PORTS
+ switchport access vlan 666
+ switchport mode access
+ switchport nonegotiate
+ shutdown
+ speed 100
+ duplex full
+ no cdp enable
+!
+interface FastEthernet0/5
+ description UNASSIGNED PORTS
+ switchport access vlan 666
+ switchport mode access
+ switchport nonegotiate
+ shutdown
+ speed 100
+ duplex full
+ no cdp enable
+ --More--         !
+interface FastEthernet0/6
+ description UNASSIGNED PORTS
+ switchport access vlan 666
+ switchport mode access
+ switchport nonegotiate
+ shutdown
+ speed 100
+ duplex full
+ no cdp enable
+!
+interface FastEthernet0/7
+ description UNASSIGNED PORTS
+ switchport access vlan 666
+ switchport mode access
+ switchport nonegotiate
+ shutdown
+ speed 100
+ duplex full
+ no cdp enable
+!
+interface FastEthernet0/8
+ description UNASSIGNED PORTS
+ --More--          switchport access vlan 666
+ switchport mode access
+ switchport nonegotiate
+ shutdown
+ speed 100
+ duplex full
+ no cdp enable
+!
+interface FastEthernet0/9
+ description PC-A.10
+ switchport access vlan 77
+ switchport mode access
+ switchport nonegotiate
+ switchport port-security
+ switchport port-security mac-address sticky
+ switchport port-security mac-address sticky 0021.7010.e639
+ speed 100
+ duplex full
+ no cdp enable
+!
+interface FastEthernet0/10
+ description PC-B.11
+ switchport access vlan 77
+ --More--          switchport mode access
+ switchport nonegotiate
+ switchport port-security
+ switchport port-security mac-address sticky
+ switchport port-security mac-address sticky 0021.7010.e7b5
+ speed 100
+ duplex full
+ no cdp enable
+!
+interface FastEthernet0/11
+ description UNASSIGNED PORTS
+ switchport access vlan 666
+ switchport mode access
+ switchport nonegotiate
+ shutdown
+ speed 100
+ duplex full
+ no cdp enable
+!
+interface FastEthernet0/12
+ description UNASSIGNED PORTS
+ switchport access vlan 666
+ switchport mode access
+ --More--          switchport nonegotiate
+ shutdown
+ speed 100
+ duplex full
+ no cdp enable
+!
+interface FastEthernet0/13
+ description UNASSIGNED PORTS
+ switchport access vlan 666
+ switchport mode access
+ switchport nonegotiate
+ shutdown
+ speed 100
+ duplex full
+ no cdp enable
+!
+interface FastEthernet0/14
+ description UNASSIGNED PORTS
+ switchport access vlan 666
+ switchport mode access
+ switchport nonegotiate
+ shutdown
+ speed 100
+ --More--          duplex full
+ no cdp enable
+!
+interface FastEthernet0/15
+ description UNASSIGNED PORTS
+ switchport access vlan 666
+ switchport mode access
+ switchport nonegotiate
+ shutdown
+ speed 100
+ duplex full
+ no cdp enable
+!
+interface FastEthernet0/16
+ description UNASSIGNED PORTS
+ switchport access vlan 666
+ switchport mode access
+ switchport nonegotiate
+ shutdown
+ speed 100
+ duplex full
+ no cdp enable
+!
+ --More--         interface FastEthernet0/17
+ description UNASSIGNED PORTS
+ switchport access vlan 666
+ switchport mode access
+ switchport nonegotiate
+ shutdown
+ speed 100
+ duplex full
+ no cdp enable
+!
+interface FastEthernet0/18
+ description UNASSIGNED PORTS
+ switchport access vlan 666
+ switchport mode access
+ switchport nonegotiate
+ shutdown
+ speed 100
+ duplex full
+ no cdp enable
+!
+interface FastEthernet0/19
+ description UNASSIGNED PORTS
+ switchport access vlan 666
+ --More--          switchport mode access
+ switchport nonegotiate
+ shutdown
+ speed 100
+ duplex full
+ no cdp enable
+!
+interface FastEthernet0/20
+ description UNASSIGNED PORTS
+ switchport access vlan 666
+ switchport mode access
+ switchport nonegotiate
+ shutdown
+ speed 100
+ duplex full
+ no cdp enable
+!
+interface FastEthernet0/21
+ description UNASSIGNED PORTS
+ switchport access vlan 666
+ switchport mode access
+ switchport nonegotiate
+ shutdown
+ --More--          speed 100
+ duplex full
+ no cdp enable
+!
+interface FastEthernet0/22
+ description UNASSIGNED PORTS
+ switchport access vlan 666
+ switchport mode access
+ switchport nonegotiate
+ shutdown
+ speed 100
+ duplex full
+ no cdp enable
+!
+interface FastEthernet0/23
+ description UNASSIGNED PORTS
+ switchport access vlan 666
+ switchport mode access
+ switchport nonegotiate
+ shutdown
+ speed 100
+ duplex full
+ no cdp enable
+ --More--         !
+interface FastEthernet0/24
+ description UNASSIGNED PORTS
+ switchport access vlan 666
+ switchport mode access
+ switchport nonegotiate
+ shutdown
+ speed 100
+ duplex full
+ no cdp enable
+!
+interface GigabitEthernet0/1
+ description UNASSIGNED PORTS
+ switchport access vlan 666
+ switchport mode access
+ switchport nonegotiate
+ shutdown
+ media-type rj45
+ speed 100
+ duplex full
+ no cdp enable
+!
+interface GigabitEthernet0/2
+ --More--          description UNASSIGNED PORTS
+ switchport access vlan 666
+ switchport mode access
+ switchport nonegotiate
+ shutdown
+ media-type rj45
+ speed 100
+ duplex full
+ no cdp enable
+!
+interface Vlan1
+ no ip address
+ no ip route-cache
+ shutdown
+!
+interface Vlan77
+ ip address 172.16.77.5 255.255.255.240
+ no ip route-cache
+!
+ip default-gateway 1.1.1.1
+no ip http server
+no ip http secure-server
+no cdp run
+ --More--         !
+control-plane
+!
+banner motd ^C
+
+
+        .--.
+       |o_o |
+       |:_/ |
+      //   \ \
+     (|     | )
+    /'\_   _/`\
+    \___)=(___/
+
+^C
+banner config-save ^C^C
+!
+line con 0
+ exec-timeout 27 0
+ password 7 071B24415E584B56
+ logging synchronous
+ login
+ history size 200
+ --More--         line vty 0 4
+ exec-timeout 27 0
+ logging synchronous
+ login local
+ history size 200
+ transport input ssh
+line vty 5 15
+ login
+!
+end
+
+2960SW-5#
+2960SW-5#
+2960SW-5#
+2960SW-5#
+2960SW-5#
+2960SW-5#
+2960SW-5#
+2960SW-5#
+2960SW-5#show run
+Building configuration...
+
+Current configuration : 6326 bytes
+!
+! Last configuration change at 08:40:37 UTC Wed Jul 29 2015
+!
+version 12.2
+no service pad
+service timestamps debug datetime msec
+service timestamps log datetime msec
+service password-encryption
+!
+hostname 2960SW-5
+!
+boot-start-marker
+boot-end-marker
+!
+enable secret 5 $1$Vuu/$DdGhYXLgBlGedNWGK30B31
+enable password 7 141013190E052D2E64
+!
+username rack privilege 15 password 7 021405435A545C
+no aaa new-model
+system mtu routing 1500
+ip subnet-zero
+ --More--         !
+no ip domain-lookup
+ip domain-name sat.local
+!
+!
+!
+!
+!
+!
+!
+!
+spanning-tree mode pvst
+spanning-tree portfast default
+spanning-tree extend system-id
+!
+vlan internal allocation policy ascending
+!
+ip ssh version 2
+!
+!
+interface FastEthernet0/1
+ description UNASSIGNED PORTS
+ switchport access vlan 666
+ --More--          switchport mode access
+ switchport nonegotiate
+ shutdown
+ speed 100
+ duplex full
+ no cdp enable
+!
+interface FastEthernet0/2
+ description UNASSIGNED PORTS
+ switchport access vlan 666
+ switchport mode access
+ switchport nonegotiate
+ shutdown
+ speed 100
+ duplex full
+ no cdp enable
+!
+interface FastEthernet0/3
+ description UNASSIGNED PORTS
+ switchport access vlan 666
+ switchport mode access
+ switchport nonegotiate
+ shutdown
+ --More--          speed 100
+ duplex full
+ no cdp enable
+!
+interface FastEthernet0/4
+ description UNASSIGNED PORTS
+ switchport access vlan 666
+ switchport mode access
+ switchport nonegotiate
+ shutdown
+ speed 100
+ duplex full
+ no cdp enable
+!
+interface FastEthernet0/5
+ description UNASSIGNED PORTS
+ switchport access vlan 666
+ switchport mode access
+ switchport nonegotiate
+ shutdown
+ speed 100
+ duplex full
+ no cdp enable
+ --More--         !
+interface FastEthernet0/6
+ description UNASSIGNED PORTS
+ switchport access vlan 666
+ switchport mode access
+ switchport nonegotiate
+ shutdown
+ speed 100
+ duplex full
+ no cdp enable
+!
+interface FastEthernet0/7
+ description UNASSIGNED PORTS
+ switchport access vlan 666
+ switchport mode access
+ switchport nonegotiate
+ shutdown
+ speed 100
+ duplex full
+ no cdp enable
+!
+interface FastEthernet0/8
+ description UNASSIGNED PORTS
+ --More--          switchport access vlan 666
+ switchport mode access
+ switchport nonegotiate
+ shutdown
+ speed 100
+ duplex full
+ no cdp enable
+!
+interface FastEthernet0/9
+ description PC-A.10
+ switchport access vlan 77
+ switchport mode access
+ switchport nonegotiate
+ switchport port-security
+ switchport port-security mac-address sticky
+ switchport port-security mac-address sticky 0021.7010.e639
+ speed 100
+ duplex full
+ no cdp enable
+!
+interface FastEthernet0/10
+ description PC-B.11
+ switchport access vlan 77
+ --More--          switchport mode access
+ switchport nonegotiate
+ switchport port-security
+ switchport port-security mac-address sticky
+ switchport port-security mac-address sticky 0021.7010.e7b5
+ speed 100
+ duplex full
+ no cdp enable
+!
+interface FastEthernet0/11
+ description UNASSIGNED PORTS
+ switchport access vlan 666
+ switchport mode access
+ switchport nonegotiate
+ shutdown
+ speed 100
+ duplex full
+ no cdp enable
+!
+interface FastEthernet0/12
+ description UNASSIGNED PORTS
+ switchport access vlan 666
+ switchport mode access
+ --More--          switchport nonegotiate
+ shutdown
+ speed 100
+ duplex full
+ no cdp enable
+!
+interface FastEthernet0/13
+ description UNASSIGNED PORTS
+ switchport access vlan 666
+ switchport mode access
+ switchport nonegotiate
+ shutdown
+ speed 100
+ duplex full
+ no cdp enable
+!
+interface FastEthernet0/14
+ description UNASSIGNED PORTS
+ switchport access vlan 666
+ switchport mode access
+ switchport nonegotiate
+ shutdown
+ speed 100
+ --More--          duplex full
+ no cdp enable
+!
+interface FastEthernet0/15
+ description UNASSIGNED PORTS
+ switchport access vlan 666
+ switchport mode access
+ switchport nonegotiate
+ shutdown
+ speed 100
+ duplex full
+ no cdp enable
+!
+interface FastEthernet0/16
+ description UNASSIGNED PORTS
+ switchport access vlan 666
+ switchport mode access
+ switchport nonegotiate
+ shutdown
+ speed 100
+ duplex full
+ no cdp enable
+!
+ --More--         interface FastEthernet0/17
+ description UNASSIGNED PORTS
+ switchport access vlan 666
+ switchport mode access
+ switchport nonegotiate
+ shutdown
+ speed 100
+ duplex full
+ no cdp enable
+!
+interface FastEthernet0/18
+ description UNASSIGNED PORTS
+ switchport access vlan 666
+ switchport mode access
+ switchport nonegotiate
+ shutdown
+ speed 100
+ duplex full
+ no cdp enable
+!
+interface FastEthernet0/19
+ description UNASSIGNED PORTS
+ switchport access vlan 666
+ --More--          switchport mode access
+ switchport nonegotiate
+ shutdown
+ speed 100
+ duplex full
+ no cdp enable
+!
+interface FastEthernet0/20
+ description UNASSIGNED PORTS
+ switchport access vlan 666
+ switchport mode access
+ switchport nonegotiate
+ shutdown
+ speed 100
+ duplex full
+ no cdp enable
+!
+interface FastEthernet0/21
+ description UNASSIGNED PORTS
+ switchport access vlan 666
+ switchport mode access
+ switchport nonegotiate
+ shutdown
+ --More--          speed 100
+ duplex full
+ no cdp enable
+!
+interface FastEthernet0/22
+ description UNASSIGNED PORTS
+ switchport access vlan 666
+ switchport mode access
+ switchport nonegotiate
+ shutdown
+ speed 100
+ duplex full
+ no cdp enable
+!
+interface FastEthernet0/23
+ description UNASSIGNED PORTS
+ switchport access vlan 666
+ switchport mode access
+ switchport nonegotiate
+ shutdown
+ speed 100
+ duplex full
+ no cdp enable
+ --More--         !
+interface FastEthernet0/24
+ description UNASSIGNED PORTS
+ switchport access vlan 666
+ switchport mode access
+ switchport nonegotiate
+ shutdown
+ speed 100
+ duplex full
+ no cdp enable
+!
+interface GigabitEthernet0/1
+ description UNASSIGNED PORTS
+ switchport access vlan 666
+ switchport mode access
+ switchport nonegotiate
+ shutdown
+ media-type rj45
+ speed 100
+ duplex full
+ no cdp enable
+!
+interface GigabitEthernet0/2
+ --More--          description UNASSIGNED PORTS
+ switchport access vlan 666
+ switchport mode access
+ switchport nonegotiate
+ shutdown
+ media-type rj45
+ speed 100
+ duplex full
+ no cdp enable
+!
+interface Vlan1
+ no ip address
+ no ip route-cache
+ shutdown
+!
+interface Vlan77
+ ip address 172.16.77.5 255.255.255.240
+ no ip route-cache
+!
+ip default-gateway 1.1.1.1
+no ip http server
+no ip http secure-server
+no cdp run
+ --More--         !
+control-plane
+!
+banner motd ^C
+
+
+        .--.
+       |o_o |
+       |:_/ |
+      //   \ \
+     (|     | )
+    /'\_   _/`\
+    \___)=(___/
+
+^C
+banner config-save ^C^C
+!
+line con 0
+ exec-timeout 27 0
+ password 7 071B24415E584B56
+ logging synchronous
+ login
+ history size 200
+ --More--         line vty 0 4
+ exec-timeout 27 0
+ logging synchronous
+ login local
+ history size 200
+ transport input ssh
+line vty 5 15
+ login
+!
+end
+
+2960SW-5#
+2960SW-5#copy run ftp
+Address or name of remote host []? 172.16.77.10
+Destination filename [2960sw-5-confg]? 
+Writing 2960sw-5-confg !
+6326 bytes copied in 2.550 secs (2481 bytes/sec)
+2960SW-5#
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+2960SW-5 con0 is now available
+
+
+
+
+
+Press RETURN to get started.
+
+
+
+
+
+
+
+        .--.
+       |o_o |
+       |:_/ |
+      //   \ \
+     (|     | )
+    /'\_   _/`\
+    \___)=(___/
+
+
+
+User Access Verification
+
+Password: 
+2960SW-5>enable
+Password: 
+2960SW-5#copy flash ftp
+Source filename []? ru unning-config.dat
+Address or name of remote host []? 172.16.77.5 10
+Destination filename [running-config.dat]? 
+%Error opening flash:running-config.dat (No such file or directory)
+2960SW-5#172.16.77.10running-config.datcopy flash ftp    
+Source filename [running-config.dat]? run-config.dat    d .at  dat
+Address or name of remote host []? 172.168.  .77.10
+Destination filename [run-config.dat]? 
+%Error opening flash:run-config.dat (No such file or directory)
+2960SW-5#172.16.77.10run-config.datcopy flash ftp
+Source filename [run-config.dat]? ios.bin
+Address or name of remote host []? 172.16.77.10
+Destination filename [ios.bin]? 
+%Error opening flash:ios.bin (No such file or directory)
+2960SW-5#cp opy flash ?
+  flash:          Copy to flash: file system
+  ftp:            Copy to ftp: file system
+  http:           Copy to http: file system
+  https:          Copy to https: file system
+  null:           Copy to null: file system
+  nvram:          Copy to nvram: file system
+  rcp:            Copy to rcp: file system
+  running-config  Update (merge with) current system configuration
+  scp:            Copy to scp: file system
+  startup-config  Copy to startup configuration
+  system:         Copy to system: file system
+  tftp:           Copy to tftp: file system
+  tmpsys:         Copy to tmpsys: file system
+  vb:             Copy to vb: file system
+
+2960SW-5#copy flash            dir flash:
+Directory of flash:/
+
+    3  -rwx        2141   Mar 1 1993 20:36:43 +00:00  stazrt
+    4  -rwx         616   Mar 1 1993 01:01:37 +00:00  vlan.dat.renamed
+    5  -rwx         676  Jul 28 2015 14:19:59 +00:00  vlan.dat
+    6  drwx         192   Mar 1 1993 00:06:45 +00:00  c2960-lanbasek9-mz.122-44.SE6
+  548  -rwx        4483   Mar 1 1993 04:04:01 +00:00  s1.bak
+  549  -rwx        4483   Mar 2 1993 04:15:30 +00:00  day2.bak
+  551  -rwx        1301   Mar 3 1993 13:47:35 +00:00  config.text.renamed
+  553  -rwx           5   Mar 3 1993 13:47:35 +00:00  private-config.text.renamed
+
+32514048 bytes total (22089728 bytes free)
+2960SW-5#copy flash ftp
+Source filename [ios.bin]? 
+?Bad filename
+%Error parsing filename (Bad file number)
+2960SW-5#dir nvram:
+Directory of nvram:/
+
+   62  -rw-           0                    <no date>  startup-config
+   63  ----           0                    <no date>  private-config
+
+65536 bytes total (65484 bytes free)
+2960SW-5#dir system:
+Directory of system:/
+
+    2  -r--           0                    <no date>  default-running-config
+    4  dr-x           0                    <no date>  memory
+    1  -rw-        6326                    <no date>  running-config
+    3  dr-x           0                    <no date>  vfiles
+
+No space information available
+2960SW-5#dir flash:
+Directory of flash:/
+
+    3  -rwx        2141   Mar 1 1993 20:36:43 +00:00  stazrt
+    4  -rwx         616   Mar 1 1993 01:01:37 +00:00  vlan.dat.renamed
+    5  -rwx         676  Jul 28 2015 14:19:59 +00:00  vlan.dat
+    6  drwx         192   Mar 1 1993 00:06:45 +00:00  c2960-lanbasek9-mz.122-44.SE6
+  548  -rwx        4483   Mar 1 1993 04:04:01 +00:00  s1.bak
+  549  -rwx        4483   Mar 2 1993 04:15:30 +00:00  day2.bak
+  551  -rwx        1301   Mar 3 1993 13:47:35 +00:00  config.text.renamed
+  553  -rwx           5   Mar 3 1993 13:47:35 +00:00  private-config.text.renamed
+
+32514048 bytes total (22089728 bytes free)
+2960SW-5#dir
+Directory of flash:/
+
+    3  -rwx        2141   Mar 1 1993 20:36:43 +00:00  stazrt
+    4  -rwx         616   Mar 1 1993 01:01:37 +00:00  vlan.dat.renamed
+    5  -rwx         676  Jul 28 2015 14:19:59 +00:00  vlan.dat
+    6  drwx         192   Mar 1 1993 00:06:45 +00:00  c2960-lanbasek9-mz.122-44.SE6
+  548  -rwx        4483   Mar 1 1993 04:04:01 +00:00  s1.bak
+  549  -rwx        4483   Mar 2 1993 04:15:30 +00:00  day2.bak
+  551  -rwx        1301   Mar 3 1993 13:47:35 +00:00  config.text.renamed
+  553  -rwx           5   Mar 3 1993 13:47:35 +00:00  private-config.text.renamed
+
+32514048 bytes total (22089728 bytes free)
+2960SW-5#dir ?
+  /all             List all files
+  /recursive       List files recursively
+  all-filesystems  List files on all filesystems
+  bs:              Directory or file name
+  cns:             Directory or file name
+  flash:           Directory or file name
+  null:            Directory or file name
+  nvram:           Directory or file name
+  system:          Directory or file name
+  tar:             Directory or file name
+  tmpsys:          Directory or file name
+  vb:              Directory or file name
+  xmodem:          Directory or file name
+  ymodem:          Directory or file name
+  <cr>
+
+2960SW-5#dir dir all
+2960SW-5#dir dir all-
+2960SW-5#dir dir all-fi
+2960SW-5#dir dir all-filesystems
+                 ^
+% Invalid input detected at '^' marker.
+
+2960SW-5#dir /all
+Directory of flash:/
+
+    3  -rwx        2141   Mar 1 1993 20:36:43 +00:00  stazrt
+    4  -rwx         616   Mar 1 1993 01:01:37 +00:00  vlan.dat.renamed
+    5  -rwx         676  Jul 28 2015 14:19:59 +00:00  vlan.dat
+    6  drwx         192   Mar 1 1993 00:06:45 +00:00  c2960-lanbasek9-mz.122-44.SE6
+  548  -rwx        4483   Mar 1 1993 04:04:01 +00:00  s1.bak
+  549  -rwx        4483   Mar 2 1993 04:15:30 +00:00  day2.bak
+  551  -rwx        1301   Mar 3 1993 13:47:35 +00:00  config.text.renamed
+  553  -rwx           5   Mar 3 1993 13:47:35 +00:00  private-config.text.renamed
+
+32514048 bytes total (22089728 bytes free)
+2960SW-5#dir nvram:
+Directory of nvram:/
+
+   62  -rw-           0                    <no date>  startup-config
+   63  ----           0                    <no date>  private-config
+
+65536 bytes total (65484 bytes free)
+2960SW-5#dir flash:
+Directory of flash:/
+
+    3  -rwx        2141   Mar 1 1993 20:36:43 +00:00  stazrt
+    4  -rwx         616   Mar 1 1993 01:01:37 +00:00  vlan.dat.renamed
+    5  -rwx         676  Jul 28 2015 14:19:59 +00:00  vlan.dat
+    6  drwx         192   Mar 1 1993 00:06:45 +00:00  c2960-lanbasek9-mz.122-44.SE6
+  548  -rwx        4483   Mar 1 1993 04:04:01 +00:00  s1.bak
+  549  -rwx        4483   Mar 2 1993 04:15:30 +00:00  day2.bak
+  551  -rwx        1301   Mar 3 1993 13:47:35 +00:00  config.text.renamed
+  553  -rwx           5   Mar 3 1993 13:47:35 +00:00  private-config.text.renamed
+
+32514048 bytes total (22089728 bytes free)
+2960SW-5#cd c2960-lanbasek9-mz.122-44.SE6
+2960SW-5#dir
+Directory of flash:/c2960-lanbasek9-mz.122-44.SE6/
+
+    7  drwx        4672   Mar 1 1993 00:04:50 +00:00  html
+  546  -rwx     7075041   Mar 1 1993 00:06:45 +00:00  c2960-lanbasek9-mz.122-44.SE6.bin
+  547  -rwx         525   Mar 1 1993 00:06:45 +00:00  info
+
+32514048 bytes total (22089728 bytes free)
+2960SW-5#copy flash: c2960-lanbasek9-mz.122-44.SE6
+Source filename [/c2960-lanbasek9-mz.122-44.SE6/ios.bin]? 
+?Bad filename
+%Error parsing filename (Bad file number)
+2960SW-5#dir
+Directory of flash:/c2960-lanbasek9-mz.122-44.SE6/
+
+    7  drwx        4672   Mar 1 1993 00:04:50 +00:00  html
+  546  -rwx     7075041   Mar 1 1993 00:06:45 +00:00  c2960-lanbasek9-mz.122-44.SE6.bin
+  547  -rwx         525   Mar 1 1993 00:06:45 +00:00  info
+
+32514048 bytes total (22089728 bytes free)
+2960SW-5#copy flash:
+% Incomplete command.
+
+2960SW-5#copy flash:  ftp
+Source filename [/c2960-lanbasek9-mz.122-44.SE6/ios.bin]? c2960-lanbasek9-mz.122-44.SE6.bin
+Address or name of remote host []? 172.168 .77.10
+Destination filename [c2960-lanbasek9-mz.122-44.SE6.bin]? 
+Writing c2960-lanbasek9-mz.122-44.SE6.bin !!!!!!!!!!!!!!!!!!!!!!!!!!!!
+7075041 bytes copied in 4.731 secs (1495464 bytes/sec)
+2960SW-5#
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+2960SW-5 con0 is now available
+
+
+
+
+
+Press RETURN to get started.
+
+
+
+
+
+
+
+
+
+
+
+
+Jul 29 10:51:39.019: %SYS-7-NV_BLOCK_INIT: Initialized the geometry of nvram
+Jul 29 10:51:39.019: %EXPRESS_SETUP-6-CONFIG_IS_RESET: The configuration is reset and the system will now reboot
+Jul 29 10:51:40.026: %SYS-5-RELOAD: Reload requested by Hulc LED Process. Reload Reason: Reason unspecified.
+Boot Sector Filesystem (bs) installed, fsid: 2
+Base ethernet MAC Address: 00:26:98:63:eb:00
+Xmodem file system is available.
+The password-recovery mechanism is enabled.
+Initializing Flash...
+flashfs[0]: 530 files, 19 directories
+flashfs[0]: 0 orphaned files, 0 orphaned directories
+flashfs[0]: Total bytes: 32514048
+flashfs[0]: Bytes used: 10423296
+flashfs[0]: Bytes available: 22090752
+flashfs[0]: flashfs fsck took 10 seconds.
+...done Initializing Flash.
+done.
+Loading "flash:c2960-lanbasek9-mz.122-44.SE6/c2960-lanbasek9-mz.122-44.SE6.bin"...@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+File "flash:c2960-lanbasek9-mz.122-44.SE6/c2960-lanbasek9-mz.122-44.SE6.bin" uncompressed and installed, entry point: 0x3000
+executing...
+
+              Restricted Rights Legend
+
+Use, duplication, or disclosure by the Government is
+subject to restrictions as set forth in subparagraph
+(c) of the Commercial Computer Software - Restricted
+Rights clause at FAR sec. 52.227-19 and subparagraph
+(c) (1) (ii) of the Rights in Technical Data and Computer
+Software clause at DFARS sec. 252.227-7013.
+
+           cisco Systems, Inc.
+           170 West Tasman Drive
+           San Jose, California 95134-1706
+
+
+
+Cisco IOS Software, C2960 Software (C2960-LANBASEK9-M), Version 12.2(44)SE6, RELEASE SOFTWARE (fc1)
+Copyright (c) 1986-2009 by Cisco Systems, Inc.
+Compiled Mon 09-Mar-09 18:10 by gereddy
+Image text-base: 0x00003000, data-base: 0x01100000
+
+Initializing flashfs...
+
+flashfs[1]: 530 files, 19 directories
+flashfs[1]: 0 orphaned files, 0 orphaned directories
+flashfs[1]: Total bytes: 32514048
+flashfs[1]: Bytes used: 10423296
+flashfs[1]: Bytes available: 22090752
+flashfs[1]: flashfs fsck took 2 seconds.
+flashfs[1]: Initialization complete....done Initializing flashfs.
+
+Checking for Bootloader upgrade.. not needed
+
+POST: CPU MIC register Tests : Begin
+POST: CPU MIC register Tests : End, Status Passed
+
+POST: PortASIC Memory Tests : Begin
+POST: PortASIC Memory Tests : End, Status Passed
+
+POST: CPU MIC interface Loopback Tests : Begin
+POST: CPU MIC interface Loopback Tests : End, Status Passed
+
+POST: PortASIC RingLoopback Tests : Begin
+POST: PortASIC RingLoopback Tests : End, Status Passed
+
+POST: PortASIC CAM Subsystem Tests : Begin
+POST: PortASIC CAM Subsystem Tests : End, Status Passed
+
+POST: PortASIC Port Loopback Tests : Begin
+POST: PortASIC Port Loopback Tests : End, Status Passed
+
+Waiting for Port download...Complete
+
+
+This product contains cryptographic features and is subject to United
+States and local country laws governing import, export, transfer and
+use. Delivery of Cisco cryptographic products does not imply
+third-party authority to import, export, distribute or use encryption.
+Importers, exporters, distributors and users are responsible for
+compliance with U.S. and local country laws. By using this product you
+agree to comply with applicable laws and regulations. If you are unable
+to comply with U.S. and local laws, return this product immediately.
+
+A summary of U.S. laws governing Cisco cryptographic products may be found at:
+http://www.cisco.com/wwl/export/crypto/tool/stqrg.html
+
+If you require further assistance please contact us by sending email to
+export@cisco.com.
+
+cisco WS-C2960-24TC-L (PowerPC405) processor (revision J0) with 61440K/4088K bytes of memory.
+Processor board ID FOC1328V7XB
+Last reset from power-on
+1 Virtual Ethernet interface
+24 FastEthernet interfaces
+2 Gigabit Ethernet interfaces
+The password-recovery mechanism is enabled.
+
+64K bytes of flash-simulated non-volatile configuration memory.
+Base ethernet MAC Address       : 00:26:98:63:EB:00
+Motherboard assembly number     : 73-11437-06
+Power supply part number        : 341-0097-02
+Motherboard serial number       : FOC13290VHG
+Power supply serial number      : AZS132620PD
+Model revision number           : J0
+Motherboard revision number     : A0
+Model number                    : WS-C2960-24TC-L
+System serial number            : FOC1328V7XB
+Top Assembly Part Number        : 800-29826-03
+Top Assembly Revision Number    : C0
+Version ID                      : V06
+CLEI Code Number                : COMFT00BRA
+Hardware Board Revision Number  : 0x01
+
+
+Switch Ports Model              SW Version            SW Image                 
+------ ----- -----              ----------            ----------               
+*    1 26    WS-C2960-24TC-L    12.2(44)SE6           C2960-LANBASEK9-M        
+
+
+
+
+Press RETURN to get started!
+
+
+*Mar  1 00:00:25.451: %LINEPROTO-5-UPDOWN: Line protocol on Interface Vlan1, changed state to down
+*Mar  1 00:00:26.566: %SPANTREE-5-EXTENDED_SYSID: Extended SysId enabled for type vlan
+*Mar  1 00:00:47.479: %SYS-5-RESTART: System restarted --
+Cisco IOS Software, C2960 Software (C2960-LANBASEK9-M), Version 12.2(44)SE6, RELEASE SOFTWARE (fc1)
+Copyright (c) 1986-2009 by Cisco Systems, Inc.
+Compiled Mon 09-Mar-09 18:10 by gereddy
+*Mar  1 00:00:49.408: %LINK-3-UPDOWN: Interface FastEthernet0/2, changed state to up
+*Mar  1 00:00:49.417: %LINK-3-UPDOWN: Interface FastEthernet0/23, changed state to up
+*Mar  1 00:00:50.415: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/2, changed state to up
+*Mar  1 00:00:50.423: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/23, changed state to up
+
+
+         --- System Configuration Dialog ---
+
+Would you like to enter the initial configuration dialog? [yes/no]: no
+Switch>
+*Mar  1 00:01:09.197: %LINK-3-UPDOWN: Interface FastEthernet0/1, changed state to up
+*Mar  1 00:01:09.407: %LINK-3-UPDOWN: Interface FastEthernet0/24, changed state to up
+*Mar  1 00:01:10.204: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/1, changed state to up
+*Mar  1 00:01:10.413: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/24, changed state to up
+*Mar  1 00:01:20.052: %LINEPROTO-5-UPDOWN: Line protocol on Interface Vlan1, changed state to up
+*Mar  1 00:01:38.314: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/1, changed state to down
+*Mar  1 00:01:38.322: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/24, changed state to down
+*Mar  1 00:01:39.312: %LINK-3-UPDOWN: Interface FastEthernet0/1, changed state to down
+*Mar  1 00:01:39.321: %LINK-3-UPDOWN: Interface FastEthernet0/24, changed state to down
+Switch>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Switch con0 is now available
+
+
+
+
+
+Press RETURN to get started.
+
+
+
+
+
+
+
+*Mar  1 00:16:26.500: %LINK-3-UPDOWN: Interface FastEthernet0/1, changed state to up
+*Mar  1 00:16:26.508: %LINK-3-UPDOWN: Interface FastEthernet0/24, changed state to up
+*Mar  1 00:16:27.506: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/1, changed state to up
+*Mar  1 00:16:27.515: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/24, changed state to up
+*Mar  1 00:16:45.299: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/1, changed state to down
+*Mar  1 00:16:45.307: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/24, changed state to down
+*Mar  1 00:16:46.297: %LINK-3-UPDOWN: Interface FastEthernet0/1, changed state to down
+*Mar  1 00:16:46.305: %LINK-3-UPDOWN: Interface FastEthernet0/24, changed state to down
+Switch>enable
+Switch#service password enc
+         ^
+% Invalid input detected at '^' marker.
+
+Switch#config t
+Enter configuration commands, one per line.  End with CNTL/Z.
+Switch(config)#service password enc
+                                ^
+% Invalid input detected at '^' marker.
+
+Switch(config)#service password enc
+% Ambiguous command:  "service password enc"
+Switch(config)#service password enc
+*Mar  1 00:18:14.587: %LINK-3-UPDOWN: Interface FastEthernet0/1, changed state to up
+*Mar  1 00:18:14.755: %LINK-3-UPDOWN: Interface FastEthernet0/24, changed state to up
+*Mar  1 00:18:15.594: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/1, changed state to up
+*Mar  1 00:18:15.761: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/24, changed state to up                    
+Switch(config)#service password-encryption
+Switch(config)#hostname somethingus           team6
+team6(config)#ip domain name team6.local
+team6(config)#enable password garbage
+team6(config)#enable secret rax123
+team6(config)#username racker priv 15 pass rax123
+team6(config)#no ip domain lookup
+team6(config)#clock set
+                     ^
+% Invalid input detected at '^' marker.
+
+team6(config)#clock set 11:15:00 29 July 0 2015
+                     ^
+% Invalid input detected at '^' marker.
+
+team6(config)#clock ?
+  summer-time  Configure summer (daylight savings) time
+  timezone     Configure time zone
+
+team6(config)#clock 
+% Incomplete command.
+
+team6(config)#exit
+team6#
+*Mar  1 00:21:29.018: %SYS-5-CONFIG_I: Configured from console by console
+team6#clock set 11:15:00 29 July 2015
+team6#
+*Jul 29 11:15:00.000: %SYS-6-CLOCKUPDATE: System clock has been updated from 00:21:39 UTC Mon Mar 1 1993 to 11:15:00 UTC Wed Jul 29 2015, configured from console by console.
+team6#banner MOTD
+       ^
+% Invalid input detected at '^' marker.
+
+team6#config t
+Enter configuration commands, one per line.  End with CNTL/Z.
+team6(config)#banner MOTD c Welcom  e to Wednesday c
+team6(config)#line con 0
+team6(config-line)#logging sync
+team6(config-line)#exec-timeout 28 7
+team6(config-line)#hist size 200
+team6(config-line)#passo word rax123
+team6(config-line)#login
+team6(config-line)#line vty6  0 4
+team6(config-line)#logging syncronou
+team6(config-line)#logging syncronous
+Translating "syncronous"
+                               ^
+% Invalid input detected at '^' marker.
+
+team6(config-line)#ling   ogging sync
+team6(config-line)#exec timeout 27
+                        ^
+% Invalid input detected at '^' marker.
+
+team6(config-line)#hist size         exec-ty imeout 27
+team6(config-line)#hit  ist size 29 00
+team6(config-line)#login local
+team6(config-line)#transport input ssh
+team6(config-line)#line vty 5 15
+team6(config-line)#login
+% Login disabled on line 6, until 'password' is set
+% Login disabled on line 7, until 'password' is set
+% Login disabled on line 8, until 'password' is set
+% Login disabled on line 9, until 'password' is set
+% Login disabled on line 10, until 'password' is set
+% Login disabled on line 11, until 'password' is set
+% Login disabled on line 12, until 'password' is set
+% Login disabled on line 13, until 'password' is set
+% Login disabled on line 14, until 'password' is set
+% Login disabled on line 15, until 'password' is set
+% Login disabled on line 16, until 'password' is set
+team6(config-line)#int range g0/1-2
+team6(config-if-range)#media-type f rj45
+team6(config-if-range)#spanning-tree p               exit
+team6(config)#spanning t  -tree protfast defaultotfast default ~otfast defaultootfast defaultrotfast defaultotfast default tfast default otfast default ortfast default
+%Warning: this command enables portfast by default on all interfaces. You
+ should now disable portfast explicitly on switched ports leading to hubs,
+ switches and bridges as they may create temporary bridging loops.
+
+team6(config)#no cdp run
+team6(config)#int range f0/1-24 , g0/11-2   -2
+team6(config-if-range)#speed 100
+team6(config-if-range)#duplex full
+Jul 29 11:21:46.092: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/1, changed state to down
+Jul 29 11:21:46.092: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/2, changed state to down
+Jul 29 11:21:46.126: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/23, changed state to down
+Jul 29 11:21:46.134: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/24, changed state to down
+Jul 29 11:21:46.134: %LINEPROTO-5-UPDOWN: Line protocol on Interface Vl
+team6(config-if-range)#duplex fullan1, changed state to down
+team6(config-if-range)#duplex full
+Jul 29 11:21:47.728: %LINEPROTO-5-UPDOWN: Line protocol on Interface Vlan1, changed state to up
+Jul 29 11:21:48.097: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/1, changed state to up
+Jul 29 11:21:48.097: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/2, changed state to up
+Jul 29 11:21:48.139: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/23, changed state to up
+Jul 29 11:21:48.139: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/24, cha
+team6(config-if-range)#duplex fullnged state to up
+team6(config-if-range)#duplex full
+team6(config-if-range)#
+Jul 29 11:21:53.793: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/23, changed state to down
+Jul 29 11:21:53.793: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/24, changed state to down
+Jul 29 11:21:53.826: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/1, changed state to down
+Jul 29 11:21:53.826: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/2, changed state to down
+Jul 29 11:21:53.826: %LINEPROTO-5-UPDOWN: Line protocol on Interface Vl
+team6(config-if-range)#an1, changed state to down
+Jul 29 11:21:54.791: %LINK-3-UPDOWN: Interface FastEthernet0/24, changed state to down
+Jul 29 11:21:54.825: %LINK-3-UPDOWN: Interface FastEthernet0/1, changed state to down
+team6(config-if-range)#
+Jul 29 11:21:55.680: %LINEPROTO-5-UPDOWN: Line protocol on Interface Vlan1, changed state to up
+Jul 29 11:21:55.798: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/23, changed state to up
+Jul 29 11:21:55.840: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/2, changed state to up
+team6(config-if-range)#
+Jul 29 11:21:57.006: %LINK-3-UPDOWN: Interface FastEthernet0/24, changed state to up
+Jul 29 11:21:57.048: %LINK-3-UPDOWN: Interface FastEthernet0/1, changed state to up
+Jul 29 11:21:58.012: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/24, changed state to up
+team6(config-if-range)#
+Jul 29 11:21:58.054: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/1, changed state to up
+team6(config-if-range)#sup   duplex full
+team6(config-if-range)#shutdown
+team6(config-if-range)#descrup
+Jul 29 11:22:12.894: %LINEPROTO-5-UPDOWN: Line protocol on Interface Vlan1, changed state to down
+Jul 29 11:22:13.825: %LINK-5-CHANGED: Interface FastEthernet0/1, changed state to administratively down
+Jul 29 11:22:13.833: %LINK-5-CHANGED: Interface FastEthernet0/2, changed state to administratively down
+Jul 29 11:22:13.842: %LINK-5-CHANGED: Interface FastEthernet0/3, changed state to administratively down
+Jul 29 11:22:13.842: %LINK-5-CHANGED: Interface FastEthernet0/4, changed state to administrativ
+team6(config-if-range)#descrup  ely down
+Jul 29 11:22:13.842: %LINK-5-CHANGED: Interface FastEthernet0/5, changed state to administratively down
+Jul 29 11:22:13.842: %LINK-5-CHANGED: Interface FastEthernet0/6, changed state to administratively down
+Jul 29 11:22:13.842: %LINK-5-CHANGED: Interface FastEthernet0/7, changed state to administratively down
+Jul 29 11:22:13.850: %LINK-5-CHANGED: Interface FastEthernet0/8, changed state to administratively down
+Jul 29 11:22:13.850: %LINK-5-CHANGED: Interface FastEthernet0/9, changed state to
+team6(config-if-range)#descr administratively down
+Jul 29 11:22:13.850: %LINK-5-CHANGED: Interface FastEthernet0/10, changed state to administratively down
+Jul 29 11:22:13.850: %LINK-5-CHANGED: Interface FastEthernet0/11, changed state to administratively down
+Jul 29 11:22:13.850: %LINK-5-CHANGED: Interface FastEthernet0/12, changed state to administratively down
+Jul 29 11:22:13.858: %LINK-5-CHANGED: Interface FastEthernet0/13, changed state to administratively down
+Jul 29 11:22:13.858: %LINK-5-CHANGED: Interface FastEthernet0/1
+team6(config-if-range)#descr4, changed state to administratively down
+Jul 29 11:22:13.858: %LINK-5-CHANGED: Interface FastEthernet0/15, changed state to administratively down
+Jul 29 11:22:13.858: %LINK-5-CHANGED: Interface FastEthernet0/16, changed state to administratively down
+Jul 29 11:22:13.858: %LINK-5-CHANGED: Interface FastEthernet0/17, changed state to administratively down
+Jul 29 11:22:13.867: %LINK-5-CHANGED: Interface FastEthernet0/18, changed state to administratively down
+Jul 29 11:22:13.867: %LINK-5-CHANGED: Interf
+team6(config-if-range)#descrace FastEthernet0/19, changed state to administratively down
+Jul 29 11:22:13.867: %LINK-5-CHANGED: Interface FastEthernet0/20, changed state to administratively down
+Jul 29 11:22:13.867: %LINK-5-CHANGED: Interface FastEthernet0/21, changed state to administratively down
+Jul 29 11:22:13.875: %LINK-5-CHANGED: Interface FastEthernet0/22, changed state to administratively down
+Jul 29 11:22:13.875: %LINK-5-CHANGED: Interface FastEthernet0/23, changed state to administratively down
+Jul 29 11:22:13.883: %LIN
+team6(config-if-range)#descrK-5-CHANGED: Interface FastEthernet0/24, changed state to administratively down
+Jul 29 11:22:13.892: %LINK-5-CHANGED: Interface GigabitEthernet0/1, changed state to administratively down
+Jul 29 11:22:13.892: %LINK-5-CHANGED: Interface GigabitEthernet0/2, changed state to administratively down
+Jul 29 11:22:14.831: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/1, changed state to down
+Jul 29 11:22:14.840: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/2, changed state to do
+team6(config-if-range)#descrwn
+Jul 29 11:22:14.882: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/23, changed state to down
+Jul 29 11:22:14.890: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/24, changed state to down
+team6(config-if-range)#description unused port
+team6(config-if-range)#switchpportort port mode access
+team6(config-if-range)#switchport access vlan 666
+% Access VLAN does not exist. Creating vlan 666
+team6(config-if-range)#switchport nonegotiate
+team6(config-if-range)#no cdp enable
+team6(config-if-range)#int f0/1
+% Command exited out of interface range and its sub-modes.
+  Not executing the command for second and later interfaces
+team6(config-if)#description enabled       vlan 111 to router
+team6(config-if)#no shu8t  t
+team6(config-if)#
+Jul 29 11:25:04.919: %LINK-3-UPDOWN: Interface FastEthernet0/1, changed state to up
+Jul 29 11:25:05.925: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/1, changed state to up
+team6(config-if)#int f0/2  
+team6(config-if)#description pc 111
+team6(config-if)#no sut  hut
+team6(config-if)#int 
+Jul 29 11:25:42.357: %LINK-3-UPDOWN: Interface FastEthernet0/2, changed state to up
+Jul 29 11:25:43.364: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/2, changed state to up
+team6(config-if)#int 23  f0/23
+team6(config-if)#description pc 222
+team6(config-if)#no shut
+team6(config-if)#int f0/2
+Jul 29 11:26:03.916: %LINK-3-UPDOWN: Interface FastEthernet0/23, changed state to up
+Jul 29 11:26:04.922: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/23, changed state to up
+team6(config-if)#int f0/24
+team6(config-if)#description vlan 222 to router
+team6(config-if)#no shut
+team6(config-if)#
+Jul 29 11:26:23.285: %LINK-3-UPDOWN: Interface FastEthernet0/24, changed state to up
+Jul 29 11:26:24.292: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/24, changed state to up
+team6(config-if)#int range f0/1-2
+team6(config-if-range)#w switchport access vlan 111
+% Access VLAN does not exist. Creating vlan 111
+team6(config-if-range)#int range f0/23-24
+team6(config-if-range)#switchport access vlan 222
+% Access VLAN does not exist. Creating vlan 222
+team6(config-if-range)#exit
+team6(config)#int vl
+team6(config)#int vlan 
+team6(config)#int vlan 111
+team6(config-if)#
+Jul 29 11:28:44.423: %LINEPROTO-5-UPDOWN: Line protocol on Interface Vlan111, changed state to up
+team6(config-if)#ip add 192.6.111.5 255.255.255.0
+team6(config-if)#cri ypto key gen rsa
+The name for the keys will be: team6.team6.local
+Choose the size of the key modulus in the range of 360 to 2048 for your
+  General Purpose Keys. Choosing a key modulus greater than 512 may take
+  a few minutes.
+
+How many bits in the modulus [512]: 2048
+% Generating 2048 bit RSA keys, keys will be non-exportable...[OK]
+
+Jul 29 11:30:37.837: %SSH-5-ENABLED: SSH 1.99 has been enabled
+team6(config)#ip ssh ver 2
+team6(config)#no ip he ttp v server
+team6(config)#no ip http secure-server
+team6(config)#
+Jul 29 11:33:47.688: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/1, changed state to down
+Jul 29 11:33:47.697: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/24, changed state to down
+team6(config)#
+Jul 29 11:33:48.687: %LINK-3-UPDOWN: Interface FastEthernet0/1, changed state to down
+Jul 29 11:33:48.695: %LINK-3-UPDOWN: Interface FastEthernet0/24, changed state to down
+team6(config)#hostname team6switch
+team6switch(config)#sp
+team6switch(config)#spanning-tree pr
+team6switch(config)#spanning-tree pr or
+team6switch(config)#spanning-tree portfast ?
+  bpdufilter  Enable portfast bdpu filter on this switch
+  bpduguard   Enable portfast bpdu guard on this switch
+  default     Enable portfast by default on all access ports
+
+team6switch(config)#spanning-tree portfast bpdu
+team6switch(config)#spanning-tree portfast bpdugua
+team6switch(config)#spanning-tree portfast bpduguard 
+team6switch(config)#
+Jul 29 11:56:27.767: %LINK-3-UPDOWN: Interface FastEthernet0/24, changed state to up
+Jul 29 11:56:28.774: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/24, changed state to up
+team6switch(config)#
+Jul 29 11:56:35.317: %LINK-3-UPDOWN: Interface FastEthernet0/1, changed state to up
+Jul 29 11:56:36.323: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/1, changed state to up
+team6switch(config)#
+Jul 29 12:00:09.537: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/23, changed state to down
+team6switch(config)#
+Jul 29 12:00:10.535: %LINK-3-UPDOWN: Interface FastEthernet0/23, changed state to down
+team6switch(config)#
+Jul 29 12:01:41.887: %LINK-3-UPDOWN: Interface FastEthernet0/23, changed state to up
+Jul 29 12:01:42.893: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/23, changed state to up
+team6switch(config)#
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+team6switch con0 is now available
+
+
+
+
+
+Press RETURN to get started.
+
+
+
+Jul 29 12:09:15.576: %SYS-5-CONFIG_I: Configured from console by console
+Jul 29 12:34:18.110: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/2, changed state to down
+Jul 29 12:34:20.115: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/2, changed state to up
+Jul 29 13:03:16.834: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/23, changed state to down
+Jul 29 13:03:17.832: %LINK-3-UPDOWN: Interface FastEthernet0/23, changed state to down
+Jul 29 13:03:20.684: %LINK-3-UPDOWN: Interface FastEthernet0/23, changed state to up
+Jul 29 13:03:23.704: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/23, changed state to up
+Jul 29 13:03:26.900: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/23, changed state to down Wel
+
+User Access Verification
+
+Password: 
+Jul 29 13:03:28.905: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/23, changed state to up
+team6switch>enable
+Password: 
+team6switch#conf t
+Enter configuration commands, one per line.  End with CNTL/Z.
+team6switch(config)#int vlan 111
+team6switch(config-if)#ip ?
+Interface IP configuration subcommands:
+  access-group        Specify access control for packets
+  accounting          Enable IP accounting on this interface
+  address             Set the IP address of an interface
+  admission           Apply Network Admission Control
+  broadcast-address   Set the broadcast address of an interface
+  dhcp                Configure DHCP parameters for this interface
+  directed-broadcast  Enable forwarding of directed broadcasts
+  helper-address      Specify a destination address for UDP broadcasts
+  information-reply   Enable sending ICMP Information Reply messages
+  local-proxy-arp     Enable local-proxy ARP
+  mask-reply          Enable sending ICMP Mask Reply messages
+  mtu                 Set IP Maximum Transmission Unit
+  probe               Enable HP Probe support
+  proxy-arp           Enable proxy ARP
+  rarp-server         Enable RARP server for static arp entries
+  redirects           Enable sending ICMP Redirect messages
+  route-cache         Enable fast-switching cache for outgoing packets
+  security            DDN IP Security Option
+  sticky-arp          Allow the creation of sticky ARP entries
+  tcp                 TCP interface commands
+  unnumbered          Enable IP processing without an explicit address
+ --More--           unreachables        Enable sending ICMP Unreachable messages
+ --More--           verify              Enable per packet validation
+
+team6switch(config-if)#ip ?
+Interface IP configuration subcommands:
+  access-group        Specify access control for packets
+  accounting          Enable IP accounting on this interface
+  address             Set the IP address of an interface
+  admission           Apply Network Admission Control
+  broadcast-address   Set the broadcast address of an interface
+  dhcp                Configure DHCP parameters for this interface
+  directed-broadcast  Enable forwarding of directed broadcasts
+  helper-address      Specify a destination address for UDP broadcasts
+  information-reply   Enable sending ICMP Information Reply messages
+  local-proxy-arp     Enable local-proxy ARP
+  mask-reply          Enable sending ICMP Mask Reply messages
+  mtu                 Set IP Maximum Transmission Unit
+  probe               Enable HP Probe support
+  proxy-arp           Enable proxy ARP
+  rarp-server         Enable RARP server for static arp entries
+  redirects           Enable sending ICMP Redirect messages
+  route-cache         Enable fast-switching cache for outgoing packets
+  security            DDN IP Security Option
+  sticky-arp          Allow the creation of sticky ARP entries
+  tcp                 TCP interface commands
+  unnumbered          Enable IP processing without an explicit address
+ --More--         
+team6switch(config-if)#ip    ?
+Interface configuration commands:
+  arp                     Set arp type (arpa, probe, snap) or timeout
+  bandwidth               Set bandwidth informational parameter
+  carrier-delay           Specify delay for interface transitions
+  cdp                     CDP interface subcommands
+  dampening               Enable event dampening
+  default                 Set a command to its defaults
+  delay                   Specify interface throughput delay
+  description             Interface specific description
+  exit                    Exit from interface configuration mode
+  help                    Description of the interactive help system
+  hold-queue              Set hold queue depth
+  ip                      Interface Internet Protocol config commands
+  link                    Configure Link
+  load-interval           Specify interval for load calculation for an
+                          interface
+  logging                 Configure logging for interface
+  loopback                Configure internal loopback on an interface
+  macro                   Command macro
+  max-reserved-bandwidth  Maximum Reservable Bandwidth on an Interface
+  no                      Negate a command or set its defaults
+  ntp                     Configure NTP
+ --More--           service-policy          Configure QoS Service Policy
+  shutdown                Shutdown the selected interface
+  snmp                    Modify SNMP interface parameters
+  source                  Get config from another source
+  spanning-tree           Spanning Tree Subsystem
+  standby                 HSRP interface configuration commands
+  timeout                 Define timeout values for this interface
+
+team6switch(config-if)#exit
+team6switch(config)#?
+Configure commands:
+  aaa                         Authentication, Authorization and Accounting.
+  access-list                 Add an access list entry
+  alias                       Create command alias
+  archive                     Archive the configuration
+  arp                         Set a static ARP entry
+  banner                      Define a login banner
+  beep                        Configure BEEP (Blocks Extensible Exchange
+                              Protocol)
+  boot                        Modify system boot parameters
+  buffers                     Adjust system buffer pool parameters
+  cdp                         Global CDP configuration subcommands
+  class-map                   Configure QoS Class Map
+  clock                       Configure time-of-day clock
+  cluster                     Cluster configuration commands
+  cns                         CNS agents
+  configuration               Configuration access
+  control-plane               Configure control plane services
+  crypto                      Encryption module
+  default                     Set a command to its defaults
+  default-value               Default character-bits values
+  define                      interface range macro definition
+ --More--           do                          To run exec commands in config mode
+  dot1x                       IEEE 802.1X Global Configuration Commands
+  downward-compatible-config  Generate a configuration compatible with older
+                              software
+  eap                         EAP Global Configuration Commands
+  enable                      Modify enable password parameters
+  end                         Exit from configure mode
+  errdisable                  Error disable
+  exception                   Exception handling
+  exit                        Exit from configure mode
+  fallback                    Fallback configuration commands
+  file                        Adjust file system parameters
+  help                        Description of the interactive help system
+  hostname                    Set system's network name
+  hw-module                   Control of individual components in the system
+  identity                    Identity Configuration Commands
+  interface                   Select an interface to configure
+  ip                          Global IP configuration subcommands
+  ixi                         IXI Config command
+  key                         Key management
+  kron                        Kron interval Facility
+  lacp                        LACP configuration
+  li-view                     LI View
+ --More--           line                        Configure a terminal line
+  link                        Enable Link State Tracking feature
+  lldp                        Global LLDP configuration subcommands
+  location                    Global location configuration commands
+  logging                     Modify message logging facilities
+  login                       Enable secure login checking
+  mac                         Global MAC configuration subcommands
+  macro                       Create a command macro
+  map-class                   Configure static map class
+  map-list                    Configure static map list
+  memory                      Configure memory management
+  mls                         mls global commands
+  monitor                     Monitoring different system events
+  mvr                         Enable/Disable MVR on the switch
+  netconf                     Configure NETCONF
+  no                          Negate a command or set its defaults
+  ntp                         Configure NTP
+  parser                      Configure parser
+  password                    Configure encryption password (key)
+  platform                    platform specific config commands
+  policy-manager              Policy Manager configuration commands
+  policy-map                  Configure QoS Policy Map
+  port-channel                EtherChannel configuration
+ --More--           power                       Power configure
+  priority-list               Build a priority list
+  privilege                   Command privilege parameters
+  process                     Configure process
+  process-max-time            Maximum time for process to run before
+                              voluntarily relinquishing processor
+  queue-list                  Build a custom queue list
+  regexp                      regexp commands
+  resource                    Configure Resource settings
+  rmon                        Remote Monitoring
+  sasl                        Configure SASL
+  scheduler                   Scheduler parameters
+  sdm                         Switch database management
+  service                     Modify use of network based services
+  setup                       Configure setup options
+  shutdown                    Shutdown system elements
+  snmp                        Modify non engine SNMP parameters
+  snmp-server                 Modify SNMP engine parameters
+  spanning-tree               Spanning Tree Subsystem
+  stackmaker                  Specify stack name and add its member
+  standby                     Global HSRP configuration commands
+  system                      Set the system configuration
+  table-map                   Configure Table Map
+ --More--           tacacs-server               Modify TACACS query parameters
+  template                    Select a template to configure
+  tftp-server                 Provide TFTP service for netload requests
+  time-range                  Define time range entries
+  udld                        Configure global UDLD setting
+  username                    Establish User Name Authentication
+  vlan                        Vlan commands
+  vmps                        VMPS settings
+  vtp                         Configure global VTP state
+
+team6switch(config)#ip def
+team6switch(config)#ip default-gateway 192.6.111.1
+team6switch(config)#exit
+team6switch#show ru
+Jul 29 13:06:22.079: %SYS-5-CONFIG_I: Configured from console by console
+team6switch#show run
+Building configuration...
+
+Current configuration : 5847 bytes
+!
+! Last configuration change at 13:06:22 UTC Wed Jul 29 2015
+!
+version 12.2
+no service pad
+service timestamps debug datetime msec
+service timestamps log datetime msec
+service password-encryption
+!
+hostname team6switch
+!
+boot-start-marker
+boot-end-marker
+!
+enable secret 5 $1$1U3Q$e7ducE5m.pcRRQTpLE.Ub0
+enable password 7 01140716590A010A
+!
+username racker privilege 15 password 7 08334D56584B56
+no aaa new-model
+system mtu routing 1500
+ip subnet-zero
+ --More--         !
+no ip domain-lookup
+ip domain-name team6.local
+!
+!
+!
+!
+!
+!
+!
+!
+spanning-tree mode pvst
+spanning-tree portfast default
+spanning-tree portfast bpduguard default
+spanning-tree extend system-id
+!
+vlan internal allocation policy ascending
+!
+ip ssh version 2
+!
+!
+interface FastEthernet0/1
+ description vlan 111 to router
+ --More--          switchport access vlan 111
+ switchport mode access
+ switchport nonegotiate
+ speed 100
+ duplex full
+ no cdp enable
+!
+interface FastEthernet0/2
+ description pc 111
+ switchport access vlan 111
+ switchport mode access
+ switchport nonegotiate
+ speed 100
+ duplex full
+ no cdp enable
+!
+interface FastEthernet0/3
+ description unused port
+ switchport access vlan 666
+ switchport mode access
+ switchport nonegotiate
+ shutdown
+ speed 100
+ --More--         
+team6switch#show ip int
+Vlan1 is up, line protocol is down
+  Internet protocol processing disabled
+Vlan111 is up, line protocol is up
+  Internet address is 192.6.111.5/24
+  Broadcast address is 255.255.255.255
+  Address determined by setup command
+  MTU is 1500 bytes
+  Helper address is not set
+  Directed broadcast forwarding is disabled
+  Outgoing access list is not set
+  Inbound  access list is not set
+  Proxy ARP is enabled
+  Local Proxy ARP is disabled
+  Security level is default
+  Split horizon is enabled
+  ICMP redirects are always sent
+  ICMP unreachables are always sent
+  ICMP mask replies are never sent
+  IP fast switching is disabled
+  IP CEF switching is disabled
+  IP Null turbo vector
+  IP Null turbo vector
+  IP multicast fast switching is disabled
+ --More--         
+team6switch#show    cont f t
+Enter configuration commands, one per line.  End with CNTL/Z.
+team6switch(config)#ip 
+team6switch(config)#ip e
+team6switch(config)#ip e de
+team6switch(config)#ip de
+team6switch(config)#ip de
+team6switch(config)#ip de  exitip default-gateway 192.6.111.1
+Jul 29 13:08:02.826: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/2, changed state to down
+team6switch(config)#ip default-gateway 192.6.111.1
+Jul 29 13:08:03.825: %LINK-3-UPDOWN: Interface FastEthernet0/2, changed state to down
+team6switch(config)#ip default-gateway 192.6.111.1
+Jul 29 13:08:07.600: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/2, changed state to up
+team6switch(config)#ip default-gateway 192.6.111.1
+Jul 29 13:08:09.403: %LINK-3-UPDOWN: Interface FastEthernet0/2, changed state to up
+team6switch(config)#ip default-gateway 192.6.111.1
+Jul 29 13:08:12.851: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/2, changed state to down
+team6switch(config)#ip default-gateway 192.6.111.1
+Jul 29 13:08:14.856: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/2, changed state to up
+team6switch(config)#ip default-gateway 192.6.111.1
+Jul 29 13:22:35.418: %SYS-5-CONFIG_I: Configured from console by racker on vty0 (192.6.222.10)
+team6switch(config)#ip default-gateway 192.6.111.1
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+team6switch con0 is now available
+
+
+
+
+
+Press RETURN to get started.
+
+
+
+
+
+
+
+
+
+
+Jul 29 13:34:41.058: %SYS-5-CONFIG_I: Configured from console by console
+Jul 29 14:40:42.661: %SYS-5-CONFIG_I: Configured from console by racker on vty1 (192.16.222.10)
+Jul 29 14:45:02.499: %SYS-5-CONFIG_I: Configured from console by racker on vty1 (192.16.222.10)
+Jul 29 15:16:32.561: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/2, changed state to down
+Jul 29 15:16:33.559: %LINK-3-UPDOWN: Interface FastEthernet0/2, changed state to down
+Jul 29 15:16:35.572: %LINK-3-UPDOWN: Interface FastEthernet0/2, changed state to up
+Jul 29 15:16:36.579: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/2, changed state to up
+Jul 29 15:16:37.888: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/2, changed state to down
+Jul 29 15:16:38.886: %LINK-3-UPDOWN: Interface FastEthernet0/2, changed state to down
+Jul 29 15:16:42.703: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/2, changed state to up
+Jul 29 15:16:44.045: %LINK-3-UPDOWN: Interface FastEthernet0/2, changed state to up
