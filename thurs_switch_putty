@@ -1,0 +1,1398 @@
+=~=~=~=~=~=~=~=~=~=~=~= PuTTY log 2015.07.30 08:34:58 =~=~=~=~=~=~=~=~=~=~=~=
+
+Team 6 SW
+
+        .--.
+       |o_o |
+       |:_/ |
+      //   \ \
+     (|     | )
+    /'\_   _/`\
+    \___)=(___/
+
+
+
+User Access Verification
+
+Password: 
+team6switch>enable
+Password: 
+team6switch#erase start
+Erasing the nvram filesystem will remove all configuration files! Continue? [confirm]
+[OK]
+Erase of nvram: complete
+team6switch#res
+Jul 30 08:34:33.242: %SYS-7-NV_BLOCK_INIT: Initialized the geometry of nvram
+team6switch#reset
+Translating "reset"
+% Unknown command or computer name, or unable to find computer address
+team6switch#reload
+
+System configuration has been modified. Save? [yes/no]: no
+Proceed with reload? [confirm]
+
+Jul 30 08:34:48.032: %SYS-5-RELOAD: Reload requested by console. Reload Reason: Reload command.
+Boot Sector Filesystem (bs) installed, fsid: 2
+Base ethernet MAC Address: 00:26:98:63:eb:00
+Xmodem file system is available.
+The password-recovery mechanism is enabled.
+Initializing Flash...
+flashfs[0]: 532 files, 19 directories
+flashfs[0]: 0 orphaned files, 0 orphaned directories
+flashfs[0]: Total bytes: 32514048
+flashfs[0]: Bytes used: 10425856
+flashfs[0]: Bytes available: 22088192
+flashfs[0]: flashfs fsck took 10 seconds.
+...done Initializing Flash.
+done.
+Loading "flash:c2960-lanbasek9-mz.122-44.SE6/c2960-lanbasek9-mz.122-44.SE6.bin"...@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+File "flash:c2960-lanbasek9-mz.122-44.SE6/c2960-lanbasek9-mz.122-44.SE6.bin" uncompressed and installed, entry point: 0x3000
+executing...
+
+              Restricted Rights Legend
+
+Use, duplication, or disclosure by the Government is
+subject to restrictions as set forth in subparagraph
+(c) of the Commercial Computer Software - Restricted
+Rights clause at FAR sec. 52.227-19 and subparagraph
+(c) (1) (ii) of the Rights in Technical Data and Computer
+Software clause at DFARS sec. 252.227-7013.
+
+           cisco Systems, Inc.
+           170 West Tasman Drive
+           San Jose, California 95134-1706
+
+
+
+Cisco IOS Software, C2960 Software (C2960-LANBASEK9-M), Version 12.2(44)SE6, RELEASE SOFTWARE (fc1)
+Copyright (c) 1986-2009 by Cisco Systems, Inc.
+Compiled Mon 09-Mar-09 18:10 by gereddy
+Image text-base: 0x00003000, data-base: 0x01100000
+
+Initializing flashfs...
+
+flashfs[1]: 532 files, 19 directories
+flashfs[1]: 0 orphaned files, 0 orphaned directories
+flashfs[1]: Total bytes: 32514048
+flashfs[1]: Bytes used: 10425856
+flashfs[1]: Bytes available: 22088192
+flashfs[1]: flashfs fsck took 2 seconds.
+flashfs[1]: Initialization complete....done Initializing flashfs.
+
+Checking for Bootloader upgrade.. not needed
+
+POST: CPU MIC register Tests : Begin
+POST: CPU MIC register Tests : End, Status Passed
+
+POST: PortASIC Memory Tests : Begin
+POST: PortASIC Memory Tests : End, Status Passed
+
+POST: CPU MIC interface Loopback Tests : Begin
+POST: CPU MIC interface Loopback Tests : End, Status Passed
+
+POST: PortASIC RingLoopback Tests : Begin
+POST: PortASIC RingLoopback Tests : End, Status Passed
+
+POST: PortASIC CAM Subsystem Tests : Begin
+POST: PortASIC CAM Subsystem Tests : End, Status Passed
+
+POST: PortASIC Port Loopback Tests : Begin
+POST: PortASIC Port Loopback Tests : End, Status Passed
+
+Waiting for Port download...Complete
+
+
+This product contains cryptographic features and is subject to United
+States and local country laws governing import, export, transfer and
+use. Delivery of Cisco cryptographic products does not imply
+third-party authority to import, export, distribute or use encryption.
+Importers, exporters, distributors and users are responsible for
+compliance with U.S. and local country laws. By using this product you
+agree to comply with applicable laws and regulations. If you are unable
+to comply with U.S. and local laws, return this product immediately.
+
+A summary of U.S. laws governing Cisco cryptographic products may be found at:
+http://www.cisco.com/wwl/export/crypto/tool/stqrg.html
+
+If you require further assistance please contact us by sending email to
+export@cisco.com.
+
+cisco WS-C2960-24TC-L (PowerPC405) processor (revision J0) with 61440K/4088K bytes of memory.
+Processor board ID FOC1328V7XB
+Last reset from power-on
+1 Virtual Ethernet interface
+24 FastEthernet interfaces
+2 Gigabit Ethernet interfaces
+The password-recovery mechanism is enabled.
+
+64K bytes of flash-simulated non-volatile configuration memory.
+Base ethernet MAC Address       : 00:26:98:63:EB:00
+Motherboard assembly number     : 73-11437-06
+Power supply part number        : 341-0097-02
+Motherboard serial number       : FOC13290VHG
+Power supply serial number      : AZS132620PD
+Model revision number           : J0
+Motherboard revision number     : A0
+Model number                    : WS-C2960-24TC-L
+System serial number            : FOC1328V7XB
+Top Assembly Part Number        : 800-29826-03
+Top Assembly Revision Number    : C0
+Version ID                      : V06
+CLEI Code Number                : COMFT00BRA
+Hardware Board Revision Number  : 0x01
+
+
+Switch Ports Model              SW Version            SW Image                 
+------ ----- -----              ----------            ----------               
+*    1 26    WS-C2960-24TC-L    12.2(44)SE6           C2960-LANBASEK9-M        
+
+
+
+
+Press RETURN to get started!
+
+
+*Mar  1 00:00:25.492: %LINEPROTO-5-UPDOWN: Line protocol on Interface Vlan1, changed state to down
+*Mar  1 00:00:26.608: %SPANTREE-5-EXTENDED_SYSID: Extended SysId enabled for type vlan
+*Mar  1 00:00:47.529: %SYS-5-RESTART: System restarted --
+Cisco IOS Software, C2960 Software (C2960-LANBASEK9-M), Version 12.2(44)SE6, RELEASE SOFTWARE (fc1)
+Copyright (c) 1986-2009 by Cisco Systems, Inc.
+Compiled Mon 09-Mar-09 18:10 by gereddy
+*Mar  1 00:00:49.459: %LINK-3-UPDOWN: Interface FastEthernet0/2, changed state to up
+*Mar  1 00:00:49.467: %LINK-3-UPDOWN: Interface FastEthernet0/23, changed state to up
+*Mar  1 00:00:50.465: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/1, changed state to up
+*Mar  1 00:00:50.465: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/2, changed state to up
+*Mar  1 00:00:50.474: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/23, changed state to up
+*Mar  1 00:00:50.474: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/24, changed state to up
+*Mar  1 00:00:51.707: %LINK-3-UPDOWN: Interface FastEthernet0/1, changed state to up
+*Mar  1 00:00:52.084: %LINK-3-UPDOWN: Interface FastEthernet0/24, changed state to up
+*Mar  1 00:01:16.294: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/1, changed state to down
+*Mar  1 00:01:16.302: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/24, changed state to down
+*Mar  1 00:01:17.301: %LINK-3-UPDOWN: Interface FastEthernet0/24, changed state to down
+
+
+         --- System Configuration Dialog ---
+
+Would you like to enter the initial configuration dialog? [yes/no]: no
+*Mar  1 00:01:19.305: %LINK-3-UPDOWN: Interface FastEthernet0/24, changed state to up
+Switch>
+*Mar  1 00:01:20.094: %LINEPROTO-5-UPDOWN: Line protocol on Interface Vlan1, changed state to up
+*Mar  1 00:01:20.312: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/24, changed state to up
+*Mar  1 00:01:20.354: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/1, changed state to up
+*Mar  1 00:01:23.550: %LINK-5-CHANGED: Interface Vlan1, changed state to administratively down
+*Mar  1 00:01:24.557: %LINEPROTO-5-UPDOWN: Line protocol on Interface Vlan1, changed state to down
+*Mar  1 00:01:39.992: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/24, changed state to down
+*Mar  1 00:01:40.034: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/1, changed state to down
+*Mar  1 00:01:40.990: %LINK-3-UPDOWN: Interface FastEthernet0/24, changed state to down
+*Mar  1 00:01:41.032: %LINK-3-UPDOWN: Interface FastEthernet0/1, changed state to down
+Switch>enable
+Switch#conf t
+Enter configuration commands, one per line.  End with CNTL/Z.
+Switch(config)#lin con 0
+Switch(config-line)#logg
+Switch(config-line)#logging syn
+Switch(config-line)#logging synchronous 
+Switch(config-line)#exit
+Switch(config)#
+*Mar  1 00:03:08.693: %LINK-3-UPDOWN: Interface FastEthernet0/1, changed state to up
+*Mar  1 00:03:08.777: %LINK-3-UPDOWN: Interface FastEthernet0/24, changed state to up
+*Mar  1 00:03:09.699: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/1, changed state to up
+Switch(config)#
+*Mar  1 00:03:09.783: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/24, changed state to up
+Switch(config)#exit
+Switch#
+*Mar  1 00:03:12.703: %SYS-5-CONFIG_I: Configured from console by console
+Switch# 
+*Mar  1 00:08:24.910: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/1, changed state to down
+*Mar  1 00:08:25.916: %LINK-3-UPDOWN: Interface FastEthernet0/1, changed state to down
+Switch# 
+*Mar  1 00:08:39.389: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/24, changed state to down
+Switch# 
+*Mar  1 00:08:40.387: %LINK-3-UPDOWN: Interface FastEthernet0/24, changed state to down
+Switch# 
+*Mar  1 00:08:46.351: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/23, changed state to down
+*Mar  1 00:08:47.358: %LINK-3-UPDOWN: Interface FastEthernet0/23, changed state to down
+Switch# 
+*Mar  1 00:09:05.485: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/2, changed state to down
+*Mar  1 00:09:06.492: %LINK-3-UPDOWN: Interface FastEthernet0/2, changed state to down
+Switch# 
+*Mar  1 00:09:13.362: %LINK-3-UPDOWN: Interface FastEthernet0/5, changed state to up
+*Mar  1 00:09:14.369: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/5, changed state to up
+Switch# 
+*Mar  1 00:09:26.868: %LINK-3-UPDOWN: Interface FastEthernet0/12, changed state to up
+*Mar  1 00:09:27.875: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/12, changed state to up
+Switch# 
+*Mar  1 00:10:13.341: %LINK-3-UPDOWN: Interface FastEthernet0/1, changed state to up
+*Mar  1 00:10:14.348: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/1, changed state to up
+Switch# 
+*Mar  1 00:10:25.513: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/1, changed state to down
+Switch# 
+*Mar  1 00:10:26.511: %LINK-3-UPDOWN: Interface FastEthernet0/1, changed state to down
+Switch# 
+*Mar  1 00:10:31.125: %LINK-3-UPDOWN: Interface FastEthernet0/1, changed state to up
+*Mar  1 00:10:32.131: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/1, changed state to up
+Switch# 
+*Mar  1 00:13:01.121: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/1, changed state to down
+Switch# 
+*Mar  1 00:13:02.120: %LINK-3-UPDOWN: Interface FastEthernet0/1, changed state to down
+Switch# 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Switch con0 is now available
+
+
+
+
+
+Press RETURN to get started.
+
+
+
+*Mar  1 00:26:46.619: %LINK-3-UPDOWN: Interface FastEthernet0/1, changed state to up
+*Mar  1 00:26:47.626: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/1, changed state to up
+Switch>enable
+Switch#conf t
+Enter configuration commands, one per line.  End with CNTL/Z.
+Switch(config)#ser
+Switch(config)#service pa
+Switch(config)#service pas
+Switch(config)#service password-e
+Switch(config)#service password-encryption 
+Switch(config)#hostname ta eam6w swir tch
+team6switch(config)#ip domain 
+team6switch(config)#ip domain n
+team6switch(config)#ip domain name team6.local
+team6switch(config)#enable password garbage
+team6switch(config)#enable secret rax123
+team6switch(config)#username racker priv 15 pass rax123
+team6switch(config)#no ip dom
+team6switch(config)#no ip domainl 
+team6switch(config)#no ip domain
+team6switch(config)#no ip domain?
+domain  domain-list  domain-lookup  domain-name  
+
+team6switch(config)#no ip domain-
+team6switch(config)#no ip domain-l
+team6switch(config)#no ip domain-lo
+team6switch(config)#no ip domain-lookup 
+team6switch(config)#exit
+team6switch#clo
+*Mar  1 00:46:11.604: %SYS-5-CONFIG_I: Configured from console by console
+team6switch#clock set 09:            ont f t
+Enter configuration commands, one per line.  End with CNTL/Z.
+team6switch(config)#clock summer-t
+team6switch(config)#clock summer-time ?
+  WORD  name of time zone in summer
+
+team6switch(config)#clock summer-time central ?
+  date       Configure absolute summer time
+  recurring  Configure recurring summer time
+
+team6switch(config)#clock summer-time central date ?
+  <1-31>  Date to start
+  MONTH   Month to start
+
+team6switch(config)#clock summer-time central date 2   8 march ?
+  <1993-2035>  Year to start
+
+team6switch(config)#clock summer-time central date 8 march 2015 ?
+  hh:mm  Time to start (hh:mm)
+
+team6switch(config)#clock summer-time central date 8 march 2015 00:00 ?
+  <1-31>  Date to end
+  MONTH   Month to end
+
+team6switch(config)#clock summer-time central date 8 march 2015 00:00 1 novem$r-time central date 8 march 2015 00:00 1 novemb         er 2015 0tral date 8 march 2015 00:00 1 november 2015 00         :00
+team6switch(config)#
+*Mar  1 00:47:44.105: %SYS-6-CLOCKUPDATE: System clock has been updated from 00:47:44 UTC Mon Mar 1 1993 to 00:47:44 UTC Mon Mar 1 1993, configured from console by console.
+team6switch(config)#exit
+team6switch#clo
+*Mar  1 00:47:47.091: %SYS-5-CONFIG_I: Configured from console by console
+team6switch#clock 09:25s09:25e09:25t09:25 09:2509:25:00 30 july 2015
+team6switch#
+*Jul 30 08:25:00.000: %SYS-6-CLOCKUPDATE: System clock has been updated from 00:48:08 UTC Mon Mar 1 1993 to 09:25:00 central Thu Jul 30 2015, configured from console by console.
+team6switch#lin con 0
+             ^
+% Invalid input detected at '^' marker.
+
+team6switch#conf t
+Enter configuration commands, one per line.  End with CNTL/Z.
+team6switch(config)#lin con 0
+team6switch(config-line)#logging syn
+team6switch(config-line)#logging synchronous 
+team6switch(config-line)#exe
+team6switch(config-line)#exec-
+team6switch(config-line)#exec-ti
+team6switch(config-line)#exec-timeout 27
+team6switch(config-line)#hist size 200
+team6switch(config-line)#password temp123
+team6switch(config-line)#login
+team6switch(config-line)#lin vty 0 4
+team6switch(config-line)#logging sync
+team6switch(config-line)#logging synchronous 
+team6switch(config-line)#exec-tim
+team6switch(config-line)#exec-timeout 27
+team6switch(config-line)#hist size 200
+team6switch(config-line)#login local
+team6switch(config-line)#tansport input ssh
+                          ^
+% Invalid input detected at '^' marker.
+
+team6switch(config-line)#tansport input sshransport input ssh
+team6switch(config-line)#lin vty 5 15
+team6switch(config-line)#login
+% Login disabled on line 6, until 'password' is set
+% Login disabled on line 7, until 'password' is set
+% Login disabled on line 8, until 'password' is set
+% Login disabled on line 9, until 'password' is set
+% Login disabled on line 10, until 'password' is set
+% Login disabled on line 11, until 'password' is set
+% Login disabled on line 12, until 'password' is set
+% Login disabled on line 13, until 'password' is set
+% Login disabled on line 14, until 'password' is set
+% Login disabled on line 15, until 'password' is set
+% Login disabled on line 16, until 'password' is set
+team6switch(config-line)#int g/0/1    0/1-2
+                                 ^
+% Invalid input detected at '^' marker.
+
+team6switch(config)#int g0/1-2rg0/1-2ag0/1-2ng0/1-2gg0/1-2eg0/1-2 g0/1-2
+team6switch(config-if-range)#medi
+team6switch(config-if-range)#media-type rj45
+team6switch(config-if-range)#exit
+team6switch(config)#span
+team6switch(config)#spanning-tree por
+team6switch(config)#spanning-tree portfast bpd
+team6switch(config)#spanning-tree portfast bpdug
+team6switch(config)#spanning-tree portfast bpduguard 
+team6switch(config)#no cdp run
+team6switch(config)#int range f0/1-24, g0/1-2
+                                     ^
+% Invalid input detected at '^' marker.
+
+team6switch(config)#int range f0/1-24, g0/1-2 , g0/1-2
+team6switch(config-if-range)#speed 100
+team6switch(config-if-range)#duplex ful
+Jul 30 08:27:33.427: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/5, changed state to down
+Jul 30 08:27:33.427: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/12, changed state to down
+Jul 30 08:27:33.461: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/1, changed state to down
+team6switch(config-if-range)#duplex full
+team6switch(config-if-range)#
+Jul 30 08:27:35.432: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/5, changed state to up
+Jul 30 08:27:35.440: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/12, changed state to up
+Jul 30 08:27:35.474: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/1, changed state to up
+team6switch(config-if-range)#shutdown
+Jul 30 08:27:37.462: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/5, changed state to down
+Jul 30 08:27:37.462: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/12, changed state to down
+team6switch(config-if-range)#shutdown
+team6switch(config-if-range)#
+Jul 30 08:27:39.509: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/1, changed state to down
+team6switch(config-if-range)#
+Jul 30 08:27:41.321: %LINK-5-CHANGED: Interface FastEthernet0/1, changed state to administratively down
+Jul 30 08:27:41.329: %LINK-5-CHANGED: Interface FastEthernet0/2, changed state to administratively down
+Jul 30 08:27:41.338: %LINK-5-CHANGED: Interface FastEthernet0/3, changed state to administratively down
+Jul 30 08:27:41.338: %LINK-5-CHANGED: Interface FastEthernet0/4, changed state to administratively down
+Jul 30 08:27:41.338: %LINK-5-CHANGED: Interface FastEthernet0/5, changed state to adminis
+team6switch(config-if-range)#tratively down
+Jul 30 08:27:41.346: %LINK-5-CHANGED: Interface FastEthernet0/6, changed state to administratively down
+Jul 30 08:27:41.346: %LINK-5-CHANGED: Interface FastEthernet0/7, changed state to administratively down
+Jul 30 08:27:41.346: %LINK-5-CHANGED: Interface FastEthernet0/8, changed state to administratively down
+Jul 30 08:27:41.346: %LINK-5-CHANGED: Interface FastEthernet0/9, changed state to administratively down
+Jul 30 08:27:41.346: %LINK-5-CHANGED: Interface FastEthernet0/10, changed s
+team6switch(config-if-range)#tate to administratively down
+Jul 30 08:27:41.354: %LINK-5-CHANGED: Interface FastEthernet0/11, changed state to administratively down
+Jul 30 08:27:41.354: %LINK-5-CHANGED: Interface FastEthernet0/12, changed state to administratively down
+Jul 30 08:27:41.354: %LINK-5-CHANGED: Interface FastEthernet0/13, changed state to administratively down
+Jul 30 08:27:41.363: %LINK-5-CHANGED: Interface FastEthernet0/14, changed state to administratively down
+Jul 30 08:27:41.363: %LINK-5-CHANGED: Interface FastEthe
+team6switch(config-if-range)#rnet0/15, changed state to administratively down
+Jul 30 08:27:41.363: %LINK-5-CHANGED: Interface FastEthernet0/16, changed state to administratively down
+Jul 30 08:27:41.363: %LINK-5-CHANGED: Interface FastEthernet0/17, changed state to administratively down
+Jul 30 08:27:41.371: %LINK-5-CHANGED: Interface FastEthernet0/18, changed state to administratively down
+Jul 30 08:27:41.371: %LINK-5-CHANGED: Interface FastEthernet0/19, changed state to administratively down
+Jul 30 08:27:41.371: %LINK-5-CHANGED:
+team6switch(config-if-range)# Interface FastEthernet0/20, changed state to administratively down
+Jul 30 08:27:41.371: %LINK-5-CHANGED: Interface FastEthernet0/21, changed state to administratively down
+Jul 30 08:27:41.371: %LINK-5-CHANGED: Interface FastEthernet0/22, changed state to administratively down
+Jul 30 08:27:41.380: %LINK-5-CHANGED: Interface FastEthernet0/23, changed state to administratively down
+Jul 30 08:27:41.388: %LINK-5-CHANGED: Interface FastEthernet0/24, changed state to administratively down
+Jul 30 08:27:41.38
+team6switch(config-if-range)#8: %LINK-5-CHANGED: Interface GigabitEthernet0/1, changed state to administratively down
+Jul 30 08:27:41.388: %LINK-5-CHANGED: Interface GigabitEthernet0/2, changed state to administratively down
+team6switch(config-if-range)#descriptio
+team6switch(config-if-range)#description UNUSED PORT
+team6switch(config-if-range)#swi
+team6switch(config-if-range)#switchport mode ac
+team6switch(config-if-range)#switchport mode access 
+team6switch(config-if-range)#swi
+team6switch(config-if-range)#switchport acc
+team6switch(config-if-range)#switchport access vlan 666
+team6switch(config-if-range)#swi
+team6switch(config-if-range)#switchport non
+team6switch(config-if-range)#switchport nonegotiate 
+team6switch(config-if-range)#no cdp enable
+team6switch(config-if-range)#int f/0/1    0/1
+% Command exited out of interface range and its sub-modes.
+  Not executing the command for second and later interfaces
+team6switch(config-if)#swi
+team6switch(config-if)#switchport mod
+team6switch(config-if)#switchport mode ?
+  access   Set trunking mode to ACCESS unconditionally
+  dynamic  Set trunking mode to dynamically negotiate access or trunk mode
+  trunk    Set trunking mode to TRUNK unconditionally
+
+team6switch(config-if)#switchport mode tru
+team6switch(config-if)#switchport mode trunk 
+team6switch(config-if)#no swi
+team6switch(config-if)#no switchport acc
+team6switch(config-if)#no switchport access vlan
+team6switch(config-if)#no shut
+team6switch(config-if)#
+Jul 30 08:29:47.242: %LINK-3-UPDOWN: Interface FastEthernet0/1, changed state to up
+team6switch(config-if)#
+Jul 30 08:29:48.249: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/1, changed state to up
+team6switch(config-if)#int f0/5
+team6switch(config-if)#int f0/5no shut witchport access vlanswitchport mode trunk    int f0/1              
+team6switch(config-if)#descript  ti
+team6switch(config-if)#descriti   
+team6switch(config-if)#description T trunk to o router
+team6switch(config-if)#description trunk to routerint f0/1                   5
+team6switch(config-if)#desc
+team6switch(config-if)#description TO  to pc on vb lan 5
+team6switch(config-if)#swi
+team6switch(config-if)#switchport acc
+team6switch(config-if)#switchport access vl
+team6switch(config-if)#switchport access vlan 5
+% Access VLAN does not exist. Creating vlan 5
+team6switch(config-if)#no shut
+team6switch(config-if)#
+Jul 30 08:31:41.042: %LINK-3-UPDOWN: Interface FastEthernet0/5, changed state to up
+Jul 30 08:31:42.049: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/5, changed state to up
+team6switch(config-if)#no shutswitchport access vlan 5description to pc on vlan 5int f0/5                    12
+team6switch(config-if)#int f0/12no shut  switchport access vlan 5description to pc on vlan 5 12
+team6switch(config-if)#description to pc on vlan 12int f0/12                   no shut  switchport access vlan 5 12
+% Access VLAN does not exist. Creating vlan 12
+team6switch(config-if)#int blan    vlan 9
+team6switch(config-if)#
+Jul 30 08:32:24.948: %LINEPROTO-5-UPDOWN: Line protocol on Interface Vlan9, changed state to down
+team6switch(config-if)#ip add 172.6.9.5 255.255.255.0
+team6switch(config-if)#ip ?
+Interface IP configuration subcommands:
+  access-group        Specify access control for packets
+  accounting          Enable IP accounting on this interface
+  address             Set the IP address of an interface
+  admission           Apply Network Admission Control
+  broadcast-address   Set the broadcast address of an interface
+  dhcp                Configure DHCP parameters for this interface
+  directed-broadcast  Enable forwarding of directed broadcasts
+  helper-address      Specify a destination address for UDP broadcasts
+  information-reply   Enable sending ICMP Information Reply messages
+  local-proxy-arp     Enable local-proxy ARP
+  mask-reply          Enable sending ICMP Mask Reply messages
+  mtu                 Set IP Maximum Transmission Unit
+  probe               Enable HP Probe support
+  proxy-arp           Enable proxy ARP
+  rarp-server         Enable RARP server for static arp entries
+  redirects           Enable sending ICMP Redirect messages
+  route-cache         Enable fast-switching cache for outgoing packets
+  security            DDN IP Security Option
+  sticky-arp          Allow the creation of sticky ARP entries
+  tcp                 TCP interface commands
+  unnumbered          Enable IP processing without an explicit address
+ --More--           unreachables        Enable sending ICMP Unreachable messages
+  verify              Enable per packet validation
+
+team6switch(config-if)#ip    exit
+team6switch(config)#?
+Configure commands:
+  aaa                         Authentication, Authorization and Accounting.
+  access-list                 Add an access list entry
+  alias                       Create command alias
+  archive                     Archive the configuration
+  arp                         Set a static ARP entry
+  banner                      Define a login banner
+  beep                        Configure BEEP (Blocks Extensible Exchange
+                              Protocol)
+  boot                        Modify system boot parameters
+  buffers                     Adjust system buffer pool parameters
+  cdp                         Global CDP configuration subcommands
+  class-map                   Configure QoS Class Map
+  clock                       Configure time-of-day clock
+  cluster                     Cluster configuration commands
+  cns                         CNS agents
+  configuration               Configuration access
+  control-plane               Configure control plane services
+  crypto                      Encryption module
+  default                     Set a command to its defaults
+  default-value               Default character-bits values
+  define                      interface range macro definition
+ --More--           do                          To run exec commands in config mode
+  dot1x                       IEEE 802.1X Global Configuration Commands
+  downward-compatible-config  Generate a configuration compatible with older
+                              software
+  eap                         EAP Global Configuration Commands
+  enable                      Modify enable password parameters
+  end                         Exit from configure mode
+  errdisable                  Error disable
+  exception                   Exception handling
+  exit                        Exit from configure mode
+  fallback                    Fallback configuration commands
+  file                        Adjust file system parameters
+  help                        Description of the interactive help system
+  hostname                    Set system's network name
+  hw-module                   Control of individual components in the system
+  identity                    Identity Configuration Commands
+  interface                   Select an interface to configure
+  ip                          Global IP configuration subcommands
+  ixi                         IXI Config command
+  key                         Key management
+  kron                        Kron interval Facility
+  lacp                        LACP configuration
+  li-view                     LI View
+ --More--         
+team6switch(config)#ip ?
+Global IP configuration subcommands:
+  access-list           Named access-list
+  accounting-list       Select hosts for which IP accounting information is
+                        kept
+  accounting-threshold  Sets the maximum number of accounting entries
+  accounting-transits   Sets the maximum number of transit entries
+  address-pool          Specify default IP address pooling mechanism
+  admission             Network Admission Control (NAC)
+  alias                 Alias an IP address to a TCP port
+  arp                   IP ARP global configuration
+  arp                   IP Arp features
+  default-gateway       Specify default gateway (if not routing IP)
+  device                Device tracking
+  dhcp                  Configure DHCP server and relay parameters
+  dhcp-client           Configure parameters for DHCP client operation
+  dhcp-server           Specify address of DHCP server to use
+  domain                IP DNS Resolver
+  domain-list           Domain name to complete unqualified host names.
+  domain-lookup         Enable IP Domain Name System hostname translation
+  domain-name           Define the default domain name
+  finger                finger server
+  ftp                   FTP configuration commands
+ --More--         
+team6switch(config)#ip defa
+team6switch(config)#ip default-gateway 172.6.9.1
+team6switch(config)#cy ryp
+team6switch(config)#crypto key gen rsa
+The name for the keys will be: team6switch.team6.local
+Choose the size of the key modulus in the range of 360 to 2048 for your
+  General Purpose Keys. Choosing a key modulus greater than 512 may take
+  a few minutes.
+
+How many bits in the modulus [512]: 2048
+% Generating 2048 bit RSA keys, keys will be non-exportable...[OK]
+
+team6switch(config)#
+Jul 30 08:35:35.747: %SSH-5-ENABLED: SSH 1.99 has been enabled
+team6switch(config)#ip ssh ver 2
+team6switch(config)#no htt
+team6switch(config)#no http
+team6switch(config)#no http sd er
+team6switch(config)#no http ser           exit
+team6switch#no htt
+team6switch#no htt
+Jul 30 08:35:55.007: %SYS-5-CONFIG_I: Configured from console by console
+team6switch#no htt
+team6switch#no htt
+team6switch#no htt      conf t
+Enter configuration commands, one per line.  End with CNTL/Z.
+team6switch(config)#no ip ht
+team6switch(config)#no ip http ser
+team6switch(config)#no ip http server 
+team6switch(config)#no ip ht
+team6switch(config)#no ip http se
+team6switch(config)#no ip http sec
+team6switch(config)#no ip http secure-sd er
+team6switch(config)#no ip http secure-server 
+team6switch(config)#no ip http secure-server rver        exit              ip ssh ver 22048        crypto key gen rsaip default-gateway 172.6.9.1exit                        ip add 172.6.9.5 255.255.255.0nt vlan 9                    switchport access vlan 12description to pc on vlan 12int f0/12                   
+team6switch(config-if)#no shut
+team6switch(config-if)#
+Jul 30 08:40:06.447: %LINK-3-UPDOWN: Interface FastEthernet0/12, changed state to up
+Jul 30 08:40:07.454: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/12, changed state to up
+team6switch(config-if)#no shutint f0/12no ip http secure-server rver        exit              ip ssh ver 22048        crypto key gen rsaip default-gateway 172.6.9.1exit                        ip add 172.6.9.5 255.255.255.0nt vlan 9                    ^Z
+team6switch#show int
+team6switch#show interfaces 
+Jul 30 08:40:21.522: %SYS-5-CONFIG_I: Configured from console by console
+team6switch#show interfaces br
+team6switch#show interfaces bri
+team6switch#show interfaces bri   ?
+  Async              Async interface
+  Auto-Template      Auto-Template interface
+  BVI                Bridge-Group Virtual Interface
+  CTunnel            CTunnel interface
+  Dialer             Dialer interface
+  FastEthernet       FastEthernet IEEE 802.3
+  Filter             Filter interface
+  Filtergroup        Filter Group interface
+  GigabitEthernet    GigabitEthernet IEEE 802.3z
+  GroupVI            Group Virtual interface
+  Loopback           Loopback interface
+  Null               Null interface
+  Port-channel       Ethernet Channel of interfaces
+  Portgroup          Portgroup interface
+  Pos-channel        POS Channel of interfaces
+  Tunnel             Tunnel interface
+  Vif                PGM Multicast Host interface
+  Virtual-Template   Virtual Template interface
+  Virtual-TokenRing  Virtual TokenRing
+  Vlan               Catalyst Vlans
+  accounting         Show interface accounting
+  capabilities       Show interface capabilities information
+ --More--           counters           Show interface counters
+  crb                Show interface routing/bridging info
+  dampening          Show interface dampening info
+  debounce           Show interface debounce time info
+  description        Show interface description
+  etherchannel       Show interface etherchannel information
+  fair-queue         Show interface Weighted Fair Queueing (WFQ) info
+  fcpa               Fiber Channel
+  flowcontrol        Show interface flowcontrol information
+  irb                Show interface routing/bridging info
+  mac-accounting     Show interface MAC accounting info
+  mpls-exp           Show interface MPLS experimental accounting info
+  mtu                Show interface mtu
+  precedence         Show interface precedence accounting info
+  private-vlan       Show interface private vlan information
+  pruning            Show interface trunk VTP pruning information
+  random-detect      Show interface Weighted Random Early Detection (WRED) info
+  rate-limit         Show interface rate-limit info
+  stats              Show interface packets & octets, in & out, by switching
+                     path
+  status             Show interface line status
+  summary            Show interface summary
+  switchport         Show interface switchport information
+ --More--         
+team6switch#show interfaces status
+
+Port      Name               Status       Vlan       Duplex  Speed Type
+Fa0/1     trunk to router    connected    trunk        full    100 10/100BaseTX
+Fa0/2     UNUSED PORT        disabled     666          full    100 10/100BaseTX
+Fa0/3     UNUSED PORT        disabled     666          full    100 10/100BaseTX
+Fa0/4     UNUSED PORT        disabled     666          full    100 10/100BaseTX
+Fa0/5     to pc on vlan 5    connected    5            full    100 10/100BaseTX
+Fa0/6     UNUSED PORT        disabled     666          full    100 10/100BaseTX
+Fa0/7     UNUSED PORT        disabled     666          full    100 10/100BaseTX
+Fa0/8     UNUSED PORT        disabled     666          full    100 10/100BaseTX
+Fa0/9     UNUSED PORT        disabled     666          full    100 10/100BaseTX
+Fa0/10    UNUSED PORT        disabled     666          full    100 10/100BaseTX
+Fa0/11    UNUSED PORT        disabled     666          full    100 10/100BaseTX
+Fa0/12    to pc on vlan 12   connected    12           full    100 10/100BaseTX
+Fa0/13    UNUSED PORT        disabled     666          full    100 10/100BaseTX
+Fa0/14    UNUSED PORT        disabled     666          full    100 10/100BaseTX
+Fa0/15    UNUSED PORT        disabled     666          full    100 10/100BaseTX
+Fa0/16    UNUSED PORT        disabled     666          full    100 10/100BaseTX
+Fa0/17    UNUSED PORT        disabled     666          full    100 10/100BaseTX
+Fa0/18    UNUSED PORT        disabled     666          full    100 10/100BaseTX
+Fa0/19    UNUSED PORT        disabled     666          full    100 10/100BaseTX
+Fa0/20    UNUSED PORT        disabled     666          full    100 10/100BaseTX
+Fa0/21    UNUSED PORT        disabled     666          full    100 10/100BaseTX
+ --More--         
+Port      Name               Status       Vlan       Duplex  Speed Type
+Fa0/22    UNUSED PORT        disabled     666          full    100 10/100BaseTX
+Fa0/23    UNUSED PORT        disabled     666          full    100 10/100BaseTX
+Fa0/24    UNUSED PORT        disabled     666          full    100 10/100BaseTX
+Gi0/1     UNUSED PORT        disabled     666          full    100 10/100/1000BaseTX
+Gi0/2     UNUSED PORT        disabled     666          full    100 10/100/1000BaseTX
+team6switch#int vlan        show ip int
+team6switch#show ip interface brie
+team6switch#show ip interface brief 
+Interface              IP-Address      OK? Method Status                Protocol
+Vlan1                  unassigned      YES unset  administratively down down    
+Vlan9                  172.6.9.5       YES manual down                  down    
+FastEthernet0/1        unassigned      YES unset  up                    up      
+FastEthernet0/2        unassigned      YES unset  administratively down down    
+FastEthernet0/3        unassigned      YES unset  administratively down down    
+FastEthernet0/4        unassigned      YES unset  administratively down down    
+FastEthernet0/5        unassigned      YES unset  up                    up      
+FastEthernet0/6        unassigned      YES unset  administratively down down    
+FastEthernet0/7        unassigned      YES unset  administratively down down    
+FastEthernet0/8        unassigned      YES unset  administratively down down    
+FastEthernet0/9        unassigned      YES unset  administratively down down    
+FastEthernet0/10       unassigned      YES unset  administratively down down    
+FastEthernet0/11       unassigned      YES unset  administratively down down    
+FastEthernet0/12       unassigned      YES unset  up                    up      
+FastEthernet0/13       unassigned      YES unset  administratively down down    
+FastEthernet0/14       unassigned      YES unset  administratively down down    
+FastEthernet0/15       unassigned      YES unset  administratively down down    
+FastEthernet0/16       unassigned      YES unset  administratively down down    
+FastEthernet0/17       unassigned      YES unset  administratively down down    
+FastEthernet0/18       unassigned      YES unset  administratively down down    
+FastEthernet0/19       unassigned      YES unset  administratively down down    
+FastEthernet0/20       unassigned      YES unset  administratively down down    
+ --More--         
+team6switch#nt  int vlan 9
+             ^
+% Invalid input detected at '^' marker.
+
+team6switch#conf t
+Enter configuration commands, one per line.  End with CNTL/Z.
+team6switch(config)#int cv  vlan 9
+team6switch(config-if)#no shut
+team6switch(config-if)#exit
+team6switch(config)#exitno shutint vlan 9no shut   int f0/12^Z
+team6switch#conf tint vlan 9show ip interface brief 
+Jul 30 08:45:15.685: %SYS-5-CONFIG_I: Configured from console by console
+team6switch#show ip interface brief 
+Interface              IP-Address      OK? Method Status                Protocol
+Vlan1                  unassigned      YES unset  administratively down down    
+Vlan9                  172.6.9.5       YES manual down                  down    
+FastEthernet0/1        unassigned      YES unset  up                    up      
+FastEthernet0/2        unassigned      YES unset  administratively down down    
+FastEthernet0/3        unassigned      YES unset  administratively down down    
+FastEthernet0/4        unassigned      YES unset  administratively down down    
+FastEthernet0/5        unassigned      YES unset  up                    up      
+FastEthernet0/6        unassigned      YES unset  administratively down down    
+FastEthernet0/7        unassigned      YES unset  administratively down down    
+FastEthernet0/8        unassigned      YES unset  administratively down down    
+FastEthernet0/9        unassigned      YES unset  administratively down down    
+FastEthernet0/10       unassigned      YES unset  administratively down down    
+FastEthernet0/11       unassigned      YES unset  administratively down down    
+FastEthernet0/12       unassigned      YES unset  up                    up      
+FastEthernet0/13       unassigned      YES unset  administratively down down    
+FastEthernet0/14       unassigned      YES unset  administratively down down    
+FastEthernet0/15       unassigned      YES unset  administratively down down    
+FastEthernet0/16       unassigned      YES unset  administratively down down    
+FastEthernet0/17       unassigned      YES unset  administratively down down    
+FastEthernet0/18       unassigned      YES unset  administratively down down    
+FastEthernet0/19       unassigned      YES unset  administratively down down    
+FastEthernet0/20       unassigned      YES unset  administratively down down    
+ --More--         
+team6switch#show vl
+team6switch#show vlan 
+
+VLAN Name                             Status    Ports
+---- -------------------------------- --------- -------------------------------
+1    default                          active    
+5    VLAN0005                         active    Fa0/5
+12   VLAN0012                         active    Fa0/12
+111  VLAN0111                         active    
+222  VLAN0222                         active    
+666  VLAN0666                         active    Fa0/2, Fa0/3, Fa0/4, Fa0/6
+                                                Fa0/7, Fa0/8, Fa0/9, Fa0/10
+                                                Fa0/11, Fa0/13, Fa0/14, Fa0/15
+                                                Fa0/16, Fa0/17, Fa0/18, Fa0/19
+                                                Fa0/20, Fa0/21, Fa0/22, Fa0/23
+                                                Fa0/24, Gi0/1, Gi0/2
+1002 fddi-default                     act/unsup 
+1003 token-ring-default               act/unsup 
+1004 fddinet-default                  act/unsup 
+1005 trnet-default                    act/unsup 
+
+VLAN Type  SAID       MTU   Parent RingNo BridgeNo Stp  BrdgMode Trans1 Trans2
+---- ----- ---------- ----- ------ ------ -------- ---- -------- ------ ------
+1    enet  100001     1500  -      -      -        -    -        0      0   
+5    enet  100005     1500  -      -      -        -    -        0      0   
+ --More--         
+VLAN Type  SAID       MTU   Parent RingNo BridgeNo Stp  BrdgMode Trans1 Trans2
+---- ----- ---------- ----- ------ ------ -------- ---- -------- ------ ------
+12   enet  100012     1500  -      -      -        -    -        0      0   
+111  enet  100111     1500  -      -      -        -    -        0      0   
+222  enet  100222     1500  -      -      -        -    -        0      0   
+666  enet  100666     1500  -      -      -        -    -        0      0   
+1002 fddi  101002     1500  -      -      -        -    -        0      0   
+1003 tr    101003     1500  -      -      -        -    -        0      0   
+1004 fdnet 101004     1500  -      -      -        ieee -        0      0   
+1005 trnet 101005     1500  -      -      -        ibm  -        0      0   
+
+Remote SPAN VLANs
+------------------------------------------------------------------------------
+
+
+Primary Secondary Type              Ports
+------- --------- ----------------- ------------------------------------------
+
+team6switch#conf t
+Enter configuration commands, one per line.  End with CNTL/Z.
+team6switch(config)#vl
+team6switch(config)#vlan 9
+team6switch(config-vlan)#?
+VLAN configuration commands:
+  are          Maximum number of All Route Explorer hops for this VLAN (or zero
+               if none specified)
+  backupcrf    Backup CRF mode of the VLAN
+  bridge       Bridging characteristics of the VLAN
+  exit         Apply changes, bump revision number, and exit mode
+  media        Media type of the VLAN
+  mtu          VLAN Maximum Transmission Unit
+  name         Ascii name of the VLAN
+  no           Negate a command or set its defaults
+  parent       ID number of the Parent VLAN of FDDI or Token Ring type VLANs
+  remote-span  Configure as Remote SPAN VLAN
+  ring         Ring number of FDDI or Token Ring type VLANs
+  said         IEEE 802.10 SAID
+  shutdown     Shutdown VLAN switching
+  state        Operational state of the VLAN
+  ste          Maximum number of Spanning Tree Explorer hops for this VLAN (or
+               zero if none specified)
+  stp          Spanning tree characteristics of the VLAN
+  tb-vlan1     ID number of the first translational VLAN for this VLAN (or zero
+               if none)
+  tb-vlan2     ID number of the second translational VLAN for this VLAN (or
+ --More--                        zero if none)
+
+team6switch(config-vlan)#exit
+team6switch(config)#sho   ^Z
+team6switch#
+Jul 30 08:46:36.568: %SYS-5-CONFIG_I: Configured from console by console
+team6switch#show vlqn  
+team6switch#show vlan ?
+  brief         VTP all VLAN status in brief
+  id            VTP VLAN status by VLAN id
+  ifindex       SNMP ifIndex
+  internal      VLAN internal usage
+  mtu           VLAN MTU information
+  name          VTP VLAN status by VLAN name
+  private-vlan  Private VLAN information
+  remote-span   Remote SPAN VLANs
+  summary       VLAN summary information
+  |             Output modifiers
+  <cr>
+
+team6switch#show vlan 9
+                      ^
+% Invalid input detected at '^' marker.
+
+team6switch#show vlan 9i9d9 9
+
+VLAN Name                             Status    Ports
+---- -------------------------------- --------- -------------------------------
+9    VLAN0009                         active    Fa0/1
+
+VLAN Type  SAID       MTU   Parent RingNo BridgeNo Stp  BrdgMode Trans1 Trans2
+---- ----- ---------- ----- ------ ------ -------- ---- -------- ------ ------
+9    enet  100009     1500  -      -      -        -    -        0      0   
+
+Remote SPAN VLAN
+----------------
+Disabled
+
+Primary Secondary Type              Ports
+------- --------- ----------------- ------------------------------------------
+
+team6switch#
+Jul 30 08:46:58.085: %LINEPROTO-5-UPDOWN: Line protocol on Interface Vlan9, changed state to up
+team6switch#int vlan 9
+             ^
+% Invalid input detected at '^' marker.
+
+team6switch#conf t
+Enter configuration commands, one per line.  End with CNTL/Z.
+team6switch(config)#int vlan 9
+team6switch(config-if)#?
+Interface configuration commands:
+  arp                     Set arp type (arpa, probe, snap) or timeout
+  bandwidth               Set bandwidth informational parameter
+  carrier-delay           Specify delay for interface transitions
+  cdp                     CDP interface subcommands
+  dampening               Enable event dampening
+  default                 Set a command to its defaults
+  delay                   Specify interface throughput delay
+  description             Interface specific description
+  exit                    Exit from interface configuration mode
+  help                    Description of the interactive help system
+  hold-queue              Set hold queue depth
+  ip                      Interface Internet Protocol config commands
+  link                    Configure Link
+  load-interval           Specify interval for load calculation for an
+                          interface
+  logging                 Configure logging for interface
+  loopback                Configure internal loopback on an interface
+  macro                   Command macro
+  max-reserved-bandwidth  Maximum Reservable Bandwidth on an Interface
+  no                      Negate a command or set its defaults
+  ntp                     Configure NTP
+ --More--           service-policy          Configure QoS Service Policy
+ --More--           shutdown                Shutdown the selected interface
+  snmp                    Modify SNMP interface parameters
+  source                  Get config from another source
+  spanning-tree           Spanning Tree Subsystem
+  standby                 HSRP interface configuration commands
+  timeout                 Define timeout values for this interface
+
+team6switch(config-if)#no shut
+team6switch(config-if)#^Z
+team6switch#conf tint vlan 9show vlan id 9
+Jul 30 08:48:28.162: %SYS-5-CONFIG_I: Configured from console by console
+team6switch#show vlan id 99   conf t     show vlan ip interface brief 
+Interface              IP-Address      OK? Method Status                Protocol
+Vlan1                  unassigned      YES unset  administratively down down    
+Vlan9                  172.6.9.5       YES manual up                    up      
+FastEthernet0/1        unassigned      YES unset  up                    up      
+FastEthernet0/2        unassigned      YES unset  administratively down down    
+FastEthernet0/3        unassigned      YES unset  administratively down down    
+FastEthernet0/4        unassigned      YES unset  administratively down down    
+FastEthernet0/5        unassigned      YES unset  up                    up      
+FastEthernet0/6        unassigned      YES unset  administratively down down    
+FastEthernet0/7        unassigned      YES unset  administratively down down    
+FastEthernet0/8        unassigned      YES unset  administratively down down    
+FastEthernet0/9        unassigned      YES unset  administratively down down    
+FastEthernet0/10       unassigned      YES unset  administratively down down    
+FastEthernet0/11       unassigned      YES unset  administratively down down    
+FastEthernet0/12       unassigned      YES unset  up                    up      
+FastEthernet0/13       unassigned      YES unset  administratively down down    
+FastEthernet0/14       unassigned      YES unset  administratively down down    
+FastEthernet0/15       unassigned      YES unset  administratively down down    
+FastEthernet0/16       unassigned      YES unset  administratively down down    
+FastEthernet0/17       unassigned      YES unset  administratively down down    
+FastEthernet0/18       unassigned      YES unset  administratively down down    
+FastEthernet0/19       unassigned      YES unset  administratively down down    
+FastEthernet0/20       unassigned      YES unset  administratively down down    
+ --More--         
+team6switch#show vlan
+
+VLAN Name                             Status    Ports
+---- -------------------------------- --------- -------------------------------
+1    default                          active    
+5    VLAN0005                         active    Fa0/5
+9    VLAN0009                         active    
+12   VLAN0012                         active    Fa0/12
+111  VLAN0111                         active    
+222  VLAN0222                         active    
+666  VLAN0666                         active    Fa0/2, Fa0/3, Fa0/4, Fa0/6
+                                                Fa0/7, Fa0/8, Fa0/9, Fa0/10
+                                                Fa0/11, Fa0/13, Fa0/14, Fa0/15
+                                                Fa0/16, Fa0/17, Fa0/18, Fa0/19
+                                                Fa0/20, Fa0/21, Fa0/22, Fa0/23
+                                                Fa0/24, Gi0/1, Gi0/2
+1002 fddi-default                     act/unsup 
+1003 token-ring-default               act/unsup 
+1004 fddinet-default                  act/unsup 
+1005 trnet-default                    act/unsup 
+
+VLAN Type  SAID       MTU   Parent RingNo BridgeNo Stp  BrdgMode Trans1 Trans2
+---- ----- ---------- ----- ------ ------ -------- ---- -------- ------ ------
+1    enet  100001     1500  -      -      -        -    -        0      0   
+ --More--         
+VLAN Type  SAID       MTU   Parent RingNo BridgeNo Stp  BrdgMode Trans1 Trans2
+---- ----- ---------- ----- ------ ------ -------- ---- -------- ------ ------
+5    enet  100005     1500  -      -      -        -    -        0      0   
+9    enet  100009     1500  -      -      -        -    -        0      0   
+12   enet  100012     1500  -      -      -        -    -        0      0   
+111  enet  100111     1500  -      -      -        -    -        0      0   
+222  enet  100222     1500  -      -      -        -    -        0      0   
+666  enet  100666     1500  -      -      -        -    -        0      0   
+1002 fddi  101002     1500  -      -      -        -    -        0      0   
+1003 tr    101003     1500  -      -      -        -    -        0      0   
+1004 fdnet 101004     1500  -      -      -        ieee -        0      0   
+1005 trnet 101005     1500  -      -      -        ibm  -        0      0   
+
+Remote SPAN VLANs
+------------------------------------------------------------------------------
+
+
+Primary Secondary Type              Ports
+------- --------- ----------------- ------------------------------------------
+
+team6switch#
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+team6switch con0 is now available
+
+
+
+
+
+Press RETURN to get started.
+
+
+
+
+
+
+
+
+
+
+User Access Verification
+
+Password: 
+team6switch>enable
+Password: 
+team6switch#int   
+Jul 30 09:21:51.571: SSH2 0: Unexpected mesg type received
+team6switch#
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+team6switch con0 is now available
+
+
+
+
+
+Press RETURN to get started.
+
+
+
+
+
+
+
+
+
+
+Jul 30 10:22:58.139: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/5, changed state to down
+Jul 30 10:22:59.146: %LINK-3-UPDOWN: Interface FastEthernet0/5, changed state to down
+Jul 30 10:23:01.150: %LINK-3-UPDOWN: Interface FastEthernet0/5, changed state to up
+Jul 30 10:23:02.157: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/5, changed state to up
+Jul 30 12:13:30.248: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/12, changed state to down
+Jul 30 12:13:31.254: %LINK-3-UPDOWN: Interface FastEthernet0/12, changed state to down
+Jul 30 12:13:34.056: %LINK-3-UPDOWN: Interface FastEthernet0/12, changed state to up
+Jul 30 12:13:37.202: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/12, changed state to up
+Jul 30 12:13:40.272: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/12, changed state to down
+Jul 30 12:13:42.277: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/12, changed state to up
+
+User Access Verification
+
+Password: 
+team6switch>enable
+Password: 
+team6switch#conf t
+Enter configuration commands, one per line.  End with CNTL/Z.
+team6switch(config)#access-l
+team6switch(config)#access-list 99 deny host 172.1.5.10
+team6switch(config)#access-list 99 deny host 172.1.5.10                    permit any
+team6switch(config)#access-list 99 permit any          deny all  ny log
+team6switch(config)#line vty 0 4
+team6switch(config-line)#acces
+team6switch(config-line)#access-class 99 in
+team6switch(config-line)#^Z
+team6switch#show acce
+Jul 30 12:42:46.025: %SYS-5-CONFIG_I: Configured from console by console
+team6switch#show acces
+team6switch#show access-lists 
+Standard IP access list 99
+    10 deny   172.1.5.10
+    20 permit any
+    30 deny   any log
+team6switch#show access-lists 
+Standard IP access list 99
+    10 deny   172.1.5.10
+    20 permit any
+    30 deny   any log
+team6switch#show access-lists 
+Standard IP access list 99
+    10 deny   172.1.5.10
+    20 permit any (2 matches)
+    30 deny   any log
+team6switch#show access-lists 
+Standard IP access list 99
+    10 deny   172.1.5.10
+    20 permit any (2 matches)
+    30 deny   any log
+team6switch#show access-lists 
+Standard IP access list 99
+    10 deny   172.1.5.10
+    20 permit any (2 matches)
+    30 deny   any log
+team6switch#show access-lists 
+Standard IP access list 99
+    10 deny   172.1.5.10
+    20 permit any (2 matches)
+    30 deny   any log
+team6switch#show access-lists 
+Standard IP access list 99
+    10 deny   172.1.5.10
+    20 permit any (2 matches)
+    30 deny   any log
+team6switch#show access-lists conf t            enableconf tshow access-lists                   show access-lists                   show access-lists conf t            
+Enter configuration commands, one per line.  End with CNTL/Z.
+team6switch(config)#access-class 99 inline vty 0 4      
+team6switch(config-line)#line vty 0 4access-class 99 inline vty 0 4      access-list 99 deny any log permit any  deny host 172.1.5.10^Z
+team6switch#conf tshow access-lists 
+Jul 30 12:52:41.239: %SYS-5-CONFIG_I: Configured from console by console
+team6switch#show access-lists 
+Standard IP access list 99
+    10 deny   172.1.5.10
+    20 permit any (2 matches)
+    30 deny   any log
+team6switch#show access-lists 
+Standard IP access list 99
+    10 deny   172.1.5.10
+    20 permit any (2 matches)
+    30 deny   any log
+team6switch#show access-lists 
+Standard IP access list 99
+    10 deny   172.1.5.10
+    20 permit any (2 matches)
+    30 deny   any log
+team6switch#conf t
+Enter configuration commands, one per line.  End with CNTL/Z.
+team6switch(config)#int vlan 5
+team6switch(config-if)#
+Jul 30 12:54:11.299: %LINEPROTO-5-UPDOWN: Line protocol on Interface Vlan5, changed state to up
+team6switch(config-if)#exit
+team6switch(config)#exit
+team6switch#conf t
+Jul 30 12:54:18.236: %SYS-5-CONFIG_I: Configured from console by console
+team6switch#conf tshow access-lists 
+Standard IP access list 99
+    10 deny   172.1.5.10
+    20 permit any (2 matches)
+    30 deny   any log
+team6switch#show access-lists 
+Standard IP access list 99
+    10 deny   172.1.5.10
+    20 permit any (2 matches)
+    30 deny   any log
+team6switch#conf t
+Enter configuration commands, one per line.  End with CNTL/Z.
+team6switch(config)#exitint vlan 5access-list 99 deny host 172.1.5.10line vty 0 4                       
+team6switch(config-line)#line vty 0 4exit        int vlan 5access-list 99 deny host 172.1.5.10line vty 0 4                       access-class 99 in
+team6switch(config-line)#^Z
+team6switch#conf tshow access-lists 
+Standard IP access list 99
+    10 deny   172.1.5.10
+    20 permit any (2 matches)
+    30 deny   any log
+team6switch#
+Jul 30 12:55:39.077: %SYS-5-CONFIG_I: Configured from console by console
+team6switch#show access-lists 
+Standard IP access list 99
+    10 deny   172.1.5.10
+    20 permit any (2 matches)
+    30 deny   any log
+team6switch#
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+team6switch con0 is now available
+
+
+
+
+
+Press RETURN to get started.
+
+
+
+
+
+
+
+
+
+
+
+
+
+User Access Verification
+
+Password: 
+team6switch>enable
+Password: 
+team6switch#show acc
+team6switch#show acces
+team6switch#show access-lists 
+Standard IP access list 99
+    10 deny   172.1.5.10 (6 matches)
+    20 permit any (4 matches)
+    30 deny   any log
+team6switch#conf t
+Enter configuration commands, one per line.  End with CNTL/Z.
+team6switch(config)#no access list              line cno   vty 0 4
+team6switch(config-line)#no access-
+team6switch(config-line)#no access-class 99
+% Incomplete command.
+
+team6switch(config-line)#no access-class 99 in
+team6switch(config-line)#exit
+team6switch(config)#no acces
+team6switch(config)#no access-list 99
+team6switch(config)#^Z
+team6switch#show acc
+Jul 30 14:14:01.806: %SYS-5-CONFIG_I: Configured from console by console
+team6switch#show acces l  -
+team6switch#show acces-l
+team6switch#show acces-l  s
+team6switch#show access-lists 
+
+team6switch#show access-lists 
+
+team6switch#
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+team6switch con0 is now available
+
+
+
+
+
+Press RETURN to get started.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Jul 30 15:00:24.861: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/12, changed state to down
+Jul 30 15:00:25.868: %LINK-3-UPDOWN: Interface FastEthernet0/12, changed state to down
+Jul 30 15:00:29.676: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/12, changed state to up
+Jul 30 15:00:31.186: %LINK-3-UPDOWN: Interface FastEthernet0/12, changed state to up
+Jul 30 15:00:34.886: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/12, changed state to down
+Jul 30 15:00:36.891: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/12, changed state to up

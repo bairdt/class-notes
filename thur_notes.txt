@@ -1,0 +1,266 @@
+ login as: racker
+Using keyboard-interactive authentication.
+Password:
+ Hello
+team6router#conf t
+Enter configuration commands, one per line.  End with CNTL/Z.
+team6router(config)#int range g0/1.5 , g0/1.9 , g0/1.12
+                                     ^
+% Invalid input detected at '^' marker.
+
+team6router(config)#int g0/1.5
+team6router(config-subif)#pass
+team6router(config-subif)#pass
+team6router(config-subif)#pass
+team6router(config-subif)#?
+Interface configuration commands:
+  aaa             Authentication, Authorization and Accounting.
+  arp             Set arp type (arpa, probe, snap), timeout, log options or
+                  packet priority
+  backup          Modify backup parameters
+  bandwidth       Set bandwidth informational parameter
+  bfd             BFD interface configuration commands
+  bgp-policy      Apply policy propagated by bgp community string
+  bridge-group    Transparent bridging interface parameters
+  cdp             CDP interface subcommands
+  channel-group   Add this interface to an Etherchannel group
+  clns            CLNS interface subcommands
+  content-scan    Content Scan the ingress traffic
+  crypto          Encryption/Decryption commands
+  cwmp            Configure CPE WAN Management Protocol(CWMP) on this interface
+  default         Set a command to its defaults
+  delay           Specify interface throughput delay
+  description     Interface specific description
+  dlsw            DLSw interface subcommands
+  encapsulation   Set encapsulation type for an interface
+  eou             EAPoUDP Interface Configuration Commands
+  exit            Exit from interface configuration mode
+  fhrp            Configure FHRP
+  flow-sampler    Attach flow sampler to the interface
+  glbp            Gateway Load Balancing Protocol interface commands
+  ip              Interface Internet Protocol config commands
+  ipv6            IPv6 interface subcommands
+  isis            IS-IS commands
+  iso-igrp        ISO-IGRP interface subcommands
+  keepalive       Enable keepalive
+  llc2            LLC2 Interface Subcommands
+  lldp            LLDP interface subcommands
+  logging         Configure logging for interface
+  mtu             Set the interface Maximum Transmission Unit (MTU)
+  netbios         Use a defined NETBIOS access list or enable name-caching
+  no              Negate a command or set its defaults
+  ntp             Configure NTP
+  ospfv3          OSPFv3 interface commands
+  pppoe           pppoe interface subcommands
+  pppoe-client    pppoe client
+  rate-limit      Rate Limit
+  redundancy      RG redundancy interface config
+  routing         Per-interface routing configuration
+  service-policy  Configure CPL Service Policy
+  shutdown        Shutdown the selected interface
+  snapshot        Configure snapshot support on the interface
+  snmp            Modify SNMP interface parameters
+  source          Get config from another source
+  standby         HSRP interface configuration commands
+  tarp            TARP interface subcommands
+  timeout         Define timeout values for this interface
+  topology        Configure routing topology on the interface
+  user-group      Interface-User-group Association
+  vrf             VPN Routing/Forwarding parameters on the interface
+  vrrp            VRRP Interface configuration commands
+  waas            WAN Optimization
+  zone-member     Apply zone name
+
+team6router(config-subif)#router ospf 6
+team6router(config-router)#?
+Router configuration commands:
+  address-family         Enter Address Family command mode
+  area                   OSPF area parameters
+  auto-cost              Calculate OSPF interface cost according to bandwidth
+  bfd                    BFD configuration commands
+  capability             Enable specific OSPF feature
+  compatible             OSPF compatibility list
+  default                Set a command to its defaults
+  default-information    Control distribution of default information
+  default-metric         Set metric of redistributed routes
+  discard-route          Enable or disable discard-route installation
+  distance               Define an administrative distance
+  distribute-list        Filter networks in routing updates
+  domain-id              OSPF domain-id
+  domain-tag             OSPF domain-tag
+  event-log              OSPF Event Logging
+  exit                   Exit from routing protocol configuration mode
+  help                   Description of the interactive help system
+  ignore                 Do not complain about specific event
+  interface-id           Source of the interface ID
+  ispf                   Enable incremental SPF computation
+  limit                  Limit a specific OSPF feature
+
+team6router(config-router)#int g0/1.5
+team6router(config-subif)#ip os
+team6router(config-subif)#ip ospf ?
+  <1-65535>            Process ID
+  authentication       Enable authentication
+  authentication-key   Authentication password (key)
+  bfd                  Enable BFD on this interface
+  cost                 Interface cost
+  database-filter      Filter OSPF LSA during synchronization and flooding
+  dead-interval        Interval after which a neighbor is declared dead
+  demand-circuit       OSPF Demand Circuit
+  flood-reduction      OSPF Flood Reduction
+  hello-interval       Time between HELLO packets
+  lls                  Link-local Signaling (LLS) support
+  message-digest-key   Message digest authentication password (key)
+  mtu-ignore           Ignores the MTU in DBD packets
+  network              Network type
+  prefix-suppression   OSPF prefix suppression
+  priority             Router priority
+  resync-timeout       Interval after which adjacency is reset if oob-resync is
+                       not started
+  retransmit-interval  Time between retransmitting lost link state
+                       advertisements
+  shutdown             Set OSPF protocol's state to disable under current
+                       interface
+  transmit-delay       Link state transmit delay
+  ttl-security         TTL security check
+
+team6router(config-subif)#int g0/1.5
+team6router(config-subif)#pass
+team6router(config-subif)#pass
+team6router(config-subif)#pass
+team6router(config-subif)#pass
+team6router(config-subif)#passi
+team6router(config-subif)#passi
+team6router(config-subif)#passi
+team6router(config-subif)#^Z
+team6router#show ip ospf
+ Routing Process "ospf 6" with ID 6.6.6.6
+ Start time: 00:29:00.472, Time elapsed: 01:19:58.956
+ Supports only single TOS(TOS0) routes
+ Supports opaque LSA
+ Supports Link-local Signaling (LLS)
+ Supports area transit capability
+ Supports NSSA (compatible with RFC 3101)
+ Event-log enabled, Maximum number of events: 1000, Mode: cyclic
+ Router is not originating router-LSAs with maximum metric
+ Initial SPF schedule delay 5000 msecs
+ Minimum hold time between two consecutive SPFs 10000 msecs
+ Maximum wait time between two consecutive SPFs 10000 msecs
+ Incremental-SPF disabled
+ Minimum LSA interval 5 secs
+ Minimum LSA arrival 1000 msecs
+ LSA group pacing timer 240 secs
+ Interface flood pacing timer 33 msecs
+ Retransmission pacing timer 66 msecs
+ Number of external LSA 0. Checksum Sum 0x000000
+ Number of opaque AS LSA 0. Checksum Sum 0x000000
+ Number of DCbitless external and opaque AS LSA 0
+ Number of DoNotAge external and opaque AS LSA 0
+ Number of areas in this router is 1. 1 normal 0 stub 0 nssa
+ Number of areas transit capable is 0
+ External flood list length 0
+ IETF NSF helper support enabled
+ Cisco NSF helper support enabled
+ Reference bandwidth unit is 100 mbps
+    Area BACKBONE(0)
+        Number of interfaces in this area is 5 (1 loopback)
+        Area has no authentication
+        SPF algorithm last executed 00:06:40.356 ago
+        SPF algorithm executed 7 times
+        Area ranges are
+        Number of LSA 6. Checksum Sum 0x0177A5
+        Number of opaque link LSA 0. Checksum Sum 0x000000
+        Number of DCbitless LSA 0
+        Number of indication LSA 0
+        Number of DoNotAge LSA 0
+        Flood list length 0
+
+team6router#conf t
+Enter configuration commands, one per line.  End with CNTL/Z.
+team6router(config)#pass
+team6router(config)#int g0/1.5
+team6router(config-subif)#?
+Interface configuration commands:
+  aaa             Authentication, Authorization and Accounting.
+  arp             Set arp type (arpa, probe, snap), timeout, log options or
+                  packet priority
+  backup          Modify backup parameters
+  bandwidth       Set bandwidth informational parameter
+  bfd             BFD interface configuration commands
+  bgp-policy      Apply policy propagated by bgp community string
+  bridge-group    Transparent bridging interface parameters
+  cdp             CDP interface subcommands
+  channel-group   Add this interface to an Etherchannel group
+  clns            CLNS interface subcommands
+  content-scan    Content Scan the ingress traffic
+  crypto          Encryption/Decryption commands
+  cwmp            Configure CPE WAN Management Protocol(CWMP) on this interface
+  default         Set a command to its defaults
+  delay           Specify interface throughput delay
+  description     Interface specific description
+  dlsw            DLSw interface subcommands
+  encapsulation   Set encapsulation type for an interface
+  eou             EAPoUDP Interface Configuration Commands
+  exit            Exit from interface configuration mode
+  fhrp            Configure FHRP
+  flow-sampler    Attach flow sampler to the interface
+  glbp            Gateway Load Balancing Protocol interface commands
+  ip              Interface Internet Protocol config commands
+  ipv6            IPv6 interface subcommands
+  isis            IS-IS commands
+  iso-igrp        ISO-IGRP interface subcommands
+  keepalive       Enable keepalive
+  llc2            LLC2 Interface Subcommands
+  lldp            LLDP interface subcommands
+  logging         Configure logging for interface
+  mtu             Set the interface Maximum Transmission Unit (MTU)
+  netbios         Use a defined NETBIOS access list or enable name-caching
+  no              Negate a command or set its defaults
+  ntp             Configure NTP
+  ospfv3          OSPFv3 interface commands
+  pppoe           pppoe interface subcommands
+  pppoe-client    pppoe client
+  rate-limit      Rate Limit
+  redundancy      RG redundancy interface config
+  routing         Per-interface routing configuration
+  service-policy  Configure CPL Service Policy
+  shutdown        Shutdown the selected interface
+  snapshot        Configure snapshot support on the interface
+  snmp            Modify SNMP interface parameters
+  source          Get config from another source
+  standby         HSRP interface configuration commands
+  tarp            TARP interface subcommands
+  timeout         Define timeout values for this interface
+  topology        Configure routing topology on the interface
+  user-group      Interface-User-group Association
+  vrf             VPN Routing/Forwarding parameters on the interface
+  vrrp            VRRP Interface configuration commands
+  waas            WAN Optimization
+  zone-member     Apply zone name
+
+team6router(config-subif)#router ospf 6
+team6router(config-router)#pass
+team6router(config-router)#passive-interface g0/1.5
+team6router(config-router)#passive-interface g0/1.9
+team6router(config-router)#passive-interface g0/1.1
+
+
+RFC 1918 (Private address space)
+===========
+A - 10.0.0.0/8
+B - 172.16.0.0/12  .16-31
+C - 192.168.0.0/16  
+
+ACLs
+===========
+ACLs parse top down till the 1st match (permit or deny) then stop  - therefore place more specific 
+
+
+
+
+
+
+
+
+
+

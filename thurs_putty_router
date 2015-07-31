@@ -1,0 +1,1055 @@
+=~=~=~=~=~=~=~=~=~=~=~= PuTTY log 2015.07.30 10:32:17 =~=~=~=~=~=~=~=~=~=~=~=
+
+team6router(config-router)#login as: racker
+Using keyboard-interactive authentication.
+Password: 
+ Hello 
+team6router#show ospf ?
+  <1-65535>            Process ID number
+  bad-checksum         Packets received with a bad checksum
+  border-routers       Border and Boundary Router Information
+  database             Database summary
+  events               Event log
+  flood-list           Link state flood list
+  graceful-restart     Graceful restart information
+  interface            Interface information
+  ipv4                 Address family
+  ipv6                 Address family
+  max-metric           Max-metric origination information
+  neighbor             Neighbor list
+  request-list         Link state request list
+  retransmission-list  Link state retransmission list
+  rib                  Routing Information Base (RIB)
+  sham-links           Sham link information
+  statistic            Statistics
+  summary-prefix       Summary-prefix redistribution Information
+  timers               Timer lists
+  traffic              Traffic statistics
+  virtual-links        Virtual link information
+  vrf                  VPN Routing/Forwarding instance
+  |                    Output modifiers
+  <cr>
+
+team6router#show ospf neighbors
+                              ^
+% Invalid input detected at '^' marker.
+
+team6router#show ospf neighbors 
+team6router#show      show ospf ?
+  <1-65535>            Process ID number
+  bad-checksum         Packets received with a bad checksum
+  border-routers       Border and Boundary Router Information
+  database             Database summary
+  events               Event log
+  flood-list           Link state flood list
+  graceful-restart     Graceful restart information
+  interface            Interface information
+  ipv4                 Address family
+  ipv6                 Address family
+  max-metric           Max-metric origination information
+  neighbor             Neighbor list
+  request-list         Link state request list
+  retransmission-list  Link state retransmission list
+  rib                  Routing Information Base (RIB)
+  sham-links           Sham link information
+  statistic            Statistics
+  summary-prefix       Summary-prefix redistribution Information
+  timers               Timer lists
+  traffic              Traffic statistics
+  virtual-links        Virtual link information
+  vrf                  VPN Routing/Forwarding instance
+  |                    Output modifiers
+  <cr>
+
+team6router#show ospf interface ?
+  Async                    Async interface
+  Auto-Template            Auto-Template interface
+  BVI                      Bridge-Group Virtual Interface
+  CDMA-Ix                  CDMA Ix interface
+  CTunnel                  CTunnel interface
+  Dialer                   Dialer interface
+  Embedded-Service-Engine  cisco embedded service engine module
+  GigabitEthernet          GigabitEthernet IEEE 802.3z
+  LongReachEthernet        Long-Reach Ethernet interface
+  Loopback                 Loopback interface
+  MFR                      Multilink Frame Relay bundle interface
+  Multilink                Multilink-group interface
+  Null                     Null interface
+  Port-channel             Ethernet Channel of interfaces
+  Serial                   Serial
+  Tunnel                   Tunnel interface
+  Vif                      PGM Multicast Host interface
+  Virtual-PPP              Virtual PPP interface
+  Virtual-Template         Virtual Template interface
+  Virtual-TokenRing        Virtual TokenRing
+  brief                    Brief interface information
+  vmi                      Virtual Multipoint Interface
+  |                        Output modifiers
+  <cr>
+
+team6router#show ospf interface 
+team6router#show ospf interface 
+team6router#show ip route
+Codes: L - local, C - connected, S - static, R - RIP, M - mobile, B - BGP
+       D - EIGRP, EX - EIGRP external, O - OSPF, IA - OSPF inter area 
+       N1 - OSPF NSSA external type 1, N2 - OSPF NSSA external type 2
+       E1 - OSPF external type 1, E2 - OSPF external type 2
+       i - IS-IS, su - IS-IS summary, L1 - IS-IS level-1, L2 - IS-IS level-2
+       ia - IS-IS inter area, * - candidate default, U - per-user static route
+       o - ODR, P - periodic downloaded static route, H - NHRP, l - LISP
+       + - replicated route, % - next hop override
+
+Gateway of last resort is not set
+
+      1.0.0.0/32 is subnetted, 1 subnets
+O        1.1.1.1 [110/2] via 192.168.1.1, 03:48:39, GigabitEthernet0/0
+      2.0.0.0/32 is subnetted, 1 subnets
+O        2.2.2.2 [110/2] via 192.168.1.2, 03:00:54, GigabitEthernet0/0
+      6.0.0.0/32 is subnetted, 1 subnets
+C        6.6.6.6 is directly connected, Loopback0
+      172.1.0.0/24 is subnetted, 3 subnets
+O        172.1.5.0 [110/2] via 192.168.1.1, 03:48:39, GigabitEthernet0/0
+O        172.1.9.0 [110/2] via 192.168.1.1, 03:48:39, GigabitEthernet0/0
+O        172.1.12.0 [110/2] via 192.168.1.1, 03:48:39, GigabitEthernet0/0
+      172.2.0.0/24 is subnetted, 3 subnets
+O        172.2.5.0 [110/2] via 192.168.1.2, 03:00:54, GigabitEthernet0/0
+O        172.2.9.0 [110/2] via 192.168.1.2, 03:00:54, GigabitEthernet0/0
+O        172.2.12.0 [110/2] via 192.168.1.2, 03:00:54, GigabitEthernet0/0
+      172.3.0.0/24 is subnetted, 3 subnets
+O        172.3.5.0 [110/2] via 192.168.1.3, 03:37:10, GigabitEthernet0/0
+O        172.3.9.0 [110/2] via 192.168.1.3, 03:37:10, GigabitEthernet0/0
+O        172.3.12.0 [110/2] via 192.168.1.3, 03:37:10, GigabitEthernet0/0
+      172.4.0.0/24 is subnetted, 3 subnets
+O        172.4.5.0 [110/2] via 192.168.1.4, 03:52:15, GigabitEthernet0/0
+O        172.4.9.0 [110/2] via 192.168.1.4, 03:52:15, GigabitEthernet0/0
+O        172.4.12.0 [110/2] via 192.168.1.4, 03:52:15, GigabitEthernet0/0
+      172.6.0.0/16 is variably subnetted, 6 subnets, 2 masks
+C        172.6.5.0/24 is directly connected, GigabitEthernet0/1.5
+L        172.6.5.1/32 is directly connected, GigabitEthernet0/1.5
+C        172.6.9.0/24 is directly connected, GigabitEthernet0/1.9
+L        172.6.9.1/32 is directly connected, GigabitEthernet0/1.9
+C        172.6.12.0/24 is directly connected, GigabitEthernet0/1.12
+L        172.6.12.1/32 is directly connected, GigabitEthernet0/1.12
+      192.168.1.0/24 is variably subnetted, 2 subnets, 2 masks
+C        192.168.1.0/24 is directly connected, GigabitEthernet0/0
+L        192.168.1.6/32 is directly connected, GigabitEthernet0/0
+team6router#login as: racker
+Using keyboard-interactive authentication.
+Password: 
+ Hello 
+team6router#show acc
+team6router#show access-l
+team6router#show access-lists 
+Standard IP access list 99
+    10 deny   172.1.5.10
+    20 permit any (2 matches)
+    30 deny   any log
+team6router#show access-lists 
+Standard IP access list 99
+    10 deny   172.1.5.10
+    20 permit any (2 matches)
+    30 deny   any log
+team6router#show access-lists 
+Standard IP access list 99
+    10 deny   172.1.5.10
+    20 permit any (2 matches)
+    30 deny   any log
+team6router#show access-lists 
+Standard IP access list 99
+    10 deny   172.1.5.10
+    20 permit any (2 matches)
+    30 deny   any log
+team6router#show access-lists 
+Standard IP access list 99
+    10 deny   172.1.5.10
+    20 permit any (2 matches)
+    30 deny   any log
+team6router#show access-lists 
+Standard IP access list 99
+    10 deny   172.1.5.10
+    20 permit any (2 matches)
+    30 deny   any log
+team6router#show access-lists 
+Standard IP access list 99
+    10 deny   172.1.5.10
+    20 permit any (2 matches)
+    30 deny   any log
+team6router#show access-lists 
+Standard IP access list 99
+    10 deny   172.1.5.10
+    20 permit any (2 matches)
+    30 deny   any log
+team6router#show access-lists 
+Standard IP access list 99
+    10 deny   172.1.5.10
+    20 permit any (2 matches)
+    30 deny   any log
+team6router#show access-lists 
+Standard IP access list 99
+    10 deny   172.1.5.10
+    20 permit any (2 matches)
+    30 deny   any log
+team6router#show access-lists 
+Standard IP access list 99
+    10 deny   172.1.5.10
+    20 permit any (2 matches)
+    30 deny   any log
+team6router#show access-lists 
+Standard IP access list 99
+    10 deny   172.1.5.10
+    20 permit any (2 matches)
+    30 deny   any log
+team6router#show access-lists 
+Standard IP access list 99
+    10 deny   172.1.5.10
+    20 permit any (2 matches)
+    30 deny   any log
+team6router#show access-lists 
+Standard IP access list 99
+    10 deny   172.1.5.10
+    20 permit any (2 matches)
+    30 deny   any log
+team6router#show access-lists 
+Standard IP access list 99
+    10 deny   172.1.5.10
+    20 permit any (2 matches)
+    30 deny   any log
+team6router#show access-lists 
+Standard IP access list 99
+    10 deny   172.1.5.10
+    20 permit any (2 matches)
+    30 deny   any log
+team6router#show access-lists 
+Standard IP access list 99
+    10 deny   172.1.5.10
+    20 permit any (2 matches)
+    30 deny   any log
+team6router#show access-lists 
+Standard IP access list 99
+    10 deny   172.1.5.10
+    20 permit any (2 matches)
+    30 deny   any log
+team6router#show access-lists 
+Standard IP access list 99
+    10 deny   172.1.5.10
+    20 permit any (2 matches)
+    30 deny   any log
+team6router#show access-lists 
+Standard IP access list 99
+    10 deny   172.1.5.10
+    20 permit any (2 matches)
+    30 deny   any log
+team6router#show access-lists 
+Standard IP access list 99
+    10 deny   172.1.5.10
+    20 permit any (2 matches)
+    30 deny   any log
+team6router#?
+Exec commands:
+  <1-99>           Session number to resume
+  access-enable    Create a temporary Access-List entry
+  access-profile   Apply user-profile to interface
+  access-template  Create a temporary Access-List entry
+  archive          manage archive files
+  auto             Exec level Automation
+  beep             Blocks Extensible Exchange Protocol commands
+  bfe              For manual emergency modes setting
+  calendar         Manage the hardware calendar
+  call-home        Call-Home commands
+  cd               Change current directory
+  clear            Reset functions
+  clock            Manage the system clock
+  cns              CNS agents
+  configure        Enter configuration mode
+  connect          Open a terminal connection
+  copy             Copy from one file to another
+  crypto           Encryption related commands.
+  cts              Cisco Trusted Security Exec Commands
+  debug            Debugging functions (see also 'undebug')
+  delete           Delete a file
+  dir              List files on a filesystem
+  disable          Turn off privileged commands
+  disconnect       Disconnect an existing network connection
+  do-exec          Mode-independent "do-exec" prefix support
+  dot1x            IEEE 802.1X Exec Commands
+  eap              EAP Exec Commands
+  emm              Run a configured Menu System
+  enable           Turn on privileged commands
+  eou              EAPoUDP
+  erase            Erase a filesystem
+  ethernet         Ethernet parameters
+  event            Event related commands
+  exit             Exit from the EXEC
+  format           Format a filesystem
+  fsck             Fsck a filesystem
+  help             Description of the interactive help system
+  hw-module        Hardware module level specific operations
+  if-mgr           IF-MGR operations
+  ip               Exec commands for IP features
+  ips              Intrusion Prevention System
+  isdn             Run an ISDN EXEC command on an ISDN interface
+  license          License information
+  lock             Lock the terminal
+  logging          Handles logging operations
+  login            Log in as a particular user
+  logout           Exit from the EXEC
+  microcode        microcode commands
+  mkdir            Create new directory
+  modemui          Start a modem-like user interface
+  monitor          Monitoring different system events
+  more             Display the contents of a file
+  mrinfo           Request neighbor and version information from a multicast router
+  mrm              IP Multicast Routing Monitor Test
+  mstat            Show statistics after multiple multicast traceroutes
+  mtrace           Trace reverse multicast path from destination to source
+  name-connection  Name an existing network connection
+ --More--           no               Disable debugging functions
+  pad              Open a X.29 PAD connection
+  partition        Partition disk
+  ping             Send echo messages
+  power            PS exec commands
+  ppp              Start IETF Point-to-Point Protocol (PPP)
+  pwd              Display current working directory
+  redundancy       Redundancy Facility (RF) exec commands
+  release          Release a resource
+  reload           Halt and perform a cold restart
+  rename           Rename a file
+  renew            Renew a resource
+  restart          Restart Connection
+  resume           Resume an active network connection
+  rlogin           Open an rlogin connection
+  rmdir            Remove existing directory
+  rsh              Execute a remote command
+  send             Send a message to other tty lines
+  service-module   Service module
+  set              Set system parameter (not config)
+  setup            Run the SETUP command facility
+  show             Show running system information
+  slip             Start Serial-line IP (SLIP)
+  software         Software commands
+  spec-file        format spec file commands
+  ssh              Open a secure shell client connection
+  start-chat       Start a chat-script on a line
+  systat           Display information about terminal lines
+  tarp             TARP (Target ID Resolution Protocol) commands
+  tclquit          Quit Tool Command Language shell
+  tclsh            Tool Command Language shell
+  telnet           Open a telnet connection
+  terminal         Set terminal line parameters
+  test             Test subsystems, memory, and interfaces
+  traceroute       Trace route to destination
+  trm              Trend Registration Module
+  tunnel           Open a tunnel connection
+  udptn            Open an udptn connection
+  undebug          Disable debugging functions (see also 'debug')
+  upgrade          Upgrade commands
+  verify           Verify a file
+  vlan             Configure VLAN parameters
+  vtp              Configure global VTP state
+  waas             IOS Wide Area Application Services
+  webvpn           WebVPN exec command
+  where            List active connections
+  which-route      Do OSI route table lookup and display results
+  write            Write running configuration to memory, network, or terminal
+  x28              Become an X.28 PAD
+  x3               Set X.3 parameters on PAD
+
+team6router#show l
+team6router#show l
+team6router#show lo
+team6router#show lo
+team6router#show lo
+team6router#show lo
+team6router#show lo
+team6router#show lo  ?
+  aaa                   Show AAA values
+  access-expression     List access expression
+  access-lists          List access lists
+  adjacency             Adjacent nodes
+  aliases               Display alias commands
+  alignment             Show alignment information
+  appfw                 Application Firewall information
+  archive               Archive functions
+  arp                   ARP table
+  async                 Information on terminal lines used as router interfaces
+  authentication        Shows Auth Manager registrations or sessions
+  auto                  Show Automation Template
+  autoupgrade           Show autoupgrade related information
+  backup                Backup status
+  beep                  Show BEEP information
+  bfd                   BFD protocol info
+  bgp                   BGP information
+  bridge                Bridge Forwarding/Filtering Database [verbose]
+  buffers               Buffer pool statistics
+  calendar              Display the hardware calendar
+  call                  Show call
+  call-home             Show command for call home
+  caller                Display information about dialup connections
+  capability            Capability Information
+  cca                   CCA information
+  cce                   Common Classification Engine (CCE)
+  cdapi                 CDAPI information
+  cdp                   CDP information
+  cef                   CEF address family independent status
+  checkpoint            Checkpoint Facility (CF)
+  cisp                  Shows CISP information
+  class-map             Show CPL Class Map
+  clns                  CLNS network information
+  clock                 Display the system clock
+  cls                   DLC user information
+  cns                   CNS agents
+  compress              Show compression statistics
+  configuration         Contents of Non-Volatile memory
+  connection            Show Connection
+  content-scan          Shows content-scan information
+  context               Show context information about recent crash(s)
+  control-plane         Control Plane information
+  controllers           Interface controller status
+  cops                  COPS information
+  crypto                Encryption module
+  csdb                  Show CSDB Information
+  cts                   Cisco Trusted Security information
+  cwmp                  Show CPE WAN Management Protocol(cwmp) information
+  dampening             Display dampening information 
+  data-corruption       Show data errors
+  database              Show Database
+  debugging             State of each debugging option
+  derived-config        Derived operating configuration
+  dhcp                  Dynamic Host Configuration Protocol status
+  diag                  Show diagnostic information for port adapters/modules
+  dialer                Dialer parameters and statistics
+  dlsw                  Data Link Switching information
+  dmvpn                 Display DMVPN session related information
+ --More--           dnsix                 Shows Dnsix/DMDP information
+  dot1q-tunnel          Display dot1q tunnel ports
+  dot1x                 Dot1x information
+  dtp                   DTP information
+  eap                   Shows EAP registration/session information
+  ecfmpal               Show ECFM Commands
+  eigrp                 EIGRP show commands
+  energywise            EnergyWise show commands
+  entry                 Queued terminal entries
+  environment           Environmental monitor statistics
+  eou                   EAPoUDP
+  epm                   EPM information
+  errdisable            Error disable
+  eswilp                Marvel ATU & VTU table dump
+  ethernet              Ethernet parameters
+  event                 Embedded event related commands
+  event-manager         Event manager information
+  exception             exception information
+  fastblk               fastblk memory information
+  fhrp                  FHRP information
+  file                  Show filesystem information
+  flash:                display information about flash: file system
+  flow                  Flow information
+  flow-sampler          Display the flow samplers configured
+  format                Show format information
+  frame-relay           Frame-Relay information
+  funi                  FUNI information
+  glbp                  GLBP information
+  hardware              Hardware specific information
+  history               Display the session command history
+  hosts                 IP domain-name, lookup style, nameservers, and host table
+  html                  HTML helper commands
+  idb                   List of Interface Descriptor Blocks
+  identity              Identity profiles and policies
+  idmgr                 IDMGR interaction
+  if-mgr                if-mgr information
+  interfaces            Interface status and configuration
+  inventory             Show the physical inventory
+  ip                    IP information
+  ipam                  IP Addr Mgr (IPAM) information
+  ipc                   Interprocess communications commands
+  iphc-profile          Show IPHC Profile
+  ipv6                  IPv6 information
+  isis                  IS-IS routing information
+  kerberos              Show Kerberos Values
+  key                   Key information
+  keystore              Show keystore information
+  kron                  Kron Subsystem
+  l2protocol-tunnel     Display L2PT status and configurations
+  l4f                   L4F details
+  license               Show license information
+  line                  TTY line information
+  llc2                  IBM LLC2 circuit information
+  lldp                  LLDP information
+  location              Display the system location
+  logging               Show the contents of logging buffers
+  login                 Display Secure Login Configurations and State
+  mab                   MAB information
+  mac-address-table     MAC forwarding table
+ --More--         
+team6router#show show logging
+                  ^
+% Invalid input detected at '^' marker.
+
+team6router#show show logging logging logging logging logging logging logging  logging
+Syslog logging: enabled (0 messages dropped, 2 messages rate-limited, 0 flushes, 0 overruns, xml disabled, filtering disabled)
+
+No Active Message Discriminator.
+
+
+
+No Inactive Message Discriminator.
+
+
+    Console logging: level debugging, 58 messages logged, xml disabled,
+                     filtering disabled
+    Monitor logging: level debugging, 0 messages logged, xml disabled,
+                     filtering disabled
+    Buffer logging:  level debugging, 58 messages logged, xml disabled,
+                    filtering disabled
+    Exception Logging: size (4096 bytes)
+    Count and timestamp logging messages: disabled
+    Persistent logging: disabled
+
+No active filter modules.
+
+    Trap logging: level informational, 60 message lines logged
+        Logging Source-Interface:       VRF Name:
+
+Log Buffer (8192 bytes):
+
+*Jan  2 00:00:03.111: %IOS_LICENSE_IMAGE_APPLICATION-6-LICENSE_LEVEL: Module name = c1900 Next reboot level = ipbasek9 and License = ipbasek9
+*Jan  2 00:00:03.303: %IOS_LICENSE_IMAGE_APPLICATION-6-LICENSE_LEVEL: Module name = c1900 Next reboot level = securityk9 and License = securityk9
+*Jul 30 13:26:33.127: %IFMGR-7-NO_IFINDEX_FILE: Unable to open nvram:/ifIndex-table No such file or directory
+*Jul 30 13:26:33.131: c3600_scp_set_dstaddr2_idb(184)add = 80 name is Embedded-Service-Engine0/0
+*Jul 30 13:26:51.607: %VPN_HW-6-INFO_LOC: Crypto engine: onboard 0  State changed to: Initialized 
+*Jul 30 13:26:51.611: %VPN_HW-6-INFO_LOC: Crypto engine: onboard 0  State changed to: Enabled 
+*Jul 30 13:26:52.499: %LINK-3-UPDOWN: Interface GigabitEthernet0/0, changed state to up
+*Jul 30 13:26:52.499: %LINK-3-UPDOWN: Interface GigabitEthernet0/1, changed state to up
+*Jul 30 13:26:52.499: %LINK-3-UPDOWN: Interface Serial0/0/0, changed state to up
+*Jul 30 13:26:52.499: %LINK-3-UPDOWN: Interface Serial0/0/1, changed state to down
+*Jul 30 13:26:53.499: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet0/0, changed state to up
+*Jul 30 13:26:53.499: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet0/1, changed state to up
+*Jul 30 13:26:53.499: %LINEPROTO-5-UPDOWN: Line protocol on Interface Serial0/0/0, changed state to up
+*Jul 30 13:26:53.499: %LINEPROTO-5-UPDOWN: Line protocol on Interface Serial0/0/1, changed state to down
+*Jul 30 13:26:57.603: %USBFLASH-5-CHANGE: usbflash0 has been inserted!
+*Jul 30 13:26:59.671: %SYS-6-STARTUP_CONFIG_IGNORED: System startup configuration is ignored based on the configuration register setting.
+*Jul 30 13:29:46.615: %LINK-3-UPDOWN: Interface Serial0/0/0, changed state to down
+*Jul 30 13:29:47.615: %LINEPROTO-5-UPDOWN: Line protocol on Interface Serial0/0/0, changed state to down
+*Jul 30 13:31:57.495: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet0/0, changed state to down
+*Jul 30 13:31:58.495: %LINK-3-UPDOWN: Interface GigabitEthernet0/0, changed state to down
+*Jul 30 13:32:11.495: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet0/1, changed state to down
+*Jul 30 13:32:12.495: %LINK-3-UPDOWN: Interface GigabitEthernet0/1, changed state to down
+*Jul 30 13:36:32.247: %LINK-5-CHANGED: Interface GigabitEthernet0/0, changed state to administratively down
+*Jul 30 13:36:32.447: %LINK-5-CHANGED: Interface GigabitEthernet0/1, changed state to administratively down
+*Jul 30 13:36:33.891: %LINK-5-CHANGED: Interface Embedded-Service-Engine0/0, changed state to administratively down
+*Jul 30 13:36:33.891: %LINK-5-CHANGED: Interface Serial0/0/0, changed state to administratively down
+*Jul 30 13:36:33.891: %LINK-5-CHANGED: Interface Serial0/0/1, changed state to administratively down
+*Jul 30 13:36:34.935: %LINEPROTO-5-UPDOWN: Line protocol on Interface Embedded-Service-Engine0/0, changed state to down
+*Jul 30 13:36:35.419: %SYS-5-RESTART: System restarted --
+Cisco IOS Software, C1900 Software (C1900-UNIVERSALK9-M), Version 15.2(4)M6, RELEASE SOFTWARE (fc2)
+Technical Support: http://www.cisco.com/techsupport
+Copyright (c) 1986-2014 by Cisco Systems, Inc.
+ --More--         
+team6router#[Ashow logging
+Syslog logging: enabled (0 messages dropped, 2 messages rate-limited, 0 flushes, 0 overruns, xml disabled, filtering disabled)
+
+No Active Message Discriminator.
+
+
+
+No Inactive Message Discriminator.
+
+
+    Console logging: level debugging, 58 messages logged, xml disabled,
+                     filtering disabled
+    Monitor logging: level debugging, 0 messages logged, xml disabled,
+                     filtering disabled
+    Buffer logging:  level debugging, 58 messages logged, xml disabled,
+                    filtering disabled
+    Exception Logging: size (4096 bytes)
+    Count and timestamp logging messages: disabled
+    Persistent logging: disabled
+
+No active filter modules.
+
+    Trap logging: level informational, 60 message lines logged
+        Logging Source-Interface:       VRF Name:
+
+Log Buffer (8192 bytes):
+
+*Jan  2 00:00:03.111: %IOS_LICENSE_IMAGE_APPLICATION-6-LICENSE_LEVEL: Module name = c1900 Next reboot level = ipbasek9 and License = ipbasek9
+*Jan  2 00:00:03.303: %IOS_LICENSE_IMAGE_APPLICATION-6-LICENSE_LEVEL: Module name = c1900 Next reboot level = securityk9 and License = securityk9
+*Jul 30 13:26:33.127: %IFMGR-7-NO_IFINDEX_FILE: Unable to open nvram:/ifIndex-table No such file or directory
+*Jul 30 13:26:33.131: c3600_scp_set_dstaddr2_idb(184)add = 80 name is Embedded-Service-Engine0/0
+*Jul 30 13:26:51.607: %VPN_HW-6-INFO_LOC: Crypto engine: onboard 0  State changed to: Initialized 
+*Jul 30 13:26:51.611: %VPN_HW-6-INFO_LOC: Crypto engine: onboard 0  State changed to: Enabled 
+*Jul 30 13:26:52.499: %LINK-3-UPDOWN: Interface GigabitEthernet0/0, changed state to up
+*Jul 30 13:26:52.499: %LINK-3-UPDOWN: Interface GigabitEthernet0/1, changed state to up
+*Jul 30 13:26:52.499: %LINK-3-UPDOWN: Interface Serial0/0/0, changed state to up
+*Jul 30 13:26:52.499: %LINK-3-UPDOWN: Interface Serial0/0/1, changed state to down
+*Jul 30 13:26:53.499: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet0/0, changed state to up
+*Jul 30 13:26:53.499: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet0/1, changed state to up
+*Jul 30 13:26:53.499: %LINEPROTO-5-UPDOWN: Line protocol on Interface Serial0/0/0, changed state to up
+*Jul 30 13:26:53.499: %LINEPROTO-5-UPDOWN: Line protocol on Interface Serial0/0/1, changed state to down
+*Jul 30 13:26:57.603: %USBFLASH-5-CHANGE: usbflash0 has been inserted!
+*Jul 30 13:26:59.671: %SYS-6-STARTUP_CONFIG_IGNORED: System startup configuration is ignored based on the configuration register setting.
+*Jul 30 13:29:46.615: %LINK-3-UPDOWN: Interface Serial0/0/0, changed state to down
+*Jul 30 13:29:47.615: %LINEPROTO-5-UPDOWN: Line protocol on Interface Serial0/0/0, changed state to down
+*Jul 30 13:31:57.495: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet0/0, changed state to down
+*Jul 30 13:31:58.495: %LINK-3-UPDOWN: Interface GigabitEthernet0/0, changed state to down
+*Jul 30 13:32:11.495: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet0/1, changed state to down
+*Jul 30 13:32:12.495: %LINK-3-UPDOWN: Interface GigabitEthernet0/1, changed state to down
+*Jul 30 13:36:32.247: %LINK-5-CHANGED: Interface GigabitEthernet0/0, changed state to administratively down
+*Jul 30 13:36:32.447: %LINK-5-CHANGED: Interface GigabitEthernet0/1, changed state to administratively down
+*Jul 30 13:36:33.891: %LINK-5-CHANGED: Interface Embedded-Service-Engine0/0, changed state to administratively down
+*Jul 30 13:36:33.891: %LINK-5-CHANGED: Interface Serial0/0/0, changed state to administratively down
+*Jul 30 13:36:33.891: %LINK-5-CHANGED: Interface Serial0/0/1, changed state to administratively down
+*Jul 30 13:36:34.935: %LINEPROTO-5-UPDOWN: Line protocol on Interface Embedded-Service-Engine0/0, changed state to down
+*Jul 30 13:36:35.419: %SYS-5-RESTART: System restarted --
+Cisco IOS Software, C1900 Software (C1900-UNIVERSALK9-M), Version 15.2(4)M6, RELEASE SOFTWARE (fc2)
+Technical Support: http://www.cisco.com/techsupport
+Copyright (c) 1986-2014 by Cisco Systems, Inc.
+ --More--         Compiled Wed 19-Mar-14 11:56 by prod_rel_team
+*Jul 30 13:36:35.487: %SNMP-5-COLDSTART: SNMP agent on host Router is undergoing a cold start
+*Jul 30 13:36:36.103: %SYS-6-BOOTTIME: Time taken to reboot after reload =  715 seconds
+*Jul 30 13:36:36.715: %CRYPTO-6-ISAKMP_ON_OFF: ISAKMP is OFF
+*Jul 30 13:36:36.715: %CRYPTO-6-GDOI_ON_OFF: GDOI is OFF
+*Jul 30 13:36:36.715: %CRYPTO-6-ISAKMP_ON_OFF: ISAKMP is OFF
+*Jul 30 13:36:36.715: %CRYPTO-6-GDOI_ON_OFF: GDOI is OFF
+*Jul 30 13:38:37.975: %SYS-5-CONFIG_I: Configured from console by console
+*Jul 30 08:54:00.000: %SYS-6-CLOCKUPDATE: System clock has been updated from 13:39:06 UTC Thu Jul 30 2015 to 08:54:00 UTC Thu Jul 30 2015, configured from console by console.
+Jul 30 08:57:53.815: %SYS-6-CLOCKUPDATE: System clock has been updated from 08:57:53 UTC Thu Jul 30 2015 to 09:57:53 central Thu Jul 30 2015, configured from console by console.
+Jul 30 09:03:47.535: %LINK-3-UPDOWN: Interface GigabitEthernet0/0, changed state to down
+Jul 30 09:03:49.635: %LINK-3-UPDOWN: Interface GigabitEthernet0/0, changed state to up
+Jul 30 09:03:50.635: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet0/0, changed state to up
+Jul 30 09:05:11.567: %LINK-3-UPDOWN: Interface GigabitEthernet0/1, changed state to down
+Jul 30 09:05:14.627: %LINK-3-UPDOWN: Interface GigabitEthernet0/1, changed state to up
+Jul 30 09:05:15.627: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet0/1, changed state to up
+Jul 30 09:09:32.975: %LINEPROTO-5-UPDOWN: Line protocol on Interface Loopback0, changed state to up
+Jul 30 09:14:53.627: %SYS-5-CONFIG_I: Configured from console by console
+Jul 30 09:21:57.803: %SSH-5-ENABLED: SSH 1.99 has been enabled
+Jul 30 09:22:23.719: %SYS-5-CONFIG_I: Configured from console by console
+Jul 30 09:29:07.627: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet0/1, changed state to down
+Jul 30 09:29:08.627: %LINK-3-UPDOWN: Interface GigabitEthernet0/1, changed state to down
+Jul 30 09:31:24.627: %LINK-3-UPDOWN: Interface GigabitEthernet0/1, changed state to up
+Jul 30 09:31:25.627: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet0/1, changed state to up
+Jul 30 09:32:09.899: %OSPF-5-ADJCHG: Process 6, Nbr 4.4.4.4 on GigabitEthernet0/0 from LOADING to FULL, Loading Done
+Jul 30 09:35:46.591: %OSPF-5-ADJCHG: Process 6, Nbr 1.1.1.1 on GigabitEthernet0/0 from LOADING to FULL, Loading Done
+Jul 30 09:47:15.835: %OSPF-5-ADJCHG: Process 6, Nbr 3.3.3.3 on GigabitEthernet0/0 from LOADING to FULL, Loading Done
+Jul 30 10:23:30.951: %OSPF-5-ADJCHG: Process 6, Nbr 2.2.2.2 on GigabitEthernet0/0 from LOADING to FULL, Loading Done
+Jul 30 10:30:08.095: %SYS-5-CONFIG_I: Configured from console by racker on vty0 (172.6.12.12)
+Jul 30 11:13:07.763: %SYS-5-CONFIG_I: Configured from console by racker on vty0 (172.6.12.12)
+team6router#  show loggingshow loggingaccess-lists 
+Standard IP access list 99
+    10 deny   172.1.5.10
+    20 permit any (2 matches)
+    30 deny   any log
+team6router#show access-lists 
+Standard IP access list 99
+    10 deny   172.1.5.10
+    20 permit any (2 matches)
+    30 deny   any log
+team6router#show access-lists 
+Standard IP access list 99
+    10 deny   172.1.5.10
+    20 permit any (2 matches)
+    30 deny   any log
+team6router#show access-lists 
+Standard IP access list 99
+    10 deny   172.1.5.10
+    20 permit any (2 matches)
+    30 deny   any log
+team6router#show access-lists 
+Standard IP access list 99
+    10 deny   172.1.5.10
+    20 permit any (2 matches)
+    30 deny   any log
+team6router#show access-lists 
+Standard IP access list 99
+    10 deny   172.1.5.10
+    20 permit any (2 matches)
+    30 deny   any log
+team6router#show access-lists 
+Standard IP access list 99
+    10 deny   172.1.5.10
+    20 permit any (2 matches)
+    30 deny   any log
+team6router#show access-lists 
+Standard IP access list 99
+    10 deny   172.1.5.10
+    20 permit any (2 matches)
+    30 deny   any log
+team6router#show access-lists 
+Standard IP access list 99
+    10 deny   172.1.5.10
+    20 permit any (2 matches)
+    30 deny   any log
+team6router#show access-lists 
+Standard IP access list 99
+    10 deny   172.1.5.10
+    20 permit any (2 matches)
+    30 deny   any log
+team6router#line vty 0 4
+              ^
+% Invalid input detected at '^' marker.
+
+team6router#conf t
+Enter configuration commands, one per line.  End with CNTL/Z.
+team6router(config)#line vty 0 4
+team6router(config-line)#access-c
+team6router(config-line)#access-class 99 in
+team6router(config-line)#exit
+team6router(config)#exit
+team6router#conf tline vty 0 4show access-lists 
+Standard IP access list 99
+    10 deny   172.1.5.10
+    20 permit any (2 matches)
+    30 deny   any log
+team6router#show access-lists conf t            line vty 0 4
+              ^
+% Invalid input detected at '^' marker.
+
+team6router#conf t
+Enter configuration commands, one per line.  End with CNTL/Z.
+team6router(config)#exitaccess-class 99 inline vty 0 4      
+team6router(config-line)#no accss  ess-class 99
+% Incomplete command.
+
+team6router(config-line)#no access-class 99 in
+team6router(config-line)#^Z
+team6router#conf tline vty 0 4show access-lists 
+Standard IP access list 98
+    10 deny   172.1.5.10 (18 matches)
+    20 permit any (12 matches)
+    30 deny   any log
+Standard IP access list 99
+    10 deny   172.1.5.10
+    20 permit any (2 matches)
+    30 deny   any log
+team6router#conf t
+Enter configuration commands, one per line.  End with CNTL/Z.
+team6router(config)#no access  -list 99
+team6router(config)#^Z
+team6router#conf tshow access-lists 
+Standard IP access list 98
+    10 deny   172.1.5.10 (130 matches)
+    20 permit any (129 matches)
+    30 deny   any log
+team6router#login as: racker
+Using keyboard-interactive authentication.
+Password: 
+ Hello 
+team6router#show acci es
+team6router#show access-l
+team6router#show access-lists 
+Standard IP access list 98
+    10 deny   172.1.5.10 (468 matches)
+    20 permit any (2215 matches)
+    30 deny   any log
+team6router#int g/0/    g0/0
+             ^
+% Invalid input detected at '^' marker.
+
+team6router#int g0/0        conf t
+Enter configuration commands, one per line.  End with CNTL/Z.
+team6router(config)#int g0/0
+team6router(config-if)#no acc
+team6router(config-if)#no access-expression                      ?
+Interface configuration commands:
+  aaa                 Authentication, Authorization and Accounting.
+  access-expression   Build a bridge boolean access expression
+  arp                 Set arp type (arpa, probe, snap), timeout, log options or packet priority
+  authentication      Auth Manager Interface Configuration Commands
+  backup              Modify backup parameters
+  bandwidth           Set bandwidth informational parameter
+  bfd                 BFD interface configuration commands
+  bgp-policy          Apply policy propagated by bgp community string
+  bridge-group        Transparent bridging interface parameters
+  carrier-delay       Specify delay for interface transitions
+  cdp                 CDP interface subcommands
+  channel-group       Add this interface to an Etherchannel group
+  clns                CLNS interface subcommands
+  cmns                OSI CMNS
+  content-scan        Content Scan the ingress traffic
+  crypto              Encryption/Decryption commands
+  cwmp                Configure CPE WAN Management Protocol(CWMP) on this interface
+  dampening           Enable event dampening
+  default             Set a command to its defaults
+  delay               Specify interface throughput delay
+  description         Interface specific description
+  dlsw                DLSw interface subcommands
+  dot1q               dot1q interface configuration commands
+  dot1x               Interface Config Commands for IEEE 802.1X
+  duplex              Configure duplex operation.
+  eou                 EAPoUDP Interface Configuration Commands
+  ethernet            Ethernet interface parameters
+  exit                Exit from interface configuration mode
+  fhrp                Configure FHRP
+  flow-sampler        Attach flow sampler to the interface
+  glbp                Gateway Load Balancing Protocol interface commands
+  help                Description of the interactive help system
+  history             Interface history histograms - 60 second, 60 minute and 72 hour
+  hold-queue          Set hold queue depth
+  ip                  Interface Internet Protocol config commands
+  iphc-profile        Configure IPHC profile
+  ipv6                IPv6 interface subcommands
+  isis                IS-IS commands
+  iso-igrp            ISO-IGRP interface subcommands
+  keepalive           Enable keepalive
+  llc2                LLC2 Interface Subcommands
+  lldp                LLDP interface subcommands
+  load-interval       Specify interval for load calculation for an interface
+  logging             Configure logging for interface
+  loopback            Configure internal loopback on an interface
+  mab                 MAC Authentication Bypass Interface Config Commands
+  mac-address         Manually set interface MAC address
+  macro               Command macro
+  metadata            Metadata Application
+  mop                 DEC MOP server commands
+  mtu                 Set the interface Maximum Transmission Unit (MTU)
+  netbios             Use a defined NETBIOS access list or enable name-caching
+  no                  Negate a command or set its defaults
+  ntp                 Configure NTP
+  ospfv3              OSPFv3 interface commands
+  pppoe               pppoe interface subcommands
+  pppoe-client        pppoe client
+ --More--         
+team6router(config-if)#no ip acc
+team6router(config-if)#no ip acce
+team6router(config-if)#no ip access-group 98
+% Incomplete command.
+
+team6router(config-if)#no ip access-group 98 in
+team6router(config-if)#exit
+team6router(config)#no acces
+team6router(config)#no access-list 98
+team6router(config)#^Z
+team6router#show acc
+team6router#show access-li
+team6router#show access-lists 
+team6router#conf t
+Enter configuration commands, one per line.  End with CNTL/Z.
+team6router(config)#int g0/1
+team6router(config-if)#ip nate in     inside
+team6router(config-if)#int g0/0
+team6router(config-if)#ip nat outside
+team6router(config-if)#exit
+team6router(config)#ip nat insid
+team6router(config)#ip nat inside sour
+team6router(config)#ip nat inside source sta
+team6router(config)#ip nat inside source static 172.6.5.10 192.168.1.106
+team6router(config)#^Z
+team6router#show ip nat tr
+team6router#show ip nat translations 
+Pro Inside global         Inside local          Outside local         Outside global
+--- 192.168.1.106         172.6.5.10            ---                   ---
+team6router#show ip nat translations 
+Pro Inside global         Inside local          Outside local         Outside global
+--- 192.168.1.106         172.6.5.10            ---                   ---
+team6router#show ip nat translations                t stat
+team6router#show ip nat statistics 
+Total active translations: 1 (1 static, 0 dynamic; 0 extended)
+Peak translations: 1, occurred 00:01:09 ago
+Outside interfaces:
+  GigabitEthernet0/0
+Inside interfaces: 
+  GigabitEthernet0/1
+Hits: 0  Misses: 0
+CEF Translated packets: 0, CEF Punted packets: 0
+Expired translations: 0
+Dynamic mappings:
+
+Total doors: 0
+Appl doors: 0
+Normal doors: 0
+Queued Packets: 0
+team6router#show ip nat statistics 
+Total active translations: 1 (1 static, 0 dynamic; 0 extended)
+Peak translations: 1, occurred 00:01:33 ago
+Outside interfaces:
+  GigabitEthernet0/0
+Inside interfaces: 
+  GigabitEthernet0/1
+Hits: 0  Misses: 0
+CEF Translated packets: 0, CEF Punted packets: 0
+Expired translations: 0
+Dynamic mappings:
+
+Total doors: 0
+Appl doors: 0
+Normal doors: 0
+Queued Packets: 0
+team6router#show ip nat statistics translations 
+Pro Inside global         Inside local          Outside local         Outside global
+--- 192.168.1.106         172.6.5.10            ---                   ---
+team6router#conf t
+Enter configuration commands, one per line.  End with CNTL/Z.
+team6router(config)#int g0/1
+team6router(config-if)#no ip nat inside
+team6router(config-if)#int g0/1.5
+team6router(config-subif)#ip nat inside
+team6router(config-subif)#^Z
+team6router#show nat tar  ran
+team6router#show nat trans
+team6router#show nat transl
+team6router#show nat transl               show ip nat
+team6router#show ip nat tr
+team6router#show ip nat translations 
+Pro Inside global         Inside local          Outside local         Outside global
+--- 192.168.1.106         172.6.5.10            ---                   ---
+team6router#show ip nat translations 
+Pro Inside global         Inside local          Outside local         Outside global
+icmp 192.168.1.106:1      172.6.5.10:1          172.6.12.10:1         172.6.12.10:1
+--- 192.168.1.106         172.6.5.10            ---                   ---
+team6router#show ip nat translations conf t                   show ip nat translations              stat
+team6router#show ip nat statistics 
+Total active translations: 2 (1 static, 1 dynamic; 1 extended)
+Peak translations: 2, occurred 00:00:27 ago
+Outside interfaces:
+  GigabitEthernet0/0
+Inside interfaces: 
+  GigabitEthernet0/1.5
+Hits: 4  Misses: 0
+CEF Translated packets: 4, CEF Punted packets: 0
+Expired translations: 0
+Dynamic mappings:
+
+Total doors: 0
+Appl doors: 0
+Normal doors: 0
+Queued Packets: 0
+team6router#show ip nat statistics translations 
+Pro Inside global         Inside local          Outside local         Outside global
+icmp 192.168.1.106:1      172.6.5.10:1          172.6.12.10:1         172.6.12.10:1
+--- 192.168.1.106         172.6.5.10            ---                   ---
+team6router#show os
+team6router#show ospfv3        ip
+team6router#show ip os
+team6router#show ip ospf nei
+team6router#show ip ospf neighbor 
+
+Neighbor ID     Pri   State           Dead Time   Address         Interface
+1.1.1.1           1   FULL/DROTHER    00:00:32    192.168.1.1     GigabitEthernet0/0
+2.2.2.2           1   FULL/DROTHER    00:00:31    192.168.1.2     GigabitEthernet0/0
+3.3.3.3           1   FULL/DROTHER    00:00:39    192.168.1.3     GigabitEthernet0/0
+4.4.4.4           1   FULL/BDR        00:00:37    192.168.1.4     GigabitEthernet0/0
+5.5.5.5           1   FULL/DROTHER    00:00:39    192.168.1.5     GigabitEthernet0/0
+team6router#show ip ospf neighbor nat translations 
+Pro Inside global         Inside local          Outside local         Outside global
+icmp 192.168.1.106:2      172.6.5.10:2          192.168.1.101:2       192.168.1.101:2
+--- 192.168.1.106         172.6.5.10            ---                   ---
+team6router#show ip nat translations ospf neighbor    nat translations statistics   
+Total active translations: 2 (1 static, 1 dynamic; 1 extended)
+Peak translations: 2, occurred 00:03:03 ago
+Outside interfaces:
+  GigabitEthernet0/0
+Inside interfaces: 
+  GigabitEthernet0/1.5
+Hits: 72  Misses: 0
+CEF Translated packets: 72, CEF Punted packets: 0
+Expired translations: 1
+Dynamic mappings:
+
+Total doors: 0
+Appl doors: 0
+Normal doors: 0
+Queued Packets: 0
+team6router#login as: racker
+Using keyboard-interactive authentication.
+Password: 
+ Hello 
+team6router#show ip osp
+team6router#show ip ospf to
+team6router#show ip ospf topology-info ?
+  multicast  Multicast Topology
+  topology   Unicast Topology
+  |          Output modifiers
+  <cr>
+
+team6router#show ip ospf topology-info to
+team6router#show ip ospf topology-info topology 
+
+            OSPF Router with ID (6.6.6.6) (Process ID 6)
+
+
+		Base Topology (MTID 0)
+
+ Topology priority is 64
+ Router is not originating router-LSAs with maximum metric
+ Number of areas transit capable is 0
+ Initial SPF schedule delay 5000 msecs
+ Minimum hold time between two consecutive SPFs 10000 msecs
+ Maximum wait time between two consecutive SPFs 10000 msecs
+    Area BACKBONE(0)
+	SPF algorithm last executed 00:42:57.144 ago
+	SPF algorithm executed 11 times
+	Area ranges are
+team6router#show ip pro
+team6router#show ip protocols 
+*** IP Routing is NSF aware ***
+
+Routing Protocol is "ospf 6"
+  Outgoing update filter list for all interfaces is not set
+  Incoming update filter list for all interfaces is not set
+  Router ID 6.6.6.6
+  Number of areas in this router is 1. 1 normal 0 stub 0 nssa
+  Maximum path: 4
+  Routing for Networks:
+  Routing on Interfaces Configured Explicitly (Area 0):
+    Loopback0
+    GigabitEthernet0/1.12
+    GigabitEthernet0/1.9
+    GigabitEthernet0/1.5
+    GigabitEthernet0/0
+  Passive Interface(s):
+    GigabitEthernet0/1.5
+    GigabitEthernet0/1.9
+    GigabitEthernet0/1.12
+  Routing Information Sources:
+    Gateway         Distance      Last Update
+    5.5.5.5              110      00:43:01
+    2.2.2.2              110      05:39:41
+    3.3.3.3              110      02:37:14
+    1.1.1.1              110      06:27:25
+    4.4.4.4              110      06:31:02
+  Distance: (default is 110)
+
+team6router#show ip os
+team6router#show ip ospf dat
+team6router#show ip ospf database ?
+  adv-router        Advertising Router link states
+  asbr-summary      ASBR summary link states
+  database-summary  Summary of database
+  external          External link states
+  internal          Internal LSA information
+  multicast         Multicast Topology
+  network           Network link states
+  nssa-external     NSSA External link states
+  opaque-area       Opaque Area link states
+  opaque-as         Opaque AS link states
+  opaque-link       Opaque Link-Local link states
+  router            Router link states
+  self-originate    Self-originated link states
+  summary           Network summary link states
+  topology          Unicast Topology
+  |                 Output modifiers
+  <cr>
+
+team6router#show ip ospf database top
+team6router#show ip ospf database topology 
+
+            OSPF Router with ID (6.6.6.6) (Process ID 6)
+
+
+		Base Topology (MTID 0)
+
+
+		Router Link States (Area 0)
+
+Link ID         ADV Router      Age         Seq#       Checksum Link count
+1.1.1.1         1.1.1.1         1071        0x80000011 0x005083 5
+2.2.2.2         2.2.2.2         355         0x8000003E 0x005B3B 5
+3.3.3.3         3.3.3.3         1579        0x80000010 0x000BA9 5
+4.4.4.4         4.4.4.4         1345        0x8000000D 0x000FB9 4
+5.5.5.5         5.5.5.5         773         0x80000004 0x00669C 2
+6.6.6.6         6.6.6.6         1417        0x80000012 0x0085FC 5
+
+		Net Link States (Area 0)
+
+Link ID         ADV Router      Age         Seq#       Checksum
+192.168.1.6     6.6.6.6         404         0x80000010 0x00340A
+team6router#
