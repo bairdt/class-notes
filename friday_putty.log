@@ -1,0 +1,961 @@
+=~=~=~=~=~=~=~=~=~=~=~= PuTTY log 2015.07.31 10:35:00 =~=~=~=~=~=~=~=~=~=~=~=
+
+team6router>enable
+Password: 
+team6router#erase startup-config
+Erasing the nvram filesystem will remove all configuration files! Continue? [confirm]
+[OK]
+Erase of nvram: complete
+team6router#
+Jul 31 10:37:35.201: %SYS-7-NV_BLOCK_INIT: Initialized the geometry of nvram
+team6router#reload
+
+System configuration has been modified. Save? [yes/no]: no
+Proceed with reload? [confirm]
+
+Jul 31 10:40:48.145: %SYS-5-RELOAD: Reload requested by console. Reload Reason: Reload Command.
+System Bootstrap, Version 15.0(1r)M16, RELEASE SOFTWARE (fc1)
+Technical Support: http://www.cisco.com/techsupport
+Copyright (c) 2012 by cisco Systems, Inc.
+
+Total memory size = 512 MB
+CISCO1921/K9 platform with 524288 Kbytes of main memory
+Main memory is configured to 64 bit mode with ECC disabled
+
+
+Readonly ROMMON initialized
+program load complete, entry point: 0x80903000, size: 0x4c4a0
+program load complete, entry point: 0x80903000, size: 0x4c4a0
+
+
+IOS Image Load Test 
+___________________ 
+Digitally Signed Release Software 
+program load complete, entry point: 0x81000000, size: 0x41c181c
+Self decompressing the image : #################################################################################################################################################################################################################################################################################################################################################################################################### [OK]
+
+Smart Init is enabled
+smart init is sizing iomem
+                 TYPE      MEMORY_REQ
+          HWIC Slot 0      0x00200000
+    Onboard devices &
+         buffer pools      0x01E8F000 
+-----------------------------------------------
+               TOTAL:      0x0208F000
+
+Rounded IOMEM up to: 36Mb.
+Using 7 percent iomem. [36Mb/512Mb]
+
+              Restricted Rights Legend
+
+Use, duplication, or disclosure by the Government is
+subject to restrictions as set forth in subparagraph
+(c) of the Commercial Computer Software - Restricted
+Rights clause at FAR sec. 52.227-19 and subparagraph
+(c) (1) (ii) of the Rights in Technical Data and Computer
+Software clause at DFARS sec. 252.227-7013.
+
+           cisco Systems, Inc.
+           170 West Tasman Drive
+           San Jose, California 95134-1706
+
+
+
+Cisco IOS Software, C1900 Software (C1900-UNIVERSALK9-M), Version 15.2(4)M6, RELEASE SOFTWARE (fc2)
+Technical Support: http://www.cisco.com/techsupport
+Copyright (c) 1986-2014 by Cisco Systems, Inc.
+Compiled Wed 19-Mar-14 11:56 by prod_rel_team
+
+
+This product contains cryptographic features and is subject to United
+States and local country laws governing import, export, transfer and
+use. Delivery of Cisco cryptographic products does not imply
+third-party authority to import, export, distribute or use encryption.
+Importers, exporters, distributors and users are responsible for
+compliance with U.S. and local country laws. By using this product you
+agree to comply with applicable laws and regulations. If you are unable
+to comply with U.S. and local laws, return this product immediately.
+
+A summary of U.S. laws governing Cisco cryptographic products may be found at:
+http://www.cisco.com/wwl/export/crypto/tool/stqrg.html
+
+If you require further assistance please contact us by sending email to
+export@cisco.com.
+
+Installed image archive
+Cisco CISCO1921/K9 (revision 1.0) with 487424K/36864K bytes of memory.
+Processor board ID FTX181583YT
+2 Gigabit Ethernet interfaces
+2 Serial(sync/async) interfaces
+1 terminal line
+1 Virtual Private Network (VPN) Module
+DRAM configuration is 64 bits wide with parity disabled.
+255K bytes of non-volatile configuration memory.
+245744K bytes of USB Flash usbflash0 (Read/Write)
+
+
+         --- System Configuration Dialog ---
+
+Would you like to enter the initial configuration dialog? [yes/no]: 
+% Please answer 'yes' or 'no'.
+Would you like to enter the initial configuration dialog? [yes/no]: no
+
+
+Press RETURN to get started!
+
+
+*Jan  2 00:00:03.119: %IOS_LICENSE_IMAGE_APPLICATION-6-LICENSE_LEVEL: Module name = c1900 Next reboot level = ipbasek9 and License = ipbasek9
+*Jan  2 00:00:03.311: %IOS_LICENSE_IMAGE_APPLICATION-6-LICENSE_LEVEL: Module name = c1900 Next reboot level = securityk9 and License = securityk9
+*Jul 31 15:27:44.127: %IFMGR-7-NO_IFINDEX_FILE: Unable to open nvram:/ifIndex-table No such file or directory
+*Jul 31 15:27:44.131: c3600_scp_set_dstaddr2_idb(184)add = 80 name is Embedded-Service-Engine0/0
+*Jul 31 15:28:02.615: %VPN_HW-6-INFO_LOC: Crypto engine: onboard 0  State changed to: Initialized 
+*Jul 31 15:28:02.619: %VPN_HW-6-INFO_LOC: Crypto engine: onboard 0  State changed to: Enabled 
+*Jul 31 15:28:03.503: %LINK-3-UPDOWN: Interface GigabitEthernet0/0, changed state to up
+*Jul 31 15:28:03.503: %LINK-3-UPDOWN: Interface GigabitEthernet0/1, changed state to up
+*Jul 31 15:28:03.503: %LINK-3-UPDOWN: Interface Serial0/0/0, changed state to down
+*Jul 31 15:28:03.503: %LINK-3-UPDOWN: Interface Serial0/0/1, changed state to down
+*Jul 31 15:28:04.503: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet0/0, changed state to up
+*Jul 31 15:28:04.503: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet0/1, changed state to up
+*Jul 31 15:28:04.503: %LINEPROTO-5-UPDOWN: Line protocol on Interface Serial0/0/0, changed state to down
+*Jul 31 15:28:04.503: %LINEPROTO-5-UPDOWN: Line protocol on Interface Serial0/0/1, changed state to down
+*Jul 31 15:28:08.607: %USBFLASH-5-CHANGE: usbflash0 has been inserted!
+*Jul 31 15:28:10.675: %SYS-6-STARTUP_CONFIG_IGNORED: System startup configuration is ignored based on the configuration register setting.
+*Jul 31 15:28:15.591: %LINK-5-CHANGED: Interface Embedded-Service-Engine0/0, changed state to administratively down
+*Jul 31 15:28:15.591: %LINK-5-CHANGED: Interface GigabitEthernet0/0, changed state to administratively down
+*Jul 31 15:28:15.591: %LINK-5-CHANGED: Interface GigabitEthernet0/1, changed state to administratively down
+*Jul 31 15:28:15.591: %LINK-5-CHANGED: Interface Serial0/0/0, changed state to administratively down
+*Jul 31 15:28:15.591: %LINK-5-CHANGED: Interface Serial0/0/1, changed state to administratively down
+*Jul 31 15:28:16.639: %LINEPROTO-5-UPDOWN: Line protocol on Interface Embedded-Service-Engine0/0, changed state to down
+*Jul 31 15:28:16.639: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet0/0, changed state to down
+*Jul 31 15:28:16.639: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet0/1, changed state to down
+*Jul 31 15:28:17.123: %SYS-5-RESTART: System restarted --
+Cisco IOS Software, C1900 Software (C1900-UNIVERSALK9-M), Version 15.2(4)M6, RELEASE SOFTWARE (fc2)
+Technical Support: http://www.cisco.com/techsupport
+Copyright (c) 1986-2014 by Cisco Systems, Inc.
+Compiled Wed 19-Mar-14 11:56 by prod_rel_team
+*Jul 31 15:28:17.191: %SNMP-5-COLDSTART: SNMP agent on host Router is undergoing a cold start
+*Jul 31 15:28:17.803: %SYS-6-BOOTTIME: Time taken to reboot after reload =  146 seconds
+*Jul 31 15:28:18.415: %CRYPTO-6-ISAKMP_ON_OFF: ISAKMP is OFF
+*Jul 31 15:28:18.415: %CRYPTO-6-GDOI_ON_OFF: GDOI is OFF
+*Jul 31 15:28:18.415: %CRYPTO-6-ISAKMP_ON_OFF: ISAKMP is OFF
+*Jul 31 15:28:18.415: %CRYPTO-6-GDOI_ON_OFF: GDOI is OFF
+Router>ean  nable
+Router#conf t
+Enter configuration commands, one per line.  End with CNTL/Z.
+Router(config)#service password enc
+                                ^
+% Invalid input detected at '^' marker.
+
+Router(config)#service password enc     ?
+  <cr>
+
+Router(config)#service password  -enc
+Router(config)#hostname tema  am6router
+team6router(config)#ip domain name team6.local
+team6router(config)#enable password kkkk 
+team6router(config)#enable secret rx   ax123
+team6router(config)#username racker priv 15 pass rax123
+team6router(config)#no ip domain lookup
+team6router(config)#clock set summertime
+                           ^
+% Invalid input detected at '^' marker.
+
+team6router(config)#clock set           clao  ock summertime           -tim     summer-time centrao l date 8 march 2015 0:00 rch 2015 0:00  h 2015 0:00  h 2015 0:00  h 2015 0:00  h 2015 0:00  h 2015 0:00  ~h 2015 0:00 h 2015 0:00  h 2015 0:00  m 2015 0:00 a 2015 0:00 r 2015 0:00 c 2015 0:00 h 2015 0:00   2015 0:00 8 2015 0:00  2015 0:00 nov 1 20$r-time central date march 8 2015 0:00 nov 1 201         5 0:00
+team6router(config)#
+*Jul 31 15:32:01.791: %SYS-6-CLOCKUPDATE: System clock has been updated from 15:32:01 UTC Fri Jul 31 2015 to 16:32:01 central Fri Jul 31 2015, configured from console by console.cloack set          
+team6router(config)#clock set           exit
+team6router#clo
+*Jul 31 15:32:16.879: %SYS-5-CONFIG_I: Configured from console by consoleck     
+team6router#clos ck set 1046  :45:00 31 july 2015
+team6router#
+*Jul 31 09:45:00.000: %SYS-6-CLOCKUPDATE: System clock has been updated from 16:32:55 central Fri Jul 31 2015 to 10:45:00 central Fri Jul 31 2015, configured from console by console.banner mos          
+team6router#banner MOTD
+             ^
+% Invalid input detected at '^' marker.
+
+team6router#lin   banner MOTD c FRIDAY c
+             ^
+% Invalid input detected at '^' marker.
+
+team6router#conf t
+Enter configuration commands, one per line.  End with CNTL/Z.
+team6router(config)#be anner motd c FRIS DAY c
+team6router(config)#line con 0
+team6router(config-line)#logging syncr 
+team6router(config-line)#exec-timeout 27
+team6router(config-line)#hist size 200
+team6router(config-line)#password temp123
+team6router(config-line)#login
+team6router(config-line)#ling vty 0         4 3 e vty 0 4
+team6router(config-line)#logging sync
+team6router(config-line)#exec timeout 27
+                              ^
+% Invalid input detected at '^' marker.
+
+team6router(config-line)#exec-timeout 27
+team6router(config-line)#hist size 200
+team6router(config-line)#login local
+team6router(config-line)#transport input ssh
+team6router(config-line)#ling   e vty 5 15
+team6router(config-line)#login
+% Login disabled on line 137, until 'password' is set
+% Login disabled on line 138, until 'password' is set
+% Login disabled on line 139, until 'password' is set
+% Login disabled on line 140, until 'password' is set
+% Login disabled on line 141, until 'password' is set
+% Login disabled on line 142, until 'password' is set
+% Login disabled on line 143, until 'password' is set
+% Login disabled on line 144, until 'password' is set
+% Login disabled on line 145, until 'password' is set
+% Login disabled on line 146, until 'password' is set
+% Login disabled on line 147, until 'password' is set
+team6router(config-line)#spanning-tree portfast bpduguard
+team6router(config)#no cdp run
+team6router(config)#int g0/0 , loop0        
+team6router(config-if)#speed auot  to
+team6router(config-if)#duplex auto
+team6router(config-if)#description to PC
+team6router(config-if)#no cdp enable
+team6router(config-if)#no shut
+team6router(config-if)#
+Jul 31 09:49:12.807: %LINK-3-UPDOWN: Interface GigabitEthernet0/0, changed state to down
+team6router(config-if)#
+Jul 31 09:49:16.791: %LINK-3-UPDOWN: Interface GigabitEthernet0/0, changed state to up
+Jul 31 09:49:17.791: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet0/0, changed state to up
+team6router(config-if)#int loop 0
+team6router(config-if)#
+Jul 31 09:49:32.703: %LINEPROTO-5-UPDOWN: Line protocol on Interface Loopback0, changed state to up
+team6router(config-if)#speed auto
+                        ^
+% Invalid input detected at '^' marker.
+
+team6router(config-if)#dup   ipv6 address fc  FC00:66::6/128
+team6router(config-if)#no shut
+team6router(config-if)#^Z
+team6router#
+Jul 31 09:51:03.607: %SYS-5-CONFIG_I: Configured from console by console
+team6router#conf t
+Enter configuration commands, one per line.  End with CNTL/Z.
+team6router(config)#ipv6 unt icast-routing
+team6router(config)#ipv6 router ospf 6
+team6router(config-rtr)#
+Jul 31 09:51:36.299: %OSPFv3-4-NORTRID: Process OSPFv3-6-IPv6 could not pick a router-id, please configure manually
+team6router(config-rtr)#router-id 6.6.6.6
+team6router(config-rtr)#ing t g0/0
+team6router(config-if)#ipv6 add 2000:DEAD::1/64
+team6router(config-if)#int s0/0/1
+team6router(config-if)#ipv6    speed auto
+                        ^
+% Invalid input detected at '^' marker.
+
+team6router(config-if)#ipv6 add 2000:DE  BEEF::A/64
+team6router(config-if)#ipv6 oppd f   sfp  pf 6 area 0
+team6router(config-if)#no shut
+team6router(config-if)#encap ppp
+Jul 31 09:55:58.795: %LINK-3-UPDOWN: Interface Serial0/0/1, changed state to down
+team6router(config-if)#encap ppp ?
+  <cr>
+
+team6router(config-if)#encap ppp 
+team6router(config-if)#^Z
+team6router#
+Jul 31 09:56:36.255: %SYS-5-CONFIG_I: Configured from console by console
+team6router#conf t
+Enter configuration commands, one per line.  End with CNTL/Z.
+team6router(config)#hostname team1              username tam  eam1router pass team1router
+team6router(config)#int s0/) 0/ 
+                        ^
+% Invalid input detected at '^' marker.
+
+team6router(config)#int s0/0/1
+team6router(config-if)#ppp authenc tication chap
+team6router(config-if)#^Z
+team6router#
+Jul 31 10:00:43.619: %SYS-5-CONFIG_I: Configured from console by console
+team6router#show ip int be rir ef
+Interface                  IP-Address      OK? Method Status                Protocol
+Embedded-Service-Engine0/0 unassigned      YES unset  administratively down down    
+GigabitEthernet0/0         unassigned      YES unset  up                    up      
+GigabitEthernet0/1         unassigned      YES unset  administratively down down    
+Serial0/0/0                unassigned      YES unset  administratively down down    
+Serial0/0/1                unassigned      YES unset  down                  down    
+Loopback0                  unassigned      YES unset  up                    up      
+team6router#conf t
+Enter configuration commands, one per line.  End with CNTL/Z.
+team6router(config)#int s0/0/1  
+team6router(config-if)#no shut
+team6router(config-if)#^Z
+team6router#
+Jul 31 10:01:34.803: %SYS-5-CONFIG_I: Configured from console by console
+team6router#conf tshow ip int brief
+Interface                  IP-Address      OK? Method Status                Protocol
+Embedded-Service-Engine0/0 unassigned      YES unset  administratively down down    
+GigabitEthernet0/0         unassigned      YES unset  up                    up      
+GigabitEthernet0/1         unassigned      YES unset  administratively down down    
+Serial0/0/0                unassigned      YES unset  administratively down down    
+Serial0/0/1                unassigned      YES unset  down                  down    
+Loopback0                  unassigned      YES unset  up                    up      
+team6router#
+Jul 31 10:03:47.283: %LINK-3-UPDOWN: Interface Serial0/0/1, changed state to up
+team6router#
+Jul 31 10:03:49.319: %LINEPROTO-5-UPDOWN: Line protocol on Interface Serial0/0/1, changed state to up
+Jul 31 10:03:49.331: %LINEPROTO-5-UPDOWN: Line protocol on Interface Serial0/0/1, changed state to down
+team6router#
+Jul 31 10:03:53.383: %LINEPROTO-5-UPDOWN: Line protocol on Interface Serial0/0/1, changed state to up
+Jul 31 10:03:53.395: %LINEPROTO-5-UPDOWN: Line protocol on Interface Serial0/0/1, changed state to down
+team6router#
+Jul 31 10:04:00.423: %LINEPROTO-5-UPDOWN: Line protocol on Interface Serial0/0/1, changed state to up
+Jul 31 10:04:00.435: %LINEPROTO-5-UPDOWN: Line protocol on Interface Serial0/0/1, changed state to down
+team6router#
+Jul 31 10:04:08.487: %LINEPROTO-5-UPDOWN: Line protocol on Interface Serial0/0/1, changed state to up
+Jul 31 10:04:08.499: %LINEPROTO-5-UPDOWN: Line protocol on Interface Serial0/0/1, changed state to down
+team6router#
+Jul 31 10:04:14.535: %LINEPROTO-5-UPDOWN: Line protocol on Interface Serial0/0/1, changed state to up
+Jul 31 10:04:14.547: %LINEPROTO-5-UPDOWN: Line protocol on Interface Serial0/0/1, changed state to down
+team6router#
+Jul 31 10:04:22.599: %LINEPROTO-5-UPDOWN: Line protocol on Interface Serial0/0/1, changed state to up
+Jul 31 10:04:22.611: %LINEPROTO-5-UPDOWN: Line protocol on Interface Serial0/0/1, changed state to down
+team6router#
+Jul 31 10:04:28.647: %LINEPROTO-5-UPDOWN: Line protocol on Interface Serial0/0/1, changed state to up
+Jul 31 10:04:28.659: %LINEPROTO-5-UPDOWN: Line protocol on Interface Serial0/0/1, changed state to down
+team6router#
+Jul 31 10:04:34.695: %LINEPROTO-5-UPDOWN: Line protocol on Interface Serial0/0/1, changed state to up
+Jul 31 10:04:34.707: %LINEPROTO-5-UPDOWN: Line protocol on Interface Serial0/0/1, changed state to down
+team6router#show ip int brief
+Interface                  IP-Address      OK? Method Status                Protocol
+Embedded-Service-Engine0/0 unassigned      YES unset  administratively down down    
+GigabitEthernet0/0         unassigned      YES unset  up                    up      
+GigabitEthernet0/1         unassigned      YES unset  administratively down down    
+Serial0/0/0                unassigned      YES unset  administratively down down    
+Serial0/0/1                unassigned      YES unset  up                    down    
+Loopback0                  unassigned      YES unset  up                    up      
+team6router#
+Jul 31 10:04:42.759: %LINEPROTO-5-UPDOWN: Line protocol on Interface Serial0/0/1, changed state to up
+Jul 31 10:04:42.771: %LINEPROTO-5-UPDOWN: Line protocol on Interface Serial0/0/1, changed state to down
+team6router#show ip int brief
+Interface                  IP-Address      OK? Method Status                Protocol
+Embedded-Service-Engine0/0 unassigned      YES unset  administratively down down    
+GigabitEthernet0/0         unassigned      YES unset  up                    up      
+GigabitEthernet0/1         unassigned      YES unset  administratively down down    
+Serial0/0/0                unassigned      YES unset  administratively down down    
+Serial0/0/1                unassigned      YES unset  up                    up      
+Loopback0                  unassigned      YES unset  up                    up      
+team6router#
+Jul 31 10:04:48.807: %LINEPROTO-5-UPDOWN: Line protocol on Interface Serial0/0/1, changed state to up
+Jul 31 10:04:48.819: %LINEPROTO-5-UPDOWN: Line protocol on Interface Serial0/0/1, changed state to down
+team6router#sow    how ospf
+Jul 31 10:04:54.855: %LINEPROTO-5-UPDOWN: Line protocol on Interface Serial0/0/1, changed state to up
+Jul 31 10:04:54.867: %LINEPROTO-5-UPDOWN: Line protocol on Interface Serial0/0/1, changed state to down
+team6router#show ospf neighbor
+team6router#show ospf neighbor
+team6router#show ospf neighbor
+team6router#show ospf neighbor
+team6router#
+Jul 31 10:05:02.919: %LINEPROTO-5-UPDOWN: Line protocol on Interface Serial0/0/1, changed state to up
+Jul 31 10:05:02.931: %LINEPROTO-5-UPDOWN: Line protocol on Interface Serial0/0/1, changed state to down
+team6router#show ospf neighbor
+team6router#show ospf neighbor
+team6router#show ospf neighbor
+Jul 31 10:05:09.959: %LINEPROTO-5-UPDOWN: Line protocol on Interface Serial0/0/1, changed state to up
+Jul 31 10:05:09.971: %LINEPROTO-5-UPDOWN: Line protocol on Interface Serial0/0/1, changed state to down
+team6router#show ospf neighbor        protocols
+                      ^
+% Invalid input detected at '^' marker.
+
+team6router#show ospf protocols 
+team6router#show ospf protocol
+                      ^
+% Invalid input detected at '^' marker.
+
+team6router#
+Jul 31 10:05:18.023: %LINEPROTO-5-UPDOWN: Line protocol on Interface Serial0/0/1, changed state to up
+Jul 31 10:05:18.035: %LINEPROTO-5-UPDOWN: Line protocol on Interface Serial0/0/1, changed state to down
+team6router#show ospf protocol        ?
+  <1-65535>            Process ID number
+  bad-checksum         Packets received with a bad checksum
+  border-routers       Border and Boundary Router Information
+  database             Database summary
+  events               Event log
+  flood-list           Link state flood list
+  graceful-restart     Graceful restart information
+  interface            Interface information
+  ipv4                 Address family
+  ipv6                 Address family
+  max-metric           Max-metric origination information
+  neighbor             Neighbor list
+  request-list         Link state request list
+  retransmission-list  Link state retransmission list
+  rib                  Routing Information Base (RIB)
+  sham-links           Sham link information
+  statistic            Statistics
+  summary-prefix       Summary-prefix redistribution Information
+  timers               Timer lists
+  traffic              Traffic statistics
+  virtual-links        Virtual link information
+  vrf                  VPN
+Jul 31 10:05:22.055: %LINEPROTO-5-UPDOWN: Line protocol on Int Routing/Forwarding instance
+ --More-- erface Serial0/0/1, changed state to up
+Jul 31 10:05:22.067: %LINEPROTO-5-UPDOWN: Line protocol on Interface Serial0/0/1, changed state to down
+ --More--         
+team6router#show ospf sta
+team6router#show ospf statistic \ 
+
+          OSPFv3 6 address-family ipv6 (router-id 6.6.6.6)
+
+  Area 0: SPF algorithm executed 1 times
+
+  SPF calculation time
+Delta T   SPT    Prefix D-Int  Sum    D-Sum  Ext    D-Ext  Total Reason
+00:09:41  0      0      0      0      0      0      0      0      R
+
+team6router#
+Jul 31 10:05:30.087: %LINEPROTO-5-UPDOWN: Line protocol on Interface Serial0/0/1, changed state to up
+Jul 31 10:05:30.099: %LINEPROTO-5-UPDOWN: Line protocol on Interface Serial0/0/1, changed state to down
+team6router#
+Jul 31 10:05:38.151: %LINEPROTO-5-UPDOWN: Line protocol on Interface Serial0/0/1, changed state to up
+Jul 31 10:05:38.163: %LINEPROTO-5-UPDOWN: Line protocol on Interface Serial0/0/1, changed state to down
+team6router#
+Jul 31 10:05:42.183: %LINEPROTO-5-UPDOWN: Line protocol on Interface Serial0/0/1, changed state to up
+Jul 31 10:05:42.195: %LINEPROTO-5-UPDOWN: Line protocol on Interface Serial0/0/1, changed state to down
+team6router#show ospf statistic protocol  sneighbor 
+team6router#show ospf neighbor
+team6router#show ospf neighbor
+team6router#show ipv6 route
+IPv6 Routing Table - default - 4 entries
+Codes: C - Connected, L - Local, S - Static, U - Per-user Static route
+       B - BGP, R - RIP, H - NHRP, I1 - ISIS L1
+       I2 - ISIS L2, IA - ISIS interarea, IS - ISIS summary, D - EIGRP
+       EX - EIGRP external, ND - ND Default, NDp - ND Prefix, DCE - Destination
+       NDr - Redirect, O - OSPF Intra, OI - OSPF Inter, OE1 - OSPF ext 1
+       OE2 - OSPF ext 2, ON1 - OSPF NSSA ext 1, ON2 - OSPF NSSA ext 2
+C   2000:DEAD::/64 [0/0]
+     via GigabitEthernet0/0, directly connected
+L   2000:DEAD::1/128 [0/0]
+     via GigabitEthernet0/0, receive
+LC  FC00:66::6/128 [0/0]
+     via Loopback0, receive
+L   FF00::/8 [0/0]
+     via Null0, receive
+team6router#show ipv6 routeospf neighbor
+team6router#show ospf neighbor
+team6router#show ospf neighbor
+team6router#show ospf neighbor
+team6router#
+Jul 31 10:06:26.495: %LINEPROTO-5-UPDOWN: Line protocol on Interface Serial0/0/1, changed state to up
+team6router#show ospf neighbor
+team6router#show ospf neighbor
+team6router#show ospf neighbor
+team6router#show ospf neighbor
+team6router#show ip int vb  brief
+Interface                  IP-Address      OK? Method Status                Protocol
+Embedded-Service-Engine0/0 unassigned      YES unset  administratively down down    
+GigabitEthernet0/0         unassigned      YES unset  up                    up      
+GigabitEthernet0/1         unassigned      YES unset  administratively down down    
+Serial0/0/0                unassigned      YES unset  administratively down down    
+Serial0/0/1                unassigned      YES unset  up                    up      
+Loopback0                  unassigned      YES unset  up                    up      
+team6router#show ip int brief     
+Embedded-Service-Engine0/0 is administratively down, line protocol is down
+  Internet protocol processing disabled
+GigabitEthernet0/0 is up, line protocol is up
+  Internet protocol processing disabled
+GigabitEthernet0/1 is administratively down, line protocol is down
+  Internet protocol processing disabled
+Serial0/0/0 is administratively down, line protocol is down
+  Internet protocol processing disabled
+Serial0/0/1 is up, line protocol is up
+  Internet protocol processing disabled
+Loopback0 is up, line protocol is up
+  Internet protocol processing disabled
+team6router#show in
+team6router#show in
+team6router#show int
+team6router#show interfaces 
+team6router#show interfaces 
+team6router#show interfaces 
+Embedded-Service-Engine0/0 is administratively down, line protocol is down 
+  Hardware is Embedded Service Engine, address is 0000.0000.0000 (bia 0000.0000.0000)
+  MTU 1500 bytes, BW 10000 Kbit/sec, DLY 1000 usec, 
+     reliability 255/255, txload 1/255, rxload 1/255
+  Encapsulation ARPA, loopback not set
+  Keepalive set (10 sec)
+  ARP type: ARPA, ARP Timeout 04:00:00
+  Last input never, output never, output hang never
+  Last clearing of "show interface" counters never
+  Input queue: 0/64/0/0 (size/max/drops/flushes); Total output drops: 0
+  Queueing strategy: fifo
+  Output queue: 0/40 (size/max)
+  5 minute input rate 0 bits/sec, 0 packets/sec
+  5 minute output rate 0 bits/sec, 0 packets/sec
+     0 packets input, 0 bytes, 0 no buffer
+     Received 0 broadcasts (0 IP multicasts)
+     0 runts, 0 giants, 0 throttles 
+     0 input errors, 0 CRC, 0 frame, 0 overrun, 0 ignored
+     0 input packets with dribble condition detected
+     0 packets output, 0 bytes, 0 underruns
+     0 output errors, 0 collisions, 0 interface resets
+ --More--              0 unknown protocol drops
+     0 babbles, 0 late collision, 0 deferred
+     0 lost carrier, 0 no carrier
+     0 output buffer failures, 0 output buffers swapped out
+GigabitEthernet0/0 is up, line protocol is up 
+  Hardware is CN Gigabit Ethernet, address is 18e7.28dd.78c0 (bia 18e7.28dd.78c0)
+  Description: to PC
+  MTU 1500 bytes, BW 1000000 Kbit/sec, DLY 10 usec, 
+     reliability 255/255, txload 1/255, rxload 1/255
+  Encapsulation ARPA, loopback not set
+  Keepalive set (10 sec)
+  Full Duplex, 1Gbps, media type is RJ45
+  output flow-control is XON, input flow-control is XON
+  ARP type: ARPA, ARP Timeout 04:00:00
+  Last input 00:00:20, output 00:00:20, output hang never
+  Last clearing of "show interface" counters never
+  Input queue: 0/75/0/0 (size/max/drops/flushes); Total output drops: 0
+  Queueing strategy: fifo
+  Output queue: 0/40 (size/max)
+  5 minute input rate 0 bits/sec, 0 packets/sec
+  5 minute output rate 0 bits/sec, 0 packets/sec
+     347 packets input, 43302 bytes, 0 no buffer
+ --More--              Received 36 broadcasts (0 IP multicasts)
+     0 runts, 0 giants, 0 throttles 
+     0 input errors, 0 CRC, 0 frame, 0 overrun, 0 ignored
+     0 watchdog, 11 multicast, 0 pause input
+     378 packets output, 42225 bytes, 0 underruns
+     0 output errors, 0 collisions, 1 interface resets
+     0 unknown protocol drops
+     0 babbles, 0 late collision, 0 deferred
+     0 lost carrier, 0 no carrier, 0 pause output
+     0 output buffer failures, 0 output buffers swapped out
+GigabitEthernet0/1 is administratively down, line protocol is down 
+  Hardware is CN Gigabit Ethernet, address is 18e7.28dd.78c1 (bia 18e7.28dd.78c1)
+  MTU 1500 bytes, BW 1000000 Kbit/sec, DLY 10 usec, 
+     reliability 255/255, txload 1/255, rxload 1/255
+  Encapsulation ARPA, loopback not set
+  Keepalive set (10 sec)
+  Full Duplex, 1Gbps, media type is RJ45
+  output flow-control is XON, input flow-control is XON
+  ARP type: ARPA, ARP Timeout 04:00:00
+  Last input 00:26:45, output never, output hang never
+  Last clearing of "show interface" counters never
+  Input queue: 0/75/0/0 (size/max/drops/flushes); Total output drops: 0
+ --More--           Queueing strategy: fifo
+  Output queue: 0/40 (size/max)
+  5 minute input rate 0 bits/sec, 0 packets/sec
+  5 minute output rate 0 bits/sec, 0 packets/sec
+     18 packets input, 2289 bytes, 0 no buffer
+     Received 5 broadcasts (0 IP multicasts)
+     0 runts, 0 giants, 0 throttles 
+     0 input errors, 0 CRC, 0 frame, 0 overrun, 0 ignored
+     0 watchdog, 0 multicast, 0 pause input
+     0 packets output, 0 bytes, 0 underruns
+     0 output errors, 0 collisions, 0 interface resets
+     0 unknown protocol drops
+     0 babbles, 0 late collision, 0 deferred
+     0 lost carrier, 0 no carrier, 0 pause output
+     0 output buffer failures, 0 output buffers swapped out
+Serial0/0/0 is administratively down, line protocol is down 
+  Hardware is WIC MBRD Serial
+  MTU 1500 bytes, BW 1544 Kbit/sec, DLY 20000 usec, 
+     reliability 255/255, txload 1/255, rxload 1/255
+  Encapsulation HDLC, loopback not set
+  Keepalive set (10 sec)
+  Last input never, output never, output hang never
+  Last clearing of "show interface" counters never
+ --More--           Input queue: 0/75/0/0 (size/max/drops/flushes); Total output drops: 0
+  Queueing strategy: fifo
+  Output queue: 0/40 (size/max)
+  5 minute input rate 0 bits/sec, 0 packets/sec
+  5 minute output rate 0 bits/sec, 0 packets/sec
+     0 packets input, 0 bytes, 0 no buffer
+     Received 0 broadcasts (0 IP multicasts)
+     0 runts, 0 giants, 0 throttles 
+     0 input errors, 0 CRC, 0 frame, 0 overrun, 0 ignored, 0 abort
+     0 packets output, 0 bytes, 0 underruns
+     0 output errors, 0 collisions, 2 interface resets
+     0 unknown protocol drops
+     0 output buffer failures, 0 output buffers swapped out
+     0 carrier transitions
+     DCD=down  DSR=down  DTR=down  RTS=down  CTS=down
+
+Serial0/0/1 is up, line protocol is up 
+  Hardware is WIC MBRD Serial
+  MTU 1500 bytes, BW 1544 Kbit/sec, DLY 20000 usec, 
+     reliability 255/255, txload 1/255, rxload 1/255
+  Encapsulation PPP, LCP Open
+  Open: IPV6CP, loopback not set
+  Keepalive set (10 sec)
+ --More--           Last input 00:00:01, output 00:00:01, output hang never
+  Last clearing of "show interface" counters 00:10:50
+  Input queue: 0/75/0/0 (size/max/drops/flushes); Total output drops: 0
+  Queueing strategy: fifo
+  Output queue: 0/40 (size/max)
+  5 minute input rate 0 bits/sec, 0 packets/sec
+  5 minute output rate 0 bits/sec, 0 packets/sec
+     269 packets input, 5435 bytes, 0 no buffer
+     Received 0 broadcasts (0 IP multicasts)
+     0 runts, 0 giants, 0 throttles 
+     0 input errors, 0 CRC, 0 frame, 0 overrun, 0 ignored, 0 abort
+     304 packets output, 7220 bytes, 0 underruns
+     0 output errors, 0 collisions, 50 interface resets
+     0 unknown protocol drops
+     0 output buffer failures, 0 output buffers swapped out
+     119 carrier transitions
+     DCD=up  DSR=up  DTR=up  RTS=up  CTS=up
+
+Loopback0 is up, line protocol is up 
+  Hardware is Loopback
+  MTU 1514 bytes, BW 8000000 Kbit/sec, DLY 5000 usec, 
+     reliability 255/255, txload 1/255, rxload 1/255
+  Encapsulation LOOPBACK, loopback not set
+ --More--           Keepalive set (10 sec)
+  Last input 00:15:34, output never, output hang never
+  Last clearing of "show interface" counters never
+  Input queue: 0/75/0/0 (size/max/drops/flushes); Total output drops: 0
+  Queueing strategy: fifo
+  Output queue: 0/0 (size/max)
+  5 minute input rate 0 bits/sec, 0 packets/sec
+  5 minute output rate 0 bits/sec, 0 packets/sec
+     0 packets input, 0 bytes, 0 no buffer
+     Received 0 broadcasts (0 IP multicasts)
+     0 runts, 0 giants, 0 throttles 
+     0 input errors, 0 CRC, 0 frame, 0 overrun, 0 ignored, 0 abort
+     6 packets output, 456 bytes, 0 underruns
+     0 output errors, 0 collisions, 0 interface resets
+     0 unknown protocol drops
+     0 output buffer failures, 0 output buffers swapped out
+team6router#show run
+Building configuration...
+
+Current configuration : 1965 bytes
+!
+! Last configuration change at 11:01:34 central Fri Jul 31 2015
+version 15.2
+service timestamps debug datetime msec
+service timestamps log datetime msec
+service password-encryption
+!
+hostname team6router
+!
+boot-start-marker
+boot-end-marker
+!
+!
+enable secret 5 $1$njgX$4p9SL5HksXEKtGP4Hqu2o1
+enable password 7 020D0F50
+!
+no aaa new-model
+clock summer-time central date Mar 8 2015 0:00 Nov 1 2015 0:00
+!
+ip cef
+!
+ --More--         !
+!
+!
+!
+!
+no ip domain lookup
+ip domain name team6.local
+ipv6 unicast-routing
+ipv6 cef
+!
+multilink bundle-name authenticated
+!
+!
+!
+license udi pid CISCO1921/K9 sn FTX181583YT
+!
+!
+!
+spanning-tree portfast bpduguard
+username racker privilege 15 password 7 071D20541F5B4A
+username team1router password 7 01070305565A140034584B1B
+!
+redundancy
+ --More--         !
+!
+!
+!
+!
+! 
+!
+!
+!
+!
+!
+!
+!
+!
+interface Loopback0
+ no ip address
+ ipv6 address FC00:66::6/128
+!
+interface Embedded-Service-Engine0/0
+ no ip address
+ shutdown
+!
+interface GigabitEthernet0/0
+ --More--          description to PC
+ no ip address
+ duplex auto
+ speed auto
+ ipv6 address 2000:DEAD::1/64
+ no cdp enable
+!
+interface GigabitEthernet0/1
+ no ip address
+ shutdown
+ duplex auto
+ speed auto
+!
+interface Serial0/0/0
+ no ip address
+ shutdown
+ clock rate 2000000
+!
+interface Serial0/0/1
+ no ip address
+ encapsulation ppp
+ ipv6 address 2000:BEEF::A/64
+ ipv6 ospf 6 area 0
+ --More--          ppp authentication chap
+ clock rate 2000000
+!
+ip forward-protocol nd
+!
+no ip http server
+no ip http secure-server
+!
+!
+no cdp run
+ipv6 router ospf 6
+ router-id 6.6.6.6
+!
+!
+!
+!
+control-plane
+!
+!
+banner motd ^C FRIDAY ^C
+!
+line con 0
+ exec-timeout 27 0
+ --More--          password 7 105A0C1415464058
+ logging synchronous
+ login
+ history size 200
+line aux 0
+line 2
+ no activation-character
+ no exec
+ transport preferred none
+ transport output pad telnet rlogin lapb-ta mop udptn v120 ssh
+ stopbits 1
+line vty 0 4
+ exec-timeout 27 0
+ logging synchronous
+ login local
+ history size 200
+ transport input ssh
+line vty 5 15
+ login
+ transport input all
+!
+scheduler allocate 20000 1000
+!
+ --More--         end
+
+team6router#                                                                                                                      show runinterfaces p int     briefospf neighboripv6 route   ospf neighbor
+team6router#show ospf neighbor
+team6router#show ospf neighbor
+team6router#show ospf neighbor
+team6router#sho int s/0/0/1
+                     ^
+% Invalid input detected at '^' marker.
+
+team6router#sho int s/0/0/1       ser
+team6router#sho int serial 0/1
+                             ^
+% Invalid input detected at '^' marker.
+
+team6router#sho int serial 0/1 0/1
+Serial0/0/1 is up, line protocol is up 
+  Hardware is WIC MBRD Serial
+  MTU 1500 bytes, BW 1544 Kbit/sec, DLY 20000 usec, 
+     reliability 255/255, txload 1/255, rxload 1/255
+  Encapsulation PPP, LCP Open
+  Open: IPV6CP, loopback not set
+  Keepalive set (10 sec)
+  Last input 00:00:02, output 00:00:02, output hang never
+  Last clearing of "show interface" counters 00:16:32
+  Input queue: 0/75/0/0 (size/max/drops/flushes); Total output drops: 0
+  Queueing strategy: fifo
+  Output queue: 0/40 (size/max)
+  5 minute input rate 0 bits/sec, 0 packets/sec
+  5 minute output rate 0 bits/sec, 0 packets/sec
+     337 packets input, 6523 bytes, 0 no buffer
+     Received 0 broadcasts (0 IP multicasts)
+     0 runts, 0 giants, 0 throttles 
+     0 input errors, 0 CRC, 0 frame, 0 overrun, 0 ignored, 0 abort
+     408 packets output, 11188 bytes, 0 underruns
+     0 output errors, 0 collisions, 50 interface resets
+     0 unknown protocol drops
+     0 output buffer failures, 0 output buffers swapped out
+     119 carrier transitions
+ --More--              DCD=up  DSR=up  DTR=up  RTS=up  CTS=up
+
+team6router#sho int serial 0/0/11  /0/0/1   w ospf neighbor
+team6router#
+Jul 31 10:13:33.791: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet0/0, changed state to down
+Jul 31 10:13:34.791: %LINK-3-UPDOWN: Interface GigabitEthernet0/0, changed state to down
+team6router#
+Jul 31 10:13:41.791: %LINK-3-UPDOWN: Interface GigabitEthernet0/0, changed state to up
+Jul 31 10:13:42.791: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet0/0, changed state to up
+team6router#show ospf neighbor
+team6router#
+Jul 31 10:16:02.751: %OSPFv3-5-ADJCHG: Process 6, Nbr 1.1.1.1 on Serial0/0/1 from LOADING to FULL, Loading Done
+team6router#show ospf neighbor^Z
+
+          OSPFv3 6 address-family ipv6 (router-id 6.6.6.6)
+
+Neighbor ID     Pri   State           Dead Time   Interface ID    Interface
+1.1.1.1           0   FULL/  -        00:00:37    6               Serial0/0/1
+team6router#conf t
+Enter configuration commands, one per line.  End with CNTL/Z.
+team6router(config)#int loop 0\
+                              ^
+% Invalid input detected at '^' marker.
+
+team6router(config)#int loop 0\ \ 
+team6router(config-if)#ipv6 ospf 6 area 0
+team6router(config-if)#exit
+team6router(config)#exitipv6 ospf 6 area 0nt loop 0              g/0/   0/0
+team6router(config-if)#int g0/0exit    ipv6 ospf 6 area 0
+team6router(config-if)#exit
+team6router(config)#exit
+team6router#
+Jul 31 10:16:59.755: %SYS-5-CONFIG_I: Configured from console by console
+team6router#conf tshow ospf neighbor
+
+          OSPFv3 6 address-family ipv6 (router-id 6.6.6.6)
+
+Neighbor ID     Pri   State           Dead Time   Interface ID    Interface
+1.1.1.1           0   FULL/  -        00:00:35    6               Serial0/0/1
+team6router#show run int s0/  0/0/1
+Building configuration...
+
+Current configuration : 158 bytes
+!
+interface Serial0/0/1
+ no ip address
+ encapsulation ppp
+ ipv6 address 2000:BEEF::A/64
+ ipv6 ospf 6 area 0
+ ppp authentication chap
+ clock rate 2000000
+end
+
+team6router#erase startup
+team6router#erase startup-config 
+Erasing the nvram filesystem will remove all configuration files! Continue? [confirm]
+[OK]
+Erase of nvram: complete
+team6router#
+Jul 31 10:18:35.735: %SYS-7-NV_BLOCK_INIT: Initialized the geometry of nvram
+team6router#
+Jul 31 10:18:43.791: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet0/0, changed state to down
+Jul 31 10:18:44.791: %LINK-3-UPDOWN: Interface GigabitEthernet0/0, changed state to down
+team6router#reload
+
+System configuration has been modified. Save? [yes/no]: 
+% Please answer 'yes' or 'no'.
+
+System configuration has been modified. Save? [yes/no]: no
+Proceed with reload? [confirm]
+
+Jul 31 10:19:16.751: %SYS-5-RELOAD: Reload requested by console. Reload Reason: Reload Command.
+System Bootstrap, Version 15.0(1r)M16, RELEASE SOFTWARE (fc1)
+Technical Support: http://www.cisco.com/techsupport
+Copyright (c) 2012 by cisco Systems, Inc.
+
+Total memory size = 512 MB
+CISCO1921/K9 platform with 524288 Kbytes of main memory
+Main memory is configured to 64 bit mode with ECC disabled
+
+
+Readonly ROMMON initialized
+program load complete, entry point: 0x80903000, size: 0x4c4a0
+program load complete, entry point: 0x80903000, size: 0x4c4a0
+
+
+IOS Image Load Test 
+___________________ 
+Digitally Signed Release Software 
+program load complete, entry point: 0x81000000, size: 0x41c181c
+Self decompressing the image : #################################################################################################################################################################################################################################################################################################################################################################################################### [OK]
+
+Smart Init is enabled
+smart init is sizing iomem
+                 TYPE      MEMORY_REQ
+          HWIC Slot 0      0x00200000
+    Onboard devices &
+         buffer pools      0x01E8F000 
+-----------------------------------------------
+               TOTAL:      0x0208F000
+
+Rounded IOMEM up to: 36Mb.
+Using 7 percent iomem. [36Mb/512Mb]
+
+              Restricted Rights Legend
+
+Use, duplication, or disclosure by the Government is
+subject to restrictions as set forth in subparagraph
+(c) of the Commercial Computer Software - Restricted
+Rights clause at FAR sec. 52.227-19 and subparagraph
+(c) (1) (ii) of the Rights in Technical Data and Computer
+Software clause at DFARS sec. 252.227-7013.
+
+           cisco Systems, Inc.
+           170 West Tasman Drive
+           San Jose, California 95134-1706
+
+
+
+Cisco IOS Software, C1900 Software (C1900-UNIVERSALK9-M), Version 15.2(4)M6, RELEASE SOFTWARE (fc2)
+Technical Support: http://www.cisco.com/techsupport
+Copyright (c) 1986-2014 by Cisco Systems, Inc.
+Compiled Wed 19-Mar-14 11:56 by prod_rel_team
+
+
+This product contains cryptographic features and is subject to United
+States and local country laws governing import, export, transfer and
+use. Delivery of Cisco cryptographic products does not imply
+third-party authority to import, export, distribute or use encryption.
+Importers, exporters, distributors and users are responsible for
+compliance with U.S. and local country laws. By using this product you
+agree to comply with applicable laws and regulations. If you are unable
+to comply with U.S. and local laws, return this product immediately.
+
+A summary of U.S. laws governing Cisco cryptographic products may be found at:
+http://www.cisco.com/wwl/export/crypto/tool/stqrg.html
+
+If you require further assistance please contact us by sending email to
+export@cisco.com.
+
+Installed image archive
+Cisco CISCO1921/K9 (revision 1.0) with 487424K/36864K bytes of memory.
+Processor board ID FTX181583YT
+2 Gigabit Ethernet interfaces
+2 Serial(sync/async) interfaces
+1 terminal line
+1 Virtual Private Network (VPN) Module
+DRAM configuration is 64 bits wide with parity disabled.
+255K bytes of non-volatile configuration memory.
+245744K bytes of USB Flash usbflash0 (Read/Write)
+
+
+         --- System Configuration Dialog ---
+
+Would you like to enter the initial configuration dialog? [yes/no]: 
+% Please answer 'yes' or 'no'.
+Would you like to enter the initial configuration dialog? [yes/no]: 
